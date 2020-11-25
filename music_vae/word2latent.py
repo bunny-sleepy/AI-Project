@@ -30,3 +30,6 @@ model = tf.keras.models.Sequential([
 model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
 
 model.fit(wordvec_batch, latentvec_batch, epochs = epochs)
+
+# TODO: save the trained model
+saver = tf.train.Saver() 
