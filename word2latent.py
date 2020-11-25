@@ -1,11 +1,11 @@
 # from trained_model import TrainedModel as tm
 # import copy
-# import os
 # import re
 # import tarfile
 # import tempfile
 
 import numpy as np
+import os
 import tensorflow as tf
 from tensorflow.keras import layers
 
@@ -21,16 +21,21 @@ wordvec_batch = []
 latentvec_batch = []
 epochs = -1
 
-model = tf.keras.models.Sequential([
-    layers.Dense(dense_layer_size, activation = 'relu', input_dim = wordvec_length),
-    layers.Dropout(dropout_rate),
-    layers.Dense(latentvec_length) # output layer
-])
+# TODO: evaluate the effectiveness of this model
 
-model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
+# TODO: save the trained model with training time
+if os.path.exists(".\Model\model.h5"):
+    model = tf.keras.models.Sequential([
+        layers.Dense(dense_layer_size, activation = 'relu', input_dim = wordvec_length),
+        layers.Dropout(dropout_rate),
+        layers.Dense(latentvec_length) # output layer
+    ])
+
+    model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
+    model.save('./Model/model.h5')
+else:
+    model = tf.keras.models.load_model('./Model/model.h5')
 
 model.fit(wordvec_batch, latentvec_batch, epochs = epochs)
 
-# TODO: save the trained model
-model.save_weights('./Model/model.ckpt')
 
