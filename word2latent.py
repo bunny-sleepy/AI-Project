@@ -1,9 +1,9 @@
-from trained_model import TrainedModel as tm
-import copy
-import os
-import re
-import tarfile
-import tempfile
+# from trained_model import TrainedModel as tm
+# import copy
+# import os
+# import re
+# import tarfile
+# import tempfile
 
 import numpy as np
 import tensorflow as tf
@@ -32,4 +32,5 @@ model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
 model.fit(wordvec_batch, latentvec_batch, epochs = epochs)
 
 # TODO: save the trained model
-saver = tf.train.Saver() 
+model.save_weights('./Model/model.ckpt')
+
