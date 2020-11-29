@@ -2,7 +2,6 @@ from music_vae.trained_model import TrainedModel
 import note_seq
 import pretty_midi
 import music_vae.configs as configs
-import os, sys
 
 class NoExtractedExamplesError(Exception):
   pass

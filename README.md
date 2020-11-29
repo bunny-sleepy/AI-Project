@@ -11,3 +11,18 @@
 之后, 在coconet所在目录下运行git bash, 输入以下命令
 
 `sh my_bazel.sh $model_path(folder) $file_to_harmonize_path(file)`
+
+
+
+*2020.11.29更新*
+
+在使用bert之前, 先安装包**transformers**, 在cmd运行如下命令:
+
+`pip3 install transformers`
+
+或`pip install transformers`
+
+注意不要装到python2里面了
+
+
+
