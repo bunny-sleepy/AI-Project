@@ -24,7 +24,7 @@ epochs = -1
 # TODO: evaluate the effectiveness of this model
 
 # TODO: save the trained model with training time
-if os.path.exists(".\Model\model.h5"):
+if not os.path.exists(".\Model\model.h5"):
     model = tf.keras.models.Sequential([
         layers.Dense(dense_layer_size, activation = 'relu', input_dim = wordvec_length),
         layers.Dropout(dropout_rate),
