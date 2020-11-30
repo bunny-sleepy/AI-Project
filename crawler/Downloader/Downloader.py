@@ -29,9 +29,12 @@ def downloads_done():
                 os.remove(target_path + "\\" +filename)
 
 # download.default_directory: target directory
-prefs = {'profile.default_content_settings.popups': 0, 'download.default_directory': target_path}
+prefs = {'profile.default_content_settings.popups': 0,
+         'download.default_directory': target_path,
+         "profile.managed_default_content_settings.images": 2}
 options = webdriver.ChromeOptions()
 options.add_experimental_option('prefs', prefs)
+
 
 # chromedriver directory
 driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
