@@ -7,8 +7,8 @@ target_path = "J:\\DownloadTarget"
 # chromedriver directory
 working_directory = 'D:/Python3.9/Scripts/chromedriver.exe'
 # Crawler range
-# start = 10081
-# end = 12000
+#start = 10075
+#end = 10085
 # Max time spent on one target
 max_sleep_time = 5
 
@@ -39,16 +39,25 @@ def download_batch(start, end):
     options = webdriver.ChromeOptions()
     options.add_experimental_option('prefs', prefs)
 
+    # Open error log file
+    err_log_file = open(target_path + "\\DownloadErrorLog.txt", "a+")
+
 
     # chromedriver directory
     driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
 
-    for i in range(start,end,1):
+    for iter in range(start,end,1):
         # Target url (some ids are missing, which will cause an error and the script will break down)
-        file_url = 'https://freemidi.org/getter-'+ str(i)
-        driver.get(file_url)
-        # Maybe we should check the button before click?
-        dl_button = driver.find_element_by_id('downloadmidi').click()
+        file_url = 'https://freemidi.org/getter-'+ str(iter)
+        try:
+            driver.get(file_url)
+            # Maybe we should check the button before click?
+            dl_button = driver.find_element_by_id('downloadmidi').click()
+        except:
+            err_log = "Download failed: " + file_url
+            err_log_file.write(err_log + "\n")
+            print(err_log)
+
         # Check whether download is finished
         downloads_done()
         print("Finished " + file_url)
