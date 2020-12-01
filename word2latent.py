@@ -10,23 +10,29 @@ import tensorflow as tf
 from tensorflow.keras import layers
 
 # TODO: find out the dimensions of inputs and outputs
-wordvec_length = -1
-latentvec_length = -1
+# Solved
+wordvec_length = 768
+latentvec_length = 512
 
-dense_layer_size = -1
+
+kernel_size = [3, 1]
+dense_layer_size = 1024
 dropout_rate = 0.2
 
 # TODO: add the dataset
 wordvec_batch = []
 latentvec_batch = []
-epochs = -1
+epochs = 1000
 
 # TODO: evaluate the effectiveness of this model
 
 # TODO: save the trained model with training time
 if not os.path.exists(".\Model\model.h5"):
     model = tf.keras.models.Sequential([
-        layers.Dense(dense_layer_size, activation = 'relu', input_dim = wordvec_length),
+        layers.Conv2D(),
+        layers.Dense(dense_layer_size, activation = 'relu'),
+        layers.Dense(dense_layer_size, activation = 'relu'),
+        layers.Dense(dense_layer_size, activation = 'relu'),
         layers.Dropout(dropout_rate),
         layers.Dense(latentvec_length) # output layer
     ])
@@ -37,5 +43,3 @@ else:
     model = tf.keras.models.load_model('./Model/model.h5')
 
 model.fit(wordvec_batch, latentvec_batch, epochs = epochs)
-
-

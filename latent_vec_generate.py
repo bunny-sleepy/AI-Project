@@ -25,7 +25,7 @@ def encode(trained_model = trained_model, midi_batch = []):
     Args:
         trained_model: the trained model, may be loaded from checkpoints or
           use the music_vae.trained_model.TrainedModel method.
-        midi_batch: the input batch of midi file directories.
+        midi_batch: the input batch of midi file names.
 
     Return:
         the encoded dictionary latent_vec, that takes the midi file name as index
@@ -62,4 +62,4 @@ def encode(trained_model = trained_model, midi_batch = []):
         latent_vecs[midi_file_name] = (z, mu, sigma)
     return latent_vecs
 
-# print(encode(trained_model, ['test1.mid']))
+# z, mu, sigma = encode(trained_model, ['test1.mid'])['test1.mid']
