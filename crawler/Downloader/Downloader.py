@@ -7,8 +7,8 @@ target_path = "J:\\DownloadTarget"
 # chromedriver directory
 working_directory = 'D:/Python3.9/Scripts/chromedriver.exe'
 # Crawler range
-start = 10000
-end = 12000
+# start = 10081
+# end = 12000
 # Max time spent on one target
 max_sleep_time = 5
 
@@ -28,25 +28,29 @@ def downloads_done():
                 sleeptime = 0
                 os.remove(target_path + "\\" +filename)
 
-# download.default_directory: target directory
-prefs = {'profile.default_content_settings.popups': 0,
-         'download.default_directory': target_path,
-         "profile.managed_default_content_settings.images": 2}
-options = webdriver.ChromeOptions()
-options.add_experimental_option('prefs', prefs)
+# start: start position
+# end: end position
+def download_batch(start, end):
+
+    # download.default_directory: target directory
+    prefs = {'profile.default_content_settings.popups': 0,
+            'download.default_directory': target_path,
+            "profile.managed_default_content_settings.images": 2}
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('prefs', prefs)
 
 
-# chromedriver directory
-driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
+    # chromedriver directory
+    driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
 
-for i in range(start,end,1):
-    # Target url (some ids are missing, which will cause an error and the script will break down)
-    file_url = 'https://freemidi.org/getter-'+ str(i)
-    driver.get(file_url)
-    # Maybe we should check the button before click?
-    dl_button = driver.find_element_by_id('downloadmidi').click()
-    # Check whether download is finished
-    downloads_done()
-    print("Finished " + file_url)
+    for i in range(start,end,1):
+        # Target url (some ids are missing, which will cause an error and the script will break down)
+        file_url = 'https://freemidi.org/getter-'+ str(i)
+        driver.get(file_url)
+        # Maybe we should check the button before click?
+        dl_button = driver.find_element_by_id('downloadmidi').click()
+        # Check whether download is finished
+        downloads_done()
+        print("Finished " + file_url)
 
-driver.quit()
+    driver.quit()
