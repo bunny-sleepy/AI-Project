@@ -4,7 +4,7 @@ from transformers import BertTokenizer, BertModel
 Tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 Model = BertModel.from_pretrained('bert-base-uncased')
 
-def encode_nlp(text,model,tokenizer):
+def encode_nlp(text, model, tokenizer):
     tokenized_text = tokenizer.tokenize(text)
     indexed_tokens=tokenizer.convert_tokens_to_ids(tokenized_text)
     tokens_tensor = torch.tensor([indexed_tokens])
