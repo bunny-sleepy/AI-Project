@@ -53,13 +53,13 @@ def download_batch(start, end):
             driver.get(file_url)
             # Maybe we should check the button before click?
             dl_button = driver.find_element_by_id('downloadmidi').click()
+            # Check whether download is finished
+            downloads_done()
         except:
             err_log = "Download failed: " + file_url
             err_log_file.write(err_log + "\n")
             print(err_log)
 
-        # Check whether download is finished
-        downloads_done()
         print("Finished " + file_url)
 
     driver.quit()
