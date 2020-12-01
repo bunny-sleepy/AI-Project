@@ -3,8 +3,8 @@ import os
 
 # start position and end position
 start = 10000
-end = 10500
-batch_size = 5
+end = 12000
+batch_size = 200
 
 for iter in range(start, end, batch_size):
     try:
