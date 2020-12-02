@@ -27,7 +27,9 @@ def schedule(iter_start, iter_end):
         try:
             Downloader.download_batch(iter,
                                       iter + batch_size,
-                                      "DownloadErrorLog_%d_to_%d.txt" % (iter, iter + batch_size - 1))
+                                      "DownloadErrorLog_%d_to_%d.txt" % (iter, iter + batch_size - 1),
+                                      target_path='D:\Downloads\midi',
+                                      working_directory='D:/code/repository/chromedriver/chromedriver.exe')
         except:
             err_log_file = open("DownloadErrorLog_%d_to_%d.txt" % (iter, iter + batch_size - 1), "a+")
             err_log = "Download failed: " + str(iter)

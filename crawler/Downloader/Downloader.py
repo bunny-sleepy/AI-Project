@@ -31,7 +31,7 @@ def downloads_done():
 
 # start: start position
 # end: end position
-def download_batch(start, end, file):
+def download_batch(start, end, file, target_path = target_path, working_directory = working_directory):
 
     # download.default_directory: target directory
     prefs = {'profile.default_content_settings.popups': 0,
