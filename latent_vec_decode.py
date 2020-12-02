@@ -44,7 +44,7 @@ def decode(trained_model = trained_model, z_batch = [], samples_per_batch = 1, t
     return note_seq_batch
 
 def decode_to_midi(target_directory, trained_model = trained_model, z_batch = [], samples_per_batch = 1, temperature = 0.5):
-    """ decode the generated z into note sequences
+    """ decode the generated z and output the midi files
 
     Args:
         target_directory: the directory to hold the generated piece.
