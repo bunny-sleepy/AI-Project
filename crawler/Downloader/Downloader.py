@@ -2,13 +2,14 @@ from selenium import webdriver
 from time import sleep
 import os
 
+# TODO: you should change the directory path here
 # The directory for storing our result
+# **IMPORTANT** NOTE: YOU SHOULD USE \ INSTEAD OF / IN THE DIRECTORY STRING
 target_path = "J:\\DownloadTarget"
+
 # chromedriver directory
 working_directory = 'D:/Python3.9/Scripts/chromedriver.exe'
-# Crawler range
-#start = 10075
-#end = 10085
+
 # Max time spent on one target
 max_sleep_time = 5
 
@@ -43,11 +44,12 @@ def download_batch(start, end):
     err_log_file = open(target_path + "\\DownloadErrorLog.txt", "a+")
     err_retry_list = []
 
+
     # chromedriver directory
     driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
 
     for iter in range(start,end,1):
-        # Target url (some ids are missing, which will cause an error and the script will break down)
+        # Target url
         file_url = 'https://freemidi.org/getter-'+ str(iter)
         try:
             driver.get(file_url)
@@ -62,7 +64,7 @@ def download_batch(start, end):
             print(err_log)
 
     for iter in err_retry_list:
-        # Target url (some ids are missing, which will cause an error and the script will break down)
+        # Target url
         file_url = 'https://freemidi.org/getter-'+ str(iter)
         try:
             driver.get(file_url)

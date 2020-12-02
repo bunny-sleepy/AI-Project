@@ -1,12 +1,14 @@
 import Downloader
 import os
 
+"""
+    TODO: you should change the range here (recommend 2000 each time) 
+    Currently Finished: 10000-12999, 20000-21999
+"""
 # start position and end position
-# Currently finished: 
-# Antony 10000 ~ 13000
-start = 10075
-end = 10085
-batch_size = 10
+start = 20000
+end = 22000
+batch_size = 200
 
 for iter in range(start, end, batch_size):
     try:
