@@ -2,13 +2,14 @@ from selenium import webdriver
 from time import sleep
 import os
 
+# TODO: you should change the directory path here
 # The directory for storing our result
-target_path = "J:\\DownloadTarget"
+# **IMPORTANT** NOTE: YOU SHOULD USE \ INSTEAD OF / IN THE DIRECTORY STRING
+target_path = "D:\Downloads\midi"
+
 # chromedriver directory
-working_directory = 'D:/Python3.9/Scripts/chromedriver.exe'
-# Crawler range
-#start = 10075
-#end = 10085
+working_directory = 'D:/code/repository/chromedriver/chromedriver.exe'
+
 # Max time spent on one target
 max_sleep_time = 5
 
@@ -40,7 +41,7 @@ def download_batch(start, end):
     options.add_experimental_option('prefs', prefs)
 
     # Open error log file
-    err_log_file = open(target_path + "\\DownloadErrorLog.txt", "a+")
+    err_log_file = open(target_path + "/DownloadErrorLog.txt", "a+")
 
 
     # chromedriver directory
