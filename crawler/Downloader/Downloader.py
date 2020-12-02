@@ -31,7 +31,7 @@ def downloads_done():
 
 # start: start position
 # end: end position
-def download_batch(start, end):
+def download_batch(start, end, file):
 
     # download.default_directory: target directory
     prefs = {'profile.default_content_settings.popups': 0,
@@ -41,7 +41,7 @@ def download_batch(start, end):
     options.add_experimental_option('prefs', prefs)
 
     # Open error log file
-    err_log_file = open(target_path + "\\DownloadErrorLog.txt", "a+")
+    err_log_file = open(target_path + file, "a+")
     err_retry_list = []
 
 
