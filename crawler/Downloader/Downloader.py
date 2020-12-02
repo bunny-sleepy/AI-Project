@@ -41,7 +41,7 @@ def download_batch(start, end):
 
     # Open error log file
     err_log_file = open(target_path + "\\DownloadErrorLog.txt", "a+")
-
+    err_retry_list = []
 
     # chromedriver directory
     driver = webdriver.Chrome(executable_path=working_directory, chrome_options=options)
@@ -55,11 +55,25 @@ def download_batch(start, end):
             dl_button = driver.find_element_by_id('downloadmidi').click()
             # Check whether download is finished
             downloads_done()
+            print("Finished " + file_url)
         except:
+            err_retry_list.append(iter)
             err_log = "Download failed: " + file_url
-            err_log_file.write(err_log + "\n")
             print(err_log)
 
-        print("Finished " + file_url)
+    for iter in err_retry_list:
+        # Target url (some ids are missing, which will cause an error and the script will break down)
+        file_url = 'https://freemidi.org/getter-'+ str(iter)
+        try:
+            driver.get(file_url)
+            # Maybe we should check the button before click?
+            dl_button = driver.find_element_by_id('downloadmidi').click()
+            # Check whether download is finished
+            downloads_done()
+            print("Finished " + file_url)
+        except:
+            err_log = "Retry failed: " + file_url
+            err_log_file.write(err_log + "\n")
+            print(err_log)    
 
     driver.quit()

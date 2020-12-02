@@ -2,9 +2,11 @@ import Downloader
 import os
 
 # start position and end position
-start = 10000
-end = 12000
-batch_size = 200
+# Currently finished: 
+# Antony 10000 ~ 13000
+start = 10075
+end = 10085
+batch_size = 10
 
 for iter in range(start, end, batch_size):
     try:
