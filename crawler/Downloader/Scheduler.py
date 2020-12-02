@@ -3,7 +3,7 @@ import os
 
 """
     TODO: you should change the range here (recommend 2000 each time) 
-    Currently Finished: 10000-14999, 20000-21999
+    Currently Finished: 10000-12999, 20000-21999
 """
 # start position and end position
 start = 20000
