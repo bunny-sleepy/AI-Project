@@ -14,13 +14,13 @@ config_str = 'hierdec-mel_16bar'
 config = configs.CONFIG_MAP[config_str]
 config.data_converter.max_tensors_per_item = None
 batch_size = 8
-checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
+checkpoint_dir = 'C:/Users/Li/PycharmProjects/AI_proj/hierdec-mel_16bar'
 trained_model = TrainedModel(config,
                              batch_size,
                              checkpoint_dir_or_path = checkpoint_dir)
 
 # TODO: concatenate the generated word vector with this function
-def decode(trained_model = trained_model, z_batch = [], samples_per_batch = 1, temperature = 0.5):
+def decode(trained_model = trained_model, length = None, z_batch = [], samples_per_batch = 1, temperature = 0.5):
     """ decode the generated z into note sequences
 
     Args:
@@ -36,15 +36,15 @@ def decode(trained_model = trained_model, z_batch = [], samples_per_batch = 1, t
     note_seq_batch = []
     for z in z_batch:
         for _ in range(samples_per_batch):
-            note_seqs = trained_model.decode(z, temperature = temperature)
+            note_seqs = trained_model.decode(z, length = length, temperature = temperature)
             note_seq = []
             for ns in note_seqs:
-                note_seq.extend(ns)
+                note_seq.append(ns)
             note_seq_batch.append(note_seq)
     return note_seq_batch
 
-def decode_to_midi(target_directory, trained_model = trained_model, z_batch = [], samples_per_batch = 1, temperature = 0.5):
-    """ decode the generated z and output the midi files
+def decode_to_midi(target_directory, trained_model = trained_model, length = None, z_batch = [], samples_per_batch = 1, temperature = 0.5):
+    """ decode the generated z into note sequences
 
     Args:
         target_directory: the directory to hold the generated piece.
@@ -57,10 +57,15 @@ def decode_to_midi(target_directory, trained_model = trained_model, z_batch = []
     Return:
         a batch of note sequences.
     """
-    note_seq_batch = decode(trained_model, z_batch, samples_per_batch, temperature)
+    note_seq_batch = decode(trained_model, length, z_batch, samples_per_batch, temperature)
+    
     basename = os.path.join(
         target_directory,
         '%s_%03d.mid' %
         (date_and_time, samples_per_batch))
+   
     for noteseq in note_seq_batch:
-        note_seq.sequence_proto_to_midi_file(noteseq, basename.replace('*', '%03d' % i))
+        i = 0
+        for ns in noteseq:
+            i = i + 1
+            note_seq.sequence_proto_to_midi_file(ns, basename.replace('*', '%03d' % i))
