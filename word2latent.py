@@ -22,9 +22,13 @@ latentvec_length: length of latent vector
 
 '''
 
-def train_model(wordvec_batch, latentvec_batch,
- dense_layer_size = 1024, dropout_rate = 0.2, epochs = 1000,
- wordvec_length = 768, latentvec_length = 512):
+def train_model(wordvec_batch,
+                latentvec_batch,
+                dense_layer_size = 1024,
+                dropout_rate = 0.2,
+                epochs = 1000,
+                wordvec_length = 768,
+                latentvec_length = 512):
 
     # TODO: evaluate the effectiveness of this model
     

@@ -222,6 +222,7 @@ def skyline(ns):
     target_instrument = np.argmax(counts)
     return target_instrument
 
+# TODO: change the file directory
 def main():
     notes = skyline(ns)
     if notes is None:

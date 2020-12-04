@@ -1,4 +1,4 @@
-import bert_try as bt
+import bert_try
 import numpy as np
 import os
 import tensorflow as tf
@@ -16,7 +16,7 @@ generate_temperature = 0.5
 input: word_vec
 output: latent vector
 '''
-def GenerateMidi(word_string,
+def generateMidi(word_string,
                  wordvec_to_latentvec_model,
                  music_vae_checkpoint_dir,
                  music_vae_config_str = 'hierdec-mel_16bar',
@@ -27,7 +27,7 @@ def GenerateMidi(word_string,
     # maximum pooling
     word_vec = np.max(word_vec_array, axis = 0)
     # model output
-    latent_vec = model.run(word_vec)
+    latent_vec = wordvec_to_latentvec_model.run(word_vec)
     # decode latent_vec to midi output
     music_vae_model = decode.generate_model(config_str=music_vae_config_str, checkpoint_dir=music_vae_checkpoint_dir)
     decode.decode_to_midi(target_directory=target_directory, trained_model=music_vae_model, length = len(latent_vec), z_batch = [latent_vec], temperature=generate_temperature)
