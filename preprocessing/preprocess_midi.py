@@ -3,12 +3,15 @@ import os, sys
 import numpy as np
 
 # test_target = './midi_input/BackToDecember.mid'
-test_target = './midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
+# test_target = './midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
 # test_target = './midi_input/7Days.mid'
+# test_target = './midi_input/NeverSayNever.mid'
+test_target = './midi_input/TakeMeToYourHeart.mid'
 file = open('note_seq3.txt', 'w+')
 
 ns = note_seq.midi_file_to_note_sequence(test_target)
 
+# According to the average velocity of notes
 def avg_velocity(ns):
     number = {}
     for note in ns.notes:
@@ -28,6 +31,7 @@ def avg_velocity(ns):
             max_pitch_avg = number[instrument]
     return max_instrument, number
 
+# According to the total time
 def total_time(ns):
     number = {}
     for note in ns.notes:
@@ -84,6 +88,26 @@ def max_pitch(ns):
             max_pitch = number[instrument]
     return max_instrument, number
 
+# According to maximum variance
+def pitch_var(ns):
+    number = {}
+    for note in ns.notes:
+        if not note.is_drum:
+            if note.instrument in number.keys():
+                number[note.instrument].append(note.pitch)
+            else:
+                number[note.instrument] = [note.pitch]
+    for instrument in number:
+        var_pitch = np.var(number[instrument])
+        number[instrument] = var_pitch
+    max_instrument = -1
+    max_pitch_var = -1.0
+    for instrument in number:
+        if number[instrument] > max_pitch_var:
+            max_instrument = instrument
+            max_pitch_var = number[instrument]
+    return max_instrument, number
+
 # According to the pitch diversity
 def max_diversity(ns):
     number = {}
@@ -126,7 +150,7 @@ def get_new_ns(max_instrument):
 
 def skyline(ns):
     """ Returns the melody track according to the skyline algorithm
-    To get more detail on this algorithm,
+    To get more details on this algorithm,
     please see https://www.tastestars.com/index.php/2019/01/03/1-17/
 
     Args:
@@ -139,15 +163,31 @@ def skyline(ns):
     pitch_max = max_pitch(ns)[1]
     pitch_diversity = max_diversity(ns)[1]
     pitch_total_time = total_time(ns)[1]
+    pitch_velocity = avg_velocity(ns)[1]
     # print(pitch_max)
     # print(pitch_diff)
     # print(pitch_diversity)
-    pick_num = len(pitch_max) / 3
-    pick_num_max = len(pitch_max) * 3 / 4
+    pick_num = int(len(pitch_max) / 2)
+    pick_num_max = int(len(pitch_max) * 3 / 4)
     top_diff = []
     top_max = []
     top_diversity = []
     top_total_time = []
+    top_velocity = []
+
+    for instrument in pitch_velocity:
+        if len(top_velocity) < pick_num:
+            top_velocity.append(instrument)
+        else:
+            min_index = -1
+            min_velocity = 10000.0
+            for ins in top_velocity:
+                curr_velocity = pitch_velocity[ins]
+                if curr_velocity < min_velocity:
+                    min_velocity = curr_velocity
+                    min_index = top_velocity.index(ins)
+            if pitch_velocity[instrument] > min_velocity:
+                top_velocity[min_index] = instrument
 
     for instrument in pitch_total_time:
         if len(top_total_time) < pick_num:
@@ -205,7 +245,7 @@ def skyline(ns):
             if len(pitch_diversity[instrument]) > min_diversity:
                 top_diversity[min_index] = instrument
 
-    print(top_diff, top_diversity, top_max, top_total_time)
+    print(top_diff, top_diversity, top_max, top_total_time, top_velocity)
     target = []
     # for instrument in top_diversity:
     #     if (instrument in top_max) and (instrument in top_diff) and (instrument in top_total_time):
@@ -217,18 +257,22 @@ def skyline(ns):
     target.extend(top_diversity)
     target.extend(top_max)
     target.extend(top_total_time)
+    target.extend(top_velocity)
 
     counts = np.bincount(target)
     target_instrument = np.argmax(counts)
+    print(target_instrument)
     return target_instrument
 
 # TODO: change the file directory
 def main():
-    notes = skyline(ns)
-    if notes is None:
+    target_instrument = max_diversity(ns)[0]
+    # target_instrument = skyline(ns)
+    # target_instrument = pitch_var(ns)[0]
+    if target_instrument is None:
         print('No track selected')
     else:
-        seq = get_new_ns(notes)
+        seq = get_new_ns(target_instrument)
         note_seq.sequence_proto_to_midi_file(seq, './midi_output/preprocess_output/out%s.mid' % '1')
 
 if __name__ == '__main__':
