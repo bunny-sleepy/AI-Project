@@ -11,7 +11,7 @@ config_str = 'hierdec-mel_16bar'
 config = configs.CONFIG_MAP[config_str]
 config.data_converter.max_tensors_per_item = None
 batch_size = 8
-checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
+checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
 trained_model = TrainedModel(config,
                              batch_size,
                              checkpoint_dir_or_path = checkpoint_dir)
