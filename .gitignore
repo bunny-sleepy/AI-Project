@@ -1,6 +1,7 @@
-
+*.txt
 __pycache__/bert_try.cpython-37.pyc
 *.pyc
 DownloadErrorLog.txt
 *.log
 crawler/Downloader/Downloader.py
+preprocessing/TitlePreprocessor/dataset
