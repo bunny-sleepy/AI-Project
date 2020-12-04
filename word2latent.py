@@ -47,10 +47,10 @@ if not os.path.exists(".\Model\model.h5"):
     ])
     model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
 
-    # model.save('./Model/model.h5')
 else:
     model = tf.keras.models.load_model('./Model/model.h5')
 
 # TODO: train the model
-# model.fit(wordvec_batch, latentvec_batch, epochs = epochs)
+model.fit(wordvec_batch, latentvec_batch, epochs=epochs)
+model.save('./Model/model.h5')
 print(model.summary())
