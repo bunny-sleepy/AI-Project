@@ -26,16 +26,18 @@ def train_model(wordvec_batch,
                 latentvec_batch,
                 dense_layer_size = 1024,
                 dropout_rate = 0.2,
-                epochs = 1000,
+                epochs = 10,
                 wordvec_length = 768,
-                latentvec_length = 512):
+                latentvec_length = 512,
+                checkpoint_path = "model.h5",
+                train = True):
 
     # TODO: evaluate the effectiveness of this model
     
     # TODO: save the trained model with training time
 
     model = None
-    if not os.path.exists(".\Model\model.h5"):
+    if train: 
         model = tf.keras.models.Sequential([
             layers.Dense(dense_layer_size, activation = 'relu', input_shape = (wordvec_length, )),
             layers.Dense(dense_layer_size, activation = 'relu'),
@@ -43,11 +45,11 @@ def train_model(wordvec_batch,
             layers.Dense(latentvec_length) # output layer
         ])
         model.compile(optimizer = 'adam', loss = 'MSE', metrics = ['accuracy'])
-
+        model.fit(wordvec_batch, latentvec_batch, epochs=epochs)
+        model.save(checkpoint_path)
+    elif not os.path.exists(checkpoint_path):
+        print("ERROR: No existing checkpoint")
     else:
-        model = tf.keras.models.load_model('./Model/model.h5')
-
-    # Train the model
-    model.fit(wordvec_batch, latentvec_batch, epochs=epochs)
-    model.save('./Model/model.h5')
+        model = tf.keras.models.load_model(checkpoint_path)
+    
     return model

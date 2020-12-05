@@ -11,16 +11,17 @@ date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
 
 # TODO: find the appropriate batch size
 # NOTE: plz do not change the directory here, since you can always specify out side this file
-def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'):
+def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = 'C:/Users/Li/PycharmProjects/AI_proj/hierdec-mel_16bar'):
     config = configs.CONFIG_MAP[config_str]
     config.data_converter.max_tensors_per_item = None
     batch_size = 8
     trained_model = TrainedModel(config,
                                  batch_size,
                                  checkpoint_dir_or_path = checkpoint_dir)
+    return trained_model
 
 # TODO: concatenate the generated word vector with this function
-def decode(trained_model = generate_model(),
+def decode(trained_model,
            length = None,
            z_batch = [],
            samples_per_batch = 1,
@@ -48,7 +49,7 @@ def decode(trained_model = generate_model(),
     return note_seq_batch
 
 def decode_to_midi(target_directory,
-                   trained_model = trained_model,
+                   trained_model,
                    length = None,
                    z_batch = [],
                    samples_per_batch = 1,

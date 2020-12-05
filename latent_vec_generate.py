@@ -7,19 +7,20 @@ class NoExtractedExamplesError(Exception):
   pass
 
 # TODO: find the appropriate batch size
-config_str = 'hierdec-mel_16bar'
-config = configs.CONFIG_MAP[config_str]
-config.data_converter.max_tensors_per_item = None
-batch_size = 8
-checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
-trained_model = TrainedModel(config,
-                             batch_size,
-                             checkpoint_dir_or_path = checkpoint_dir)
+# NOTE: plz do not change the directory here, since you can always specify out side this file
+def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = 'C:/Users/Li/PycharmProjects/AI_proj/hierdec-mel_16bar'):
+    config = configs.CONFIG_MAP[config_str]
+    config.data_converter.max_tensors_per_item = None
+    batch_size = 8
+    trained_model = TrainedModel(config,
+                                 batch_size,
+                                 checkpoint_dir_or_path = checkpoint_dir)
+    return trained_model
 
 # encode
 # test: transfer a midi file into note sequence and encode it
 
-def encode(trained_model = trained_model, midi_batch = []):
+def encode(trained_model, midi_batch = []):
     """encode a midi_batch according to a trained model.
 
     Args:
@@ -45,6 +46,7 @@ def encode(trained_model = trained_model, midi_batch = []):
     we should split it to several sequences.
     '''
     latent_vecs = {}
+    config = configs.CONFIG_MAP['hierdec-mel_16bar']
     for midi_file_name in noteseqs:
         noteseq = noteseqs[midi_file_name]
         tensors = config.data_converter.to_tensors(noteseq)
