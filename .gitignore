@@ -6,3 +6,4 @@ DownloadErrorLog.txt
 crawler/Downloader/Downloader.py
 preprocessing/TitlePreprocessor/dataset
 *.h5
+*.h5
