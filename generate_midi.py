@@ -30,13 +30,16 @@ def generateMidi(word_string,
 
 # TODO: write a tentative main function
 def main():
+    # word inputs
     word_train = []
     word_train.append(np.max(bert_try.encode_nlp("Back To December"), axis=0))
     word_train.append(np.max(bert_try.encode_nlp("test1"), axis=0))
+    # midi inputs
     path1 = './midi_input/BackToDecember.mid'
     path2 = './midi_input/test1.mid'
     p = []
     latent_train = []
+    # encode to latent_vec
     p.append(path1)
     p.append(path2)
     music_vae_model = decode.generate_model(config_str=music_vae_config_str, checkpoint_dir=music_vae_checkpoint_dir)
@@ -45,10 +48,10 @@ def main():
     latent_train.append(z[0])
     z,u,v = encoded_list['test1.mid']
     latent_train.append(z[0])
+    # train model
     w2vmodel = w2l.train_model(np.array(word_train), np.array(latent_train))      
-    
+    # test output
     word_input = "Hello world!"
-
     generateMidi(word_input,
                  w2vmodel,
                  music_vae_model = music_vae_model,

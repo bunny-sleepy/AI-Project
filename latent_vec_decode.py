@@ -11,7 +11,7 @@ date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
 
 # TODO: find the appropriate batch size
 # NOTE: plz do not change the directory here, since you can always specify out side this file
-def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = 'C:/Users/Li/PycharmProjects/AI_proj/hierdec-mel_16bar'):
+def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
     config = configs.CONFIG_MAP[config_str]
     config.data_converter.max_tensors_per_item = None
     batch_size = 8
