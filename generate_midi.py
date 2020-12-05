@@ -23,7 +23,7 @@ def generateMidi(word_string,
                  generate_temperature = 0.5):
     word_vec_array = bert_try.encode_nlp(word_string)
     # maximum pooling
-    word_vec = np.max(word_vec_array, axis = 0)
+    word_vec = np.max(np.array(word_vec_array), axis = 0)
     # model output
     latent_vec = wordvec_to_latentvec_model.predict(np.array([word_vec]))
     decode.decode_to_midi(target_directory=target_directory, trained_model=music_vae_model, length = len(latent_vec), z_batch = [latent_vec], temperature=generate_temperature)
