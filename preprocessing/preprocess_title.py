@@ -39,17 +39,23 @@ def file_title(file_path):
         where flg = True if the title is of desired characters
     """
     global pattern
+    # detect invalid midi files
     if not detect_failure(file_path):
         return False, None
     midi_file_name = os.path.basename(file_path)
+    # remove file extension
     midi_file_name = midi_file_name.replace('.midi', '')
     midi_file_name = midi_file_name.replace('.mid', '')
+    # detect invalid characters
     for char in char_set:
         if char in midi_file_name:
             return False, None
+    # remove version id
     for char in id_set:
         midi_file_name = midi_file_name.replace(char, '')
+    # add spacing between files
     midi_file_name = re.sub(pattern, lambda x: " " + x.group(0), midi_file_name)
+    # remove first spacing
     if midi_file_name[0] == ' ':
         midi_file_name = midi_file_name[1:]
     return True, midi_file_name

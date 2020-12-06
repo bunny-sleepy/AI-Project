@@ -17,9 +17,6 @@ def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
                                  checkpoint_dir_or_path = checkpoint_dir)
     return trained_model
 
-# encode
-# test: transfer a midi file into note sequence and encode it
-
 def encode(trained_model, midi_batch = []):
     """encode a midi_batch according to a trained model.
 
