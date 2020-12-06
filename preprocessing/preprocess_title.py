@@ -50,6 +50,8 @@ def file_title(file_path):
     for char in id_set:
         midi_file_name = midi_file_name.replace(char, '')
     midi_file_name = re.sub(pattern, lambda x: " " + x.group(0), midi_file_name)
+    if midi_file_name[0] == ' ':
+        midi_file_name = midi_file_name[1:]
     return True, midi_file_name
 
 # TODO: find a better preprocess method
