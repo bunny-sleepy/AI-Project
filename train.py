@@ -12,10 +12,12 @@ def main():
                                          checkpoint_dir = music_vae_checkpoint_dir)
     midi_wordvec_list, midi_latentvec_list = ld.load_dataset(music_vae_model,
                                                              midi_directory = dataset_path,
-                                                             max_num = 100)
-    w2l.train_model(np.array(midi_wordvec_list),
+                                                             max_num = 3)
+    w2l_model = w2l.train_model(np.array(midi_wordvec_list),
                     np.array(midi_latentvec_list),
-                    epochs = 1000)
+                    epochs = 1000,
+                    train = True)
+
 
 if __name__ == "__main__":
     main()

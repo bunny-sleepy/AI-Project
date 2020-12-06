@@ -25,9 +25,9 @@ def load_dataset(musicvae_model, midi_directory = "PATH", max_num = 1000):
     midi_latentvec_list = []
 
     curr_num = 0
-    if curr_num < max_num:
-        for filename in file_list:
-            # only append midi files
+    for filename in file_list:
+        # only append midi files
+        if curr_num < max_num:
             midi_file = midi_directory + '/' + filename
             print(midi_file)
             if (".mid" in filename) or (".midi" in filename):
