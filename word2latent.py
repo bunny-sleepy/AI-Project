@@ -6,10 +6,10 @@ from tensorflow.keras import layers
 
 def train_model(wordvec_batch = None,
                 latentvec_batch = None,
-                dense_layer_size = 100,
+                dense_layer_size = 10,
                 dropout_rate = 0.2,
                 epochs = 10,
-                learning_rate = 0.05,
+                learning_rate = 0.00005,
                 wordvec_length = 768,
                 latentvec_length = 512,
                 checkpoint_path = "model.h5",
@@ -39,10 +39,19 @@ def train_model(wordvec_batch = None,
     model = None
     if train: 
         model = tf.keras.models.Sequential([
-            layers.Dense(dense_layer_size, activation = 'relu', input_shape = (wordvec_length, )),
-            layers.Dense(dense_layer_size, activation = 'relu'),
+            layers.Dense(dense_layer_size,
+                         # activation = 'relu',
+                         input_shape = (wordvec_length, ),
+                         kernel_initializer='RandomNormal',
+                         bias_initializer='RandomNormal'),
+            layers.Dense(dense_layer_size,
+                         # activation = 'relu',
+                         kernel_initializer = 'RandomNormal',
+                         bias_initializer = 'RandomNormal'),
             layers.Dropout(dropout_rate),
-            layers.Dense(latentvec_length) # output layer
+            layers.Dense(latentvec_length,
+                         kernel_initializer='RandomNormal',
+                         bias_initializer='RandomNormal') # output layer
         ])
         model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate = learning_rate),
                       loss = 'mse',
