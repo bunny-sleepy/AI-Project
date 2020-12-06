@@ -49,7 +49,7 @@ def file_title(file_path):
             return False, None
     for char in id_set:
         midi_file_name = midi_file_name.replace(char, '')
-    midi_file_name = re.sub(u"\\(.*?\\)|\\{.*?}|\\[.*?]", "", midi_file_name)
+    midi_file_name = re.sub(pattern, lambda x: " " + x.group(0), midi_file_name)
     return True, midi_file_name
 
 # TODO: find a better preprocess method
