@@ -17,6 +17,32 @@ def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
                                  checkpoint_dir_or_path = checkpoint_dir)
     return trained_model
 
+def encode_ns(trained_model, ns):
+    """encode a note sequence according to a trained model.
+
+    Args:
+        trained_model: the trained model, may be loaded from checkpoints or
+          use the music_vae.trained_model.TrainedModel method.
+        ns: the input note sequence object to encode.
+
+    Return:
+        the encoded latent_vec
+    """
+    config = configs.CONFIG_MAP['hierdec-mel_16bar']
+    tensors = config.data_converter.to_tensors(ns)
+    if not tensors.inputs:
+        raise NoExtractedExamplesError(
+            'No examples extracted from NoteSequence')
+    inputs = []
+    controls = []
+    lengths = []
+    for i in range(len(tensors.inputs)):
+        inputs.append(tensors.inputs[i])
+        controls.append(tensors.controls[i])
+        lengths.append(tensors.lengths[i])
+    z, mu, sigma = trained_model.encode_tensors(inputs, lengths, controls)
+    return z, mu, sigma
+
 def encode(trained_model, midi_batch = []):
     """encode a midi_batch according to a trained model.
 
@@ -49,7 +75,7 @@ def encode(trained_model, midi_batch = []):
         tensors = config.data_converter.to_tensors(noteseq)
         if not tensors.inputs:
             raise NoExtractedExamplesError(
-                'No examples extracted from NoteSequence: %s' % noteseq)
+                'No examples extracted from NoteSequence: %s' % midi_file_name)
         inputs = []
         controls = []
         lengths = []
@@ -61,4 +87,14 @@ def encode(trained_model, midi_batch = []):
         latent_vecs[midi_file_name] = (z, mu, sigma)
     return latent_vecs
 
-# z, mu, sigma = encode(trained_model, ['test1.mid'])['test1.mid']
+def main():
+    path = "./midi_input/test1.mid"
+    ns = note_seq.midi_file_to_note_sequence(path)
+    music_vae_config_str = 'hierdec-mel_16bar'
+    music_vae_checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
+    music_vae_model = generate_model(config_str = music_vae_config_str,
+                                         checkpoint_dir = music_vae_checkpoint_dir)
+    print(encode_ns(music_vae_model, ns))
+
+if __name__ == "__main__":
+    main()

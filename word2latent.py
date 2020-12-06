@@ -4,24 +4,6 @@ import os
 import tensorflow as tf
 from tensorflow.keras import layers
 
-'''
-
-Dataset input:
-wordvec_batch: list of word vectors
-latentvec_batch: list of latent vectors
-NOTE: the two lists MUST be in the same order
-
-Training settings:
-dense_layer_size: size of hidden layers
-dropout_rate: percentage of neurons dropout
-epochs: training epochs
-
-Shape of dataset:
-wordvec_length: length of word vector
-latentvec_length: length of latent vector
-
-'''
-
 def train_model(wordvec_batch,
                 latentvec_batch,
                 dense_layer_size = 1024,
@@ -31,6 +13,22 @@ def train_model(wordvec_batch,
                 latentvec_length = 512,
                 checkpoint_path = "model.h5",
                 train = True):
+    """
+    Args:
+        wordvec_batch: list of word vectors.
+        latentvec_batch: list of latent vectors.
+        NOTE: the two lists MUST be in the same order
+        dense_layer_size: size of hidden layers.
+        dropout_rate: percentage of neurons dropout.
+        epochs: training epochs.
+        wordvec_length: length of word vector.
+        latentvec_length: length of latent vector.
+        checkpoint_path: the path to store the model.
+        train: whether to train or to use the model.
+
+    Return:
+        the trained model
+    """
 
     # TODO: evaluate the effectiveness of this model
     
@@ -51,5 +49,4 @@ def train_model(wordvec_batch,
         print("ERROR: No existing checkpoint")
     else:
         model = tf.keras.models.load_model(checkpoint_path)
-    
     return model

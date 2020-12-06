@@ -2,15 +2,6 @@ import note_seq
 import os, sys
 import numpy as np
 
-# test_target = './midi_input/BackToDecember.mid'
-# test_target = './midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
-# test_target = './midi_input/7Days.mid'
-# test_target = './midi_input/NeverSayNever.mid'
-test_target = './midi_input/TakeMeToYourHeart.mid'
-file = open('note_seq3.txt', 'w+')
-
-ns = note_seq.midi_file_to_note_sequence(test_target)
-
 # According to the average velocity of notes
 def avg_velocity(ns):
     number = {}
@@ -80,12 +71,12 @@ def max_pitch(ns):
             else:
                 number[note.instrument] = note.pitch
     max_instrument = -1
-    max_pitch = -1
+    max_pt = -1
     for instrument in number:
         # print(number[instrument][0], number[instrument][1])
-        if number[instrument] > max_pitch:
+        if number[instrument] > max_pt:
             max_instrument = instrument
-            max_pitch = number[instrument]
+            max_pt = number[instrument]
     return max_instrument, number
 
 # According to maximum variance
@@ -127,12 +118,27 @@ def max_diversity(ns):
             max_pitch_num = len(number[instrument])
     return max_instrument, number
 
-def get_new_ns(max_instrument):
+def get_new_ns(max_instrument, ns):
     if max_instrument is None:
         return None
     seq = note_seq.NoteSequence()
-    seq.tempos.add().qpm = ns.tempos[0].qpm
+    seq.source_info.parser = ns.source_info.parser
+    seq.source_info.encoding_type = ns.source_info.encoding_type
+    for tempo in ns.tempos:
+        seq.tempos.add().qpm = tempo.qpm
     seq.ticks_per_quarter = ns.ticks_per_quarter
+    for ns_time_signature in ns.time_signatures:
+        time_signature = seq.time_signatures.add()
+        try:
+            time_signature.numerator = ns.time_signatures.numerator
+            time_signature.denominator = ns.time_signatures.denominator
+        except:
+            time_signature.numerator = 4
+            time_signature.denominator = 4
+    for ns_key_signature in ns.key_signatures:
+        key_signature = seq.key_signatures.add()
+        key_signature = ns_key_signature
+
     new_notes = []
     for note in ns.notes:
         if not note.is_drum:
@@ -146,6 +152,7 @@ def get_new_ns(max_instrument):
         note.start_time -= timing
         note.end_time -= timing
     seq.notes.extend(new_notes)
+    seq.total_time = ns.total_time - timing
     return seq
 
 def skyline(ns):
@@ -245,7 +252,7 @@ def skyline(ns):
             if len(pitch_diversity[instrument]) > min_diversity:
                 top_diversity[min_index] = instrument
 
-    print(top_diff, top_diversity, top_max, top_total_time, top_velocity)
+    # print(top_diff, top_diversity, top_max, top_total_time, top_velocity)
     target = []
     # for instrument in top_diversity:
     #     if (instrument in top_max) and (instrument in top_diff) and (instrument in top_total_time):
@@ -261,19 +268,28 @@ def skyline(ns):
 
     counts = np.bincount(target)
     target_instrument = np.argmax(counts)
-    print(target_instrument)
     return target_instrument
 
 # TODO: change the file directory
 def main():
+    # test_target = './../midi_input/BackToDecember.mid'
+    # test_target = './midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
+    # test_target = './midi_input/7Days.mid'
+    # test_target = './midi_input/NeverSayNever.mid'
+    test_target = './../midi_input/test1.mid'
+    ns = note_seq.midi_file_to_note_sequence(test_target)
+    file1 = open('./../1.txt', 'w+')
+    file2 = open('./../2.txt', 'w+')
     target_instrument = max_diversity(ns)[0]
     # target_instrument = skyline(ns)
     # target_instrument = pitch_var(ns)[0]
     if target_instrument is None:
         print('No track selected')
     else:
-        seq = get_new_ns(target_instrument)
-        note_seq.sequence_proto_to_midi_file(seq, './midi_output/preprocess_output/out%s.mid' % '1')
+        seq = get_new_ns(target_instrument, ns)
+        file1.write(str(seq))
+        note_seq.sequence_proto_to_midi_file(seq, './../midi_output/preprocess_output/out%s.mid' % '1')
+        file2.write(str(note_seq.midi_file_to_note_sequence('./../midi_output/preprocess_output/out%s.mid' % '1')))
 
 if __name__ == '__main__':
     main()
