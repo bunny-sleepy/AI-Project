@@ -2,6 +2,8 @@ import word2latent as w2l
 import numpy as np
 import load_dataset as ld
 import latent_vec_generate as lvg
+import word2latent_torch as w2lt
+import torch
 
 def main():
     dataset_path = 'D:/Downloads/midi'
@@ -12,11 +14,13 @@ def main():
                                          checkpoint_dir = music_vae_checkpoint_dir)
     midi_wordvec_list, midi_latentvec_list = ld.load_dataset(music_vae_model,
                                                              midi_directory = dataset_path,
-                                                             max_num = 10)
-    # print(len(midi_latentvec_list), len(midi_wordvec_list))
-    w2l_model = w2l.train_model(np.array(midi_wordvec_list),
-                    np.array(midi_latentvec_list),
-                    epochs = 10000,
+                                                             max_num = 2)
+    wordvec_tensors = torch.from_numpy(np.array(midi_wordvec_list))
+    latentvec_tensors = torch.from_numpy(np.array(midi_latentvec_list))
+
+    w2l_model = w2lt.train_model(wordvec_tensors,
+                    latentvec_tensors,
+                    epochs = 1000,
                     train = True)
 
 

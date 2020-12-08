@@ -93,7 +93,7 @@ def main():
     music_vae_config_str = 'hierdec-mel_16bar'
     music_vae_checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
     music_vae_model = generate_model(config_str = music_vae_config_str,
-                                         checkpoint_dir = music_vae_checkpoint_dir)
+                                     checkpoint_dir = music_vae_checkpoint_dir)
     print(encode_ns(music_vae_model, ns))
 
 if __name__ == "__main__":

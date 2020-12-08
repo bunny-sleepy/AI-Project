@@ -3,12 +3,15 @@ import numpy as np
 import os
 import tensorflow as tf
 from tensorflow.keras import layers
+import matplotlib.pyplot as plt
 
 def train_model(wordvec_batch = None,
                 latentvec_batch = None,
-                dense_layer_size = 256,
+                dense_layer_size = 2048,
                 dropout_rate = 0.2,
-                epochs = 10000,
+                learning_rate = 1e-1,
+                momentum = 0.9,
+                epochs = 1000,
                 wordvec_length = 768,
                 latentvec_length = 512,
                 checkpoint_path = "model.h5",
@@ -19,6 +22,8 @@ def train_model(wordvec_batch = None,
         latentvec_batch: list of latent vectors.
         dense_layer_size: size of hidden layers.
         dropout_rate: percentage of neurons dropout.
+        learning_rate: the learning rate.
+        momentum: the momentum
         epochs: training epochs.
         wordvec_length: length of word vector.
         latentvec_length: length of latent vector.
@@ -30,15 +35,13 @@ def train_model(wordvec_batch = None,
     """
 
     # TODO: evaluate the effectiveness of this model
-    
     # TODO: save the trained model with training time
-
     model = None
-    if train: 
+    if train:
         model = tf.keras.models.Sequential([
+            layers.Input(shape = (wordvec_length, )),
             layers.Dense(dense_layer_size,
                          activation = 'relu',
-                         input_shape = (wordvec_length, ),
                          kernel_initializer='RandomNormal',
                          bias_initializer='RandomNormal'),
             layers.Dense(dense_layer_size,
@@ -53,27 +56,20 @@ def train_model(wordvec_batch = None,
                          activation = 'relu',
                          kernel_initializer = 'RandomNormal',
                          bias_initializer = 'RandomNormal'),
-            layers.Dense(dense_layer_size,
-                         activation = 'relu',
-                         kernel_initializer = 'RandomNormal',
-                         bias_initializer = 'RandomNormal'),
-            layers.Dense(dense_layer_size,
-                         activation = 'relu',
-                         kernel_initializer = 'RandomNormal',
-                         bias_initializer = 'RandomNormal'),
-            layers.Dense(dense_layer_size,
-                         activation = 'relu',
-                         kernel_initializer = 'RandomNormal',
-                         bias_initializer = 'RandomNormal'),
-            # layers.Dropout(dropout_rate),
+            layers.Dropout(dropout_rate),
             layers.Dense(latentvec_length,
                          kernel_initializer='RandomNormal',
                          bias_initializer='RandomNormal') # output layer
         ])
-        model.compile(optimizer = 'adam',
+        optimizer = tf.keras.optimizers.SGD(learning_rate = learning_rate, momentum = momentum)
+        model.compile(optimizer = optimizer,
                       loss = 'mse',
                       metrics = ['mse', 'mae'])
-        model.fit(wordvec_batch, latentvec_batch, batch_size = 5, epochs=epochs)
+
+        history = model.fit(wordvec_batch, latentvec_batch, batch_size = 5, epochs = epochs)
+        history.history.keys()
+        plt.plot(history.epoch, history.history.get('loss'))
+        plt.plot(history.epoch, history.history.get('acc'))
         model.summary()
         model.save(checkpoint_path)
     elif not os.path.exists(checkpoint_path):
