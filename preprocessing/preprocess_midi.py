@@ -174,8 +174,8 @@ def skyline(ns):
     # print(pitch_max)
     # print(pitch_diff)
     # print(pitch_diversity)
-    pick_num = int(len(pitch_max) / 2)
-    pick_num_max = int(len(pitch_max) * 3 / 4)
+    pick_num = int(len(pitch_max) / 3)
+    pick_num_max = int(len(pitch_max) * 2 / 3)
     top_diff = []
     top_max = []
     top_diversity = []
@@ -273,10 +273,11 @@ def skyline(ns):
 # TODO: change the file directory
 def main():
     # test_target = './../midi_input/BackToDecember.mid'
-    # test_target = './midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
-    # test_target = './midi_input/7Days.mid'
-    # test_target = './midi_input/NeverSayNever.mid'
-    test_target = './../midi_input/test1.mid'
+    # test_target = './../midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
+    test_target = './../midi_input/7Days.mid'
+    test_target = './../midi_input/7Days.mid'
+    # test_target = './../midi_input/NeverSayNever.mid'
+    # test_target = './../midi_input/test1.mid'
     ns = note_seq.midi_file_to_note_sequence(test_target)
     file1 = open('./../1.txt', 'w+')
     file2 = open('./../2.txt', 'w+')

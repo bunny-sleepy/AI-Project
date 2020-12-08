@@ -63,6 +63,31 @@ def file_title(file_path):
         midi_file_name = midi_file_name[1:]
     return True, midi_file_name
 
+def word_dict(dict_path = 'word.txt'):
+    """Return an array of words
+    This function IS effective, even if it is plain look up without using data structures
+
+    Args:
+        dict_path: the dictionary file path
+
+    Return:
+        The array
+
+    Note:
+        To use this, you should write
+        >>> my_dict = word_dict('word.txt')
+        >>> for word_to_check in words_to_check:
+        >>>     print(word_to_check in my_dict)
+    """
+    dict_file = open(dict_path, 'r')
+    dict_words = dict_file.readlines()
+    for i in range(len(dict_words)):
+        dict_words[i] = dict_words[i].lower()
+        dict_words[i] = dict_words[i].replace('\n', '')
+        dict_words[i] = dict_words[i].replace('\r', '')
+
+    return dict_words
+
 # TODO: find a better preprocess method
 def PreprocessDataset(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePreprocessor\\dataset"):
     """ Preprocess the dataset
@@ -99,10 +124,14 @@ def Rename(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePrepro
             os.remove(dataset_path + "\\" + filename)
 
 def main():
-    test_file1 = './midi_input/broken_midi.mid'
-    print(file_title(test_file1))
-    test_file2 = './midi_input/BackToDecember.mid'
-    print(file_title(test_file2))
+    # test_file1 = './midi_input/broken_midi.mid'
+    # print(file_title(test_file1))
+    # test_file2 = './midi_input/BackToDecember.mid'
+    # print(file_title(test_file2))
+    word_1 = 'apple'
+    worddct = word_dict()
+    for i in range(60000):
+        print(word_1 in worddct)
 
 if __name__ == "__main__":
     main()
