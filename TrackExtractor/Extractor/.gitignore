@@ -1,0 +1,9 @@
+__pycache__/
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+@eaDir
+*.pyc
+*.pypirc
+Thumbs.db
+*.gz
