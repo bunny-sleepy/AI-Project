@@ -85,8 +85,7 @@ def word_dict(dict_path = 'word.txt'):
         dict_words[i] = dict_words[i].lower()
         dict_words[i] = dict_words[i].replace('\n', '')
         dict_words[i] = dict_words[i].replace('\r', '')
-
-    return dict_words
+    return {}.fromkeys(dict_words, 1)
 
 # TODO: find a better preprocess method
 def PreprocessDataset(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePreprocessor\\dataset"):
@@ -128,10 +127,15 @@ def main():
     # print(file_title(test_file1))
     # test_file2 = './midi_input/BackToDecember.mid'
     # print(file_title(test_file2))
-    word_1 = 'apple'
+    word_1 = 'zebra'
     worddct = word_dict()
-    for i in range(60000):
-        print(word_1 in worddct)
+    for i in range(100000):
+        # try:
+        #     tmp = worddct[word_1]
+        #     print(True)
+        # except:
+        #     print(False)
+        print(worddct.__contains__(word_1))
 
 if __name__ == "__main__":
     main()
