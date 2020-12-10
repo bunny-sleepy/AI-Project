@@ -17,13 +17,19 @@ def main():
     path_mid = 'test_midis/SomebodyThatIUsedToKnow.mid'
     dump_path = 'tmp.mid'
     # algo according to script.py
-    preprocess(path_mid, dump_path)
-    # algo according to filters
-    ns = note_seq.midi_file_to_note_sequence(dump_path)
-    new_ns = pm.get_new_ns(pm.skyline(ns), ns)
-    # save the output
-    save_path = 'out.mid'
-    note_seq.sequence_proto_to_midi_file(new_ns, save_path)
+    try:
+        preprocess(path_mid, dump_path)
+        # algo according to filters
+        ns = note_seq.midi_file_to_note_sequence(dump_path)
+        new_ns = pm.get_new_ns(pm.skyline(ns), ns)
+        # save the output
+        save_path = 'out.mid'
+        note_seq.sequence_proto_to_midi_file(new_ns, save_path)
+    except:
+        ns = note_seq.midi_file_to_note_sequence(path_mid)
+        new_ns = pm.get_new_ns(pm.skyline(ns), ns)
+        save_path = 'out.mid'
+        note_seq.sequence_proto_to_midi_file(new_ns, save_path)
 
 if __name__ == "__main__":
     main()
