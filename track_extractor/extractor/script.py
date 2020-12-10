@@ -1,7 +1,7 @@
 import numpy as np
 from track_identifier import proc
 from miditoolkit.midi import parser
-import preprocessing.preprocess_midi as pm
+import preprocess_midi as pm
 import note_seq
 
 # save only melodic track
