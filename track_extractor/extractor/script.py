@@ -14,8 +14,8 @@ def preprocess(path_midi, dump_path = 'tmp.mid'):
     midi_file.dump(filename = dump_path, instrument_idx = midx)
 
 def main():
-    path_mid = 'test_midis/SomebodyThatIUsedToKnow.mid'
-    dump_path = 'tmp.mid'
+    path_mid = 'test_midis/advance-wars-2-black-hole-rising-super-co-power-mid.mid'
+    dump_path = '_tmp.mid'
     # algo according to script.py
     try:
         preprocess(path_mid, dump_path)
@@ -23,12 +23,12 @@ def main():
         ns = note_seq.midi_file_to_note_sequence(dump_path)
         new_ns = pm.get_new_ns(pm.skyline(ns), ns)
         # save the output
-        save_path = 'out.mid'
+        save_path = '_out.mid'
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
     except:
         ns = note_seq.midi_file_to_note_sequence(path_mid)
         new_ns = pm.get_new_ns(pm.skyline(ns), ns)
-        save_path = 'out.mid'
+        save_path = '_out.mid'
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
 
 if __name__ == "__main__":
