@@ -274,14 +274,14 @@ def skyline(ns):
 def main():
     # test_target = './../midi_input/BackToDecember.mid'
     # test_target = './../midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
-    test_target = './../midi_input/7Days.mid'
-    test_target = './../midi_input/7Days.mid'
+    # test_target = './../midi_input/7Days.mid'
+    test_target = './../midi_input/advance-wars-2-black-hole-rising-super-co-power-mid.mid'
     # test_target = './../midi_input/NeverSayNever.mid'
     # test_target = './../midi_input/test1.mid'
     ns = note_seq.midi_file_to_note_sequence(test_target)
     file1 = open('./../1.txt', 'w+')
     file2 = open('./../2.txt', 'w+')
-    target_instrument = max_diversity(ns)[0]
+    target_instrument = skyline(ns)
     # target_instrument = skyline(ns)
     # target_instrument = pitch_var(ns)[0]
     if target_instrument is None:
