@@ -28,41 +28,6 @@ def detect_failure(file_path):
     except:
         return False
 
-# Preprocess Titles (currently adding blank spaces)
-# TODO: find a better preprocess method
-def file_title(file_path):
-    """ Return the file name string with blank spaces
-    Args:
-        file_path: the file to get title
-
-    Return:
-        (flg, name_string)
-        where flg = True if the title is of desired characters
-    """
-    global pattern
-    # detect invalid midi files
-    if not detect_failure(file_path):
-        return False, None
-    midi_file_name = os.path.basename(file_path)
-    # remove file extension
-    midi_file_name = midi_file_name.replace('.midi', '')
-    midi_file_name = midi_file_name.replace('.mid', '')
-    # detect invalid characters
-    for char in char_set:
-        if char in midi_file_name:
-            return False, None
-    # remove version id
-    for char in id_set:
-        midi_file_name = midi_file_name.replace(char, '')
-    # remove parenthesis
-    midi_file_name = re.sub(u"\\(.*?\\)|\\{.*?}|\\[.*?]", "", midi_file_name)
-    # add spacing between files
-    midi_file_name = re.sub(pattern, lambda x: " " + x.group(0), midi_file_name)
-    # remove first spacing
-    if midi_file_name[0] == ' ':
-        midi_file_name = midi_file_name[1:]
-    return True, midi_file_name
-
 def word_dict(dict_path = 'word.txt'):
     """Return an array of words
     This function IS effective, even if it is plain look up without using data structures
@@ -86,6 +51,54 @@ def word_dict(dict_path = 'word.txt'):
         dict_words[i] = dict_words[i].replace('\n', '')
         dict_words[i] = dict_words[i].replace('\r', '')
     return {}.fromkeys(dict_words, 1)
+
+# Preprocess Titles (currently adding blank spaces)
+# TODO: find a better preprocess method
+def file_title(file_path, worddct):
+    """ Return the file name string with blank spaces
+    Args:
+        file_path: the file to get title
+        worddct: the word dictionary to detect spelling errors
+
+    Return:
+        (flg, name_string)
+        where flg = True if the title is of desired characters
+    """
+    global pattern
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    # detect invalid midi files
+    if not detect_failure(file_path):
+        return False, None
+    midi_file_name = os.path.basename(file_path)
+    # remove file extension
+    midi_file_name = midi_file_name.replace('.midi', '')
+    midi_file_name = midi_file_name.replace('.mid', '')
+    # detect invalid characters
+    for char in char_set:
+        if char in midi_file_name:
+            return False, None
+    # remove version id
+    for char in id_set:
+        midi_file_name = midi_file_name.replace(char, '')
+    # remove parenthesis
+    midi_file_name = re.sub(u"\\(.*?\\)|\\{.*?}|\\[.*?]", "", midi_file_name)
+    # add spacing between files
+    midi_file_name = re.sub(pattern, lambda x: " " + x.group(0), midi_file_name)
+    # remove first spacing
+    if midi_file_name[0] == ' ':
+        midi_file_name = midi_file_name[1:]
+    # check spelling errors
+    new_file_name = None
+    for number in numbers:
+        new_file_name = midi_file_name.replace(number, '')
+    new_file_name = new_file_name.lower()
+    words = new_file_name.split()
+    print(words)
+    for word in words:
+        if not worddct.__contains__(word):
+            print('invalid word: %s' % word)
+            return False, None
+    return True, midi_file_name
 
 # TODO: find a better preprocess method
 def PreprocessDataset(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePreprocessor\\dataset"):
@@ -123,19 +136,20 @@ def Rename(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePrepro
             os.remove(dataset_path + "\\" + filename)
 
 def main():
+    worddct = word_dict('./word.txt')
+    # print (worddct)
     # test_file1 = './midi_input/broken_midi.mid'
     # print(file_title(test_file1))
-    # test_file2 = './midi_input/BackToDecember.mid'
-    # print(file_title(test_file2))
-    word_1 = 'zebra'
-    worddct = word_dict()
-    for i in range(100000):
-        # try:
-        #     tmp = worddct[word_1]
-        #     print(True)
-        # except:
-        #     print(False)
-        print(worddct.__contains__(word_1))
+    test_file2 = './../midi_input/BackToDecember.mid'
+    print(file_title(test_file2, worddct))
+    # word_1 = 'zebra'
+    # for i in range(100000):
+    #     # try:
+    #     #     tmp = worddct[word_1]
+    #     #     print(True)
+    #     # except:
+    #     #     print(False)
+    #     print(worddct.__contains__(word_1))
 
 if __name__ == "__main__":
     main()

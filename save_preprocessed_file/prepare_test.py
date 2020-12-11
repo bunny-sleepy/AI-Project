@@ -1,7 +1,6 @@
 from save_preprocessed_file.dataset_prepare import prepare_dataset
 import latent_vec_generate as lvg
 
-
 def main():
     dataset_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/musictest'
     stored_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/testback/storetest'

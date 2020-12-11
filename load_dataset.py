@@ -42,7 +42,6 @@ def load_dataset(musicvae_model, midi_directory = "PATH", max_num = 1000):
                     # if True:
                     try:
                         new_ns = ppm.get_new_ns(ppm.skyline(ns), ns)
-                        # note_seq.sequence_proto_to_midi_file(new_ns, 'tmp.mid')
                         z_list, _, _ = lvg.encode_ns(musicvae_model, new_ns)
                         for z in z_list:
                             midi_latentvec_list.append(z)
