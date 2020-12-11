@@ -29,6 +29,7 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                     try:
                         if not os.path.exists(midi_store_path): 
                             os.mkdir(midi_store_path)
+
                         midi_store_path_name = midi_store_path + '/name.npy'
                         np.save(midi_store_path_name, midi_wordvec)
                         new_ns = ppm.get_new_ns(ppm.skyline(ns), ns)

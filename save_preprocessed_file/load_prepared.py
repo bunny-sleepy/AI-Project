@@ -11,7 +11,7 @@ def load_prepared_dataset(file_path):
         files = os.listdir(path)
         # name: the
         name = None
-        for file in files: 
+        for file in files:
             if file == 'name.npy':
                 npath = path + '/name.npy'
                 name =  np.load(npath)

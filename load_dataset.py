@@ -17,6 +17,7 @@ def load_dataset(musicvae_model, midi_directory = "PATH", word_dict = word_dict,
         musicvae_model: the musicvae_model to load
         midi_directory: directory of midi files
         max_num: how many files to load
+        word_dict: the dictionary of word from ppt
 
     Return:
         the x, y data ready for training

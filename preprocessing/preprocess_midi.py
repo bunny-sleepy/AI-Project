@@ -155,13 +155,16 @@ def get_new_ns(max_instrument, ns):
     seq.total_time = ns.total_time - timing
     return seq
 
-def skyline(ns):
+def skyline(ns, mode = 'argmax'):
     """ Returns the melody track according to the skyline algorithm
     To get more details on this algorithm,
     please see https://www.tastestars.com/index.php/2019/01/03/1-17/
 
     Args:
         ns: the note sequence to extract melody from
+        mode: the allowed mode
+            argmax: argmax of all filters
+            variance_first: restricted on the first 1/3 variance of the tracks
 
     Return:
         the melody note sequence object
@@ -171,6 +174,7 @@ def skyline(ns):
     pitch_diversity = max_diversity(ns)[1]
     pitch_total_time = total_time(ns)[1]
     pitch_velocity = avg_velocity(ns)[1]
+    pitch_variance = pitch_var(ns)[1]
     # print(pitch_max)
     # print(pitch_diff)
     # print(pitch_diversity)
@@ -181,6 +185,21 @@ def skyline(ns):
     top_diversity = []
     top_total_time = []
     top_velocity = []
+    top_variance = []
+
+    for instrument in pitch_variance:
+        if len(top_variance) < pick_num:
+            top_variance.append(instrument)
+        else:
+            min_index = -1
+            min_variance = 10000.0
+            for ins in top_variance:
+                curr_variance = pitch_variance[ins]
+                if curr_variance < min_variance:
+                    min_variance = curr_variance
+                    min_index = top_variance.index(ins)
+            if pitch_variance[instrument] > min_variance:
+                top_variance[min_index] = instrument
 
     for instrument in pitch_velocity:
         if len(top_velocity) < pick_num:
@@ -253,22 +272,31 @@ def skyline(ns):
                 top_diversity[min_index] = instrument
 
     # print(top_diff, top_diversity, top_max, top_total_time, top_velocity)
-    target = []
-    # for instrument in top_diversity:
-    #     if (instrument in top_max) and (instrument in top_diff) and (instrument in top_total_time):
-    #         target.append(instrument)
-    # if len(target) == 0:
-    #     return None
-    # target_instrument = target[0]
-    target.extend(top_diff)
-    target.extend(top_diversity)
-    target.extend(top_max)
-    target.extend(top_total_time)
-    target.extend(top_velocity)
+    if mode == 'argmax':
+        target = []
+        target.extend(top_diff)
+        target.extend(top_diversity)
+        target.extend(top_max)
+        target.extend(top_total_time)
+        target.extend(top_velocity)
+        target.extend(top_variance)
 
-    counts = np.bincount(target)
-    target_instrument = np.argmax(counts)
-    return target_instrument
+        counts = np.bincount(target)
+        target_instrument = np.argmax(counts)
+        return target_instrument
+    elif mode == 'variance_first':
+        target = []
+        target.extend(list(set(top_diff).intersection(set(top_variance))))
+        target.extend(list(set(top_diversity).intersection(set(top_variance))))
+        target.extend(list(set(top_max).intersection(set(top_variance))))
+        target.extend(list(set(top_total_time).intersection(set(top_variance))))
+        target.extend(list(set(top_velocity).intersection(set(top_variance))))
+
+        counts = np.bincount(target)
+        target_instrument = np.argmax(counts)
+        return target_instrument
+    else: # default: top variance
+        return top_variance[0]
 
 # TODO: change the file directory
 def main():
