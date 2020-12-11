@@ -7,8 +7,10 @@ import numpy as np
 import preprocessing.preprocess_midi as ppm
 import note_seq
 
+word_dict = ppt.word_dict('./preprocessing/word.txt')
+
 # NOTE: absolute path recommended
-def load_dataset(musicvae_model, midi_directory = "PATH", max_num = 1000):
+def load_dataset(musicvae_model, midi_directory = "PATH", word_dict = word_dict, max_num = 1000):
     """ load midi dataset from a given directory
 
     Args:
@@ -31,7 +33,7 @@ def load_dataset(musicvae_model, midi_directory = "PATH", max_num = 1000):
             midi_file = midi_directory + '/' + filename
             print(midi_file)
             if (".mid" in filename) or (".midi" in filename):
-                file_valid, title = ppt.file_title(midi_file)
+                file_valid, title = ppt.file_title(midi_file, word_dict)
                 if file_valid:
                     # this will remove ".mid", ".midi", "(*)", "[*]", "{*}" from filename
                     # NOTE: ".midi" MUST be before ".mid"
