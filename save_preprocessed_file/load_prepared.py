@@ -17,7 +17,7 @@ def load_prepared_dataset(file_path):
             if (file != 'name.npy'):
                 lpath = path + '/' + file
                 latent = np.load(lpath)
-                midi_wordvec_list.append(name)
+                midi_wordvec_list.append()
                 midi_latentvec_list.append(latent)
     
     return midi_latentvec_list, midi_wordvec_list
