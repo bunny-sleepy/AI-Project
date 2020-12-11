@@ -56,9 +56,10 @@ def load_dataset(musicvae_model, midi_directory = "PATH", max_num = 1000):
     return midi_wordvec_list, midi_latentvec_list
 
 def main():
-    list1 = load_dataset("I:/FinalProj/AI-Project/midi_input")
-    for item in list1:
-        print(item)
+    music_vae_checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
+    music_vae_model = lvg.generate_model(config_str = 'hierdec-mel_16bar',
+                                         checkpoint_dir = music_vae_checkpoint_dir)
+    list1 = load_dataset(music_vae_model, midi_directory = "./midi_input/")
 
 if __name__ == "__main__":
     main()
