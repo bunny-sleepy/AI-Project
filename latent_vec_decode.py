@@ -72,9 +72,12 @@ def decode_to_midi(target_directory,
         target_directory,
         '%s_%03d_*.mid' %
         (date_and_time, samples_per_batch))
-   
+    output_file_paths = []
     for noteseq in note_seq_batch:
         i = 0
         for ns in noteseq:
             i = i + 1
-            note_seq.sequence_proto_to_midi_file(ns, basename.replace('*', '%03d' % i))
+            file_path = basename.replace('*', '%03d' % i)
+            note_seq.sequence_proto_to_midi_file(ns, file_path)
+            output_file_paths.append(file_path)
+    return output_file_paths

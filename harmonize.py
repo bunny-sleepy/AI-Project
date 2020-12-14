@@ -6,15 +6,22 @@ import tensorflow.compat.v1 as tf
 import pretty_midi
 import numpy as np
 
-tf.compat.v1.disable_eager_execution()
+def generate_coconet_model(coconet_model_path):
+    """Generate a coconet model based on the model path
+
+
+    """
+    tf.compat.v1.disable_eager_execution()
+    coconet_model = cs.instantiate_model(coconet_model_path)
+    return coconet_model
 
 # TODO: change the instrument of the harmonized sample
-def harmonize(file_path, output_dir, coconet_model_path, temperature = 0.8, batch_size = 2):
+def harmonize(file_path, output_dir, coconet_model, temperature = 0.8, batch_size = 2):
     """harmonize a midi file
 
     Args:
         file_path: the input path
-        coconet_model_path: the path to the model directory
+        coconet_model: the loaded coconet model
         output_dir: the output path
         temperature: the generation temperature
         batch_size: how many samples to generate each time
@@ -23,8 +30,7 @@ def harmonize(file_path, output_dir, coconet_model_path, temperature = 0.8, batc
         None
     """
     strategy = "harmonize_midi_melody"
-    wmodel = cs.instantiate_model(coconet_model_path)
-    generator = cs.Generator(wmodel, strategy)
+    generator = cs.Generator(coconet_model, strategy)
     midi_outs = generator.run_generation(midi_in = pretty_midi.PrettyMIDI(file_path),
                                          gen_batch_size = batch_size)
 
@@ -81,9 +87,10 @@ def harmonize(file_path, output_dir, coconet_model_path, temperature = 0.8, batc
 # example of usage
 def main():
     coconet_model_path = "D:/code/Github/repository/coconet_model"
+    coconet_model = generate_coconet_model(coconet_model_path)
     file_path = "D:/code/Github/AI-Project/midi_input/test.mid"
     output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
-    harmonize(file_path, output_path, coconet_model_path)
+    harmonize(file_path, output_path, coconet_model)
 
 if __name__ == "__main__":
     main()
