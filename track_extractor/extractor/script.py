@@ -2,7 +2,9 @@ import numpy as np
 from track_identifier import proc
 from miditoolkit.midi import parser
 import preprocessing.preprocess_midi as pm
+import preprocessing.preprocess_title as pt
 import note_seq
+import os
 
 # save only melodic track
 # path_midi = 'test_midis/aladdin-medley-of-all-songs-mid.mid'
@@ -14,7 +16,7 @@ def preprocess(path_midi, dump_path = 'tmp.mid'):
     midi_file.dump(filename = dump_path, instrument_idx = midx)
 
 def main():
-    path_mid = 'test_midis/advance-wars-2-black-hole-rising-super-co-power-mid.mid'
+    path_mid = './../../midi_input/21Guns.mid'
     dump_path = '_tmp.mid'
     # algo according to script.py
     try:
@@ -30,6 +32,8 @@ def main():
         new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'variance_first'), ns)
         save_path = '_out.mid'
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
+    if os.path.exists('_tmp.mid'):
+        os.remove('_tmp.mid')
 
 if __name__ == "__main__":
     main()
