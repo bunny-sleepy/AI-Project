@@ -22,7 +22,7 @@ set -e
 # http://download.magenta.tensorflow.org/models/coconet/checkpoint.zip
 # and pass the path up to the inner most directory as first argument when running this
 # script.
-checkpoint=../../../repository/coconet_model
+checkpoint=../../repository/coconet_model
 
 # Change this to path for saving samples.
 generation_output_dir=./samples
@@ -32,7 +32,7 @@ generation_output_dir=./samples
 gen_batch_size=2
 piece_length=32
 strategy=harmonize_midi_melody
-tfsample=true
+tfsample=False
 melody_path=./midis/test.mid
 
 # Run command.

@@ -10,7 +10,7 @@ import note_seq
 word_dict = ppt.word_dict('./preprocessing/word.txt')
 
 # NOTE: absolute path recommended
-def load_dataset(musicvae_model, midi_directory = "PATH", word_dict = word_dict, max_num = 1000):
+def load_dataset(musicvae_model, midi_directory = "PATH", pooling = True, word_dict = word_dict, max_num = 1000):
     """ load midi dataset from a given directory
 
     Args:
@@ -18,6 +18,7 @@ def load_dataset(musicvae_model, midi_directory = "PATH", word_dict = word_dict,
         midi_directory: directory of midi files
         max_num: how many files to load
         word_dict: the dictionary of word from ppt
+        pooling: whether use maximum pooling method
 
     Return:
         the x, y data ready for training
@@ -29,18 +30,14 @@ def load_dataset(musicvae_model, midi_directory = "PATH", word_dict = word_dict,
 
     curr_num = 0
     for filename in file_list:
-        # only append midi files
         if curr_num < max_num:
-            midi_file = midi_directory + '/' + filename
+            midi_file = "%s/%s" % (midi_directory, filename)
             print(midi_file)
             if (".mid" in filename) or (".midi" in filename):
                 file_valid, title = ppt.file_title(midi_file, word_dict)
                 if file_valid:
-                    # this will remove ".mid", ".midi", "(*)", "[*]", "{*}" from filename
-                    # NOTE: ".midi" MUST be before ".mid"
-                    midi_wordvec = np.max(bt.encode_nlp(title), axis=0)
+                    midi_wordvec = bt.encode_nlp(title, pooling)
                     ns = note_seq.midi_file_to_note_sequence(midi_file)
-                    # z_list, _, _ = lvg.encode_ns(musicvae_model, ns)
                     # TODO: change this midi preprocessing method
                     # if True:
                     try:

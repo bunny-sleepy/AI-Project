@@ -83,7 +83,7 @@ def main(unused_argv):
 
   result_npy_save_path = os.path.join(basepath, "generated_result.npy")
   tf.logging.info("Writing final result to %s", result_npy_save_path)
-  with tf.gfile.Open(result_npy_save_path, "w") as p:
+  with tf.gfile.Open(result_npy_save_path, "wb") as p:
     np.save(p, generator.pianorolls)
 
   if FLAGS.tfsample:
@@ -99,7 +99,7 @@ def main(unused_argv):
   # Save the prime as midi and npy if in harmonization mode.
   # First, checks the stored npz for the first (context) and last step.
   tf.logging.info("Reading to check %s", intermediate_steps_path)
-  with tf.gfile.Open(intermediate_steps_path, "r") as p:
+  with tf.gfile.Open(intermediate_steps_path, "rb") as p:
     foo = np.load(p)
     for key in foo.keys():
       if re.match(r"0_root/.*?_strategy/.*?_context/0_pianorolls", key):
@@ -365,8 +365,12 @@ class HarmonizeMidiMelodyStrategy(BaseStrategy):
     return rolls
 
   def run(self, tuple_in):
-    shape, midi_in = tuple_in
-    mroll = self.load_midi_melody(midi_in)
+    try:
+        shape, midi_in = tuple_in
+        mroll = self.load_midi_melody(midi_in)
+    except:
+        shape = tuple_in
+        mroll = self.load_midi_melody(None)
     pianorolls = self.make_pianoroll_from_melody_roll(mroll, shape)
     masks = lib_sampling.HarmonizationMasker()(pianorolls.shape)
     gibbs = self.make_sampler(
