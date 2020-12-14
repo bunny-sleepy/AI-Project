@@ -15,9 +15,9 @@ def preprocess(path_midi, dump_path = 'tmp.mid'):
     midx = list(np.where(np.array(ys)==0)[0])
     midi_file.dump(filename = dump_path, instrument_idx = midx)
 
-def main():
-    path_mid = './../../midi_input/21Guns.mid'
-    dump_path = '_tmp.mid'
+def extract_track(input_directory, file_name, output_directory):
+    path_mid = input_directory + "/" + file_name
+    dump_path = output_directory + "/" + file_name + ".tmp"
     # algo according to script.py
     try:
         preprocess(path_mid, dump_path)
@@ -25,15 +25,26 @@ def main():
         ns = note_seq.midi_file_to_note_sequence(dump_path)
         new_ns = pm.get_new_ns(pm.skyline(ns), ns)
         # save the output
-        save_path = '_out.mid'
+        save_path = output_directory + "/" + file_name
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
     except:
         ns = note_seq.midi_file_to_note_sequence(path_mid)
         new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'variance_first'), ns)
-        save_path = '_out.mid'
+        save_path = output_directory + "/" + file_name
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
-    if os.path.exists('_tmp.mid'):
-        os.remove('_tmp.mid')
+    if os.path.exists(dump_path):
+        os.remove(dump_path)
+
+def batch_extract_track(input_dir_name, dic_path, output_dir_name):
+    for filename in os.listdir(input_dir_name):
+        is_valid, _ = pt.file_title(input_dir_name + "/" + filename, pt.word_dict(dic_path))
+        if is_valid:
+            extract_track(input_dir_name, filename, output_dir_name)
+
+def main():
+    batch_extract_track("I:/FinalProj/Dataset/10000-12000/DownloadTarget/DownloadTarget",
+                        "I:/FinalProj/AI-Project/preprocessing/word.txt",
+                        "I:/output")
 
 if __name__ == "__main__":
     main()
