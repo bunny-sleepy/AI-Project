@@ -23,15 +23,18 @@ def extract_track(input_directory, file_name, output_directory):
         preprocess(path_mid, dump_path)
         # algo according to filters
         ns = note_seq.midi_file_to_note_sequence(dump_path)
-        new_ns = pm.get_new_ns(pm.skyline(ns), ns)
+        new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'argmax'), ns)
         # save the output
         save_path = output_directory + "/" + file_name
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
     except:
-        ns = note_seq.midi_file_to_note_sequence(path_mid)
-        new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'variance_first'), ns)
-        save_path = output_directory + "/" + file_name
-        note_seq.sequence_proto_to_midi_file(new_ns, save_path)
+        try:
+            ns = note_seq.midi_file_to_note_sequence(path_mid)
+            new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'variance_first'), ns)
+            save_path = output_directory + "/" + file_name
+            note_seq.sequence_proto_to_midi_file(new_ns, save_path)
+        except:
+            pass
     if os.path.exists(dump_path):
         os.remove(dump_path)
 

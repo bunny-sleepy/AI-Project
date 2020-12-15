@@ -3,7 +3,6 @@ import numpy as np
 import os
 import tensorflow as tf
 import word2latent as w2l
-from tensorflow.keras import layers
 import latent_vec_decode as decode
 import harmonize as har
 

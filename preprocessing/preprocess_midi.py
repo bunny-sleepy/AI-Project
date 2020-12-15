@@ -201,6 +201,9 @@ def skyline(ns, mode = 'argmax'):
             if pitch_variance[instrument] > min_variance:
                 top_variance[min_index] = instrument
 
+    if len(top_variance) == 0:
+        return None
+
     for instrument in pitch_velocity:
         if len(top_velocity) < pick_num:
             top_velocity.append(instrument)
