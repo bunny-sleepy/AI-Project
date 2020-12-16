@@ -42,7 +42,7 @@ def batch_extract_track(input_dir_name, dic_path, output_dir_name):
             extract_track(input_dir_name, filename, output_dir_name)
 
 def main():
-    batch_extract_track("I:/FinalProj/Dataset/10000-12000/DownloadTarget/DownloadTarget",
+    batch_extract_track("I:/input",
                         "I:/FinalProj/AI-Project/preprocessing/word.txt",
                         "I:/output")
 
