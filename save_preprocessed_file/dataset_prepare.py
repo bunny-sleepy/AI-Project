@@ -12,7 +12,7 @@ try:
 except:
     word_dct = None
 
-def prepare_dataset(musicvae_model, dataset_path, stored_path, pooling = True, word_dict = word_dct, max_num = 1000):
+def prepare_dataset(musicvae_model, dataset_path, stored_path, pooling = False, word_dict = word_dct, max_num = 1000):
     file_list = os.listdir(dataset_path)
     curr_num = 0
     for filename in file_list:

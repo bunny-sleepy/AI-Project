@@ -1,7391 +1,3068 @@
-ticks_per_quarter: 1024
+ticks_per_quarter: 384
 time_signatures {
   numerator: 4
   denominator: 4
 }
-key_signatures {
-}
 tempos {
-  qpm: 117.47982284042715
+  qpm: 135.000135000135
 }
 notes {
-  pitch: 41
-  velocity: 69
-  end_time: 0.137157861328125
-  program: 1
+  pitch: 47
+  velocity: 68
+  end_time: 0.222222
+  program: 30
 }
 notes {
-  pitch: 41
-  velocity: 64
-  start_time: 0.1376566171875
-  end_time: 0.249876685546875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 0.2573580234375
-  end_time: 0.369578091796875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 0.3770594296875
-  end_time: 0.49376830078125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 0.501249638671875
-  end_time: 0.61745975390625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 0.62543984765625
-  end_time: 0.7361636484375
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 0.7441437421875
-  end_time: 0.855366298828125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 0.8633463925781251
-  end_time: 0.9810527753906251
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 0.989032869140625
-  end_time: 1.1077367636718751
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 1.1152181015625
-  end_time: 1.226440658203125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 1.23392199609375
-  end_time: 1.345144552734375
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 1.3531246464843751
-  end_time: 1.468836005859375
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 1.4763173437500001
-  end_time: 1.592028703125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 1.600008796875
-  end_time: 1.711231353515625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 1.719211447265625
-  end_time: 1.83043400390625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 1.837915341796875
-  end_time: 1.954624212890625
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 64
-  start_time: 0.2573580234375
-  end_time: 1.9621055507812502
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 1.964599330078125
-  end_time: 2.1047497265625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 2.105248482421875
-  end_time: 2.216969794921875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 2.2249498886718753
-  end_time: 2.336671201171875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 2.3441525390625
-  end_time: 2.4613601660156252
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 2.46884150390625
-  end_time: 2.585051619140625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 2.59253295703125
-  end_time: 2.703755513671875
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 2.7112368515625
-  end_time: 2.8229581640625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 2.830439501953125
-  end_time: 2.948644640625
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 2.956125978515625
-  end_time: 3.074829873046875
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 3.082809966796875
-  end_time: 3.193533767578125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 3.201513861328125
-  end_time: 3.31273641796875
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 3.320217755859375
-  end_time: 3.435929115234375
-  program: 1
-}
-notes {
-  pitch: 71
-  velocity: 64
-  start_time: 1.964599330078125
-  end_time: 3.4434104531250003
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 3.4439092089843752
-  end_time: 3.559620568359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 3.56710190625
-  end_time: 3.6788232187500003
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 3.686304556640625
-  end_time: 3.7980258691406252
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 3.80550720703125
-  end_time: 3.922216078125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 3.931692439453125
-  end_time: 4.0718428359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 4.072341591796875
-  end_time: 4.18456166015625
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 64
-  start_time: 4.192042998046875
-  end_time: 4.30426306640625
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 64
-  start_time: 4.311744404296875
-  end_time: 4.428453275390625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 4.43593461328125
-  end_time: 4.552144728515625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 4.560124822265625
-  end_time: 4.670848623046875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 4.678828716796875
-  end_time: 4.7900512734375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 4.7980313671875
-  end_time: 4.91573775
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 57
-  start_time: 3.4439092089843752
-  end_time: 4.923219087890625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 67
-  start_time: 3.4439092089843752
-  end_time: 4.923219087890625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 67
-  start_time: 4.92371784375
-  end_time: 5.04242173828125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 47
-  start_time: 4.92371784375
-  end_time: 5.0494043203125
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 57
-  start_time: 4.92371784375
-  end_time: 5.0494043203125
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 5.0499030761718755
-  end_time: 5.16212314453125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.0499030761718755
-  end_time: 5.1691057265625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.0499030761718755
-  end_time: 5.1691057265625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 5.169604482421875
-  end_time: 5.2828220625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.169604482421875
-  end_time: 5.28980464453125
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.169604482421875
-  end_time: 5.28980464453125
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 5.290303400390625
-  end_time: 5.408009783203125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.290303400390625
-  end_time: 5.41549112109375
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.290303400390625
-  end_time: 5.41549112109375
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 5.415989876953125
-  end_time: 5.534693771484375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 45
-  start_time: 5.415989876953125
-  end_time: 5.542175109375
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 55
-  start_time: 5.415989876953125
-  end_time: 5.542175109375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 5.542673865234375
-  end_time: 5.657387712890626
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.542673865234375
-  end_time: 5.66486905078125
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.542673865234375
-  end_time: 5.66486905078125
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 5.665367806640625
-  end_time: 5.78058041015625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.665367806640625
-  end_time: 5.788061748046875
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.665367806640625
-  end_time: 5.788061748046875
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 5.78856050390625
-  end_time: 5.909758177734375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 5.78856050390625
-  end_time: 5.917239515625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 5.78856050390625
-  end_time: 5.917239515625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 5.919733294921875
-  end_time: 6.064372494140625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 6.06487125
-  end_time: 6.177091318359375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 6.18457265625
-  end_time: 6.296293968750001
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 6.3042740625
-  end_time: 6.42098293359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 6.428464271484375
-  end_time: 6.54467438671875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 6.5526544804687505
-  end_time: 6.66337828125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 6.6713583750000005
-  end_time: 6.782580931640625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 6.7900622695312505
-  end_time: 6.908267408203125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 67
-  start_time: 6.9162475019531255
-  end_time: 7.0349513964843755
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 7.042432734375001
-  end_time: 7.15315653515625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 7.161136628906251
-  end_time: 7.272359185546875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 7.280339279296875
-  end_time: 7.396050638671875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 65
-  start_time: 7.4035319765625
-  end_time: 7.5192433359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 7.5272234296875
-  end_time: 7.638445986328125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 7.64592732421875
-  end_time: 7.75764863671875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 7.765129974609375
-  end_time: 7.881838845703125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 5.919733294921875
-  end_time: 7.8893201835937505
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 5.919733294921875
-  end_time: 7.8893201835937505
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 7.891813962890625
-  end_time: 8.031964359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 8.032463115234375
-  end_time: 8.144184427734375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 8.152164521484375
-  end_time: 8.263885833984375
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 7.891813962890625
-  end_time: 8.270868416015626
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 75
-  start_time: 7.891813962890625
-  end_time: 8.270868416015626
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 8.271367171875001
-  end_time: 8.38807604296875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 8.39605613671875
-  end_time: 8.512266251953125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 8.271367171875001
-  end_time: 8.62348880859375
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 8.51974758984375
-  end_time: 8.630970146484374
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 70
-  start_time: 8.271367171875001
-  end_time: 8.637952728515625
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 8.638451484375
-  end_time: 8.749674041015625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 8.757654134765625
-  end_time: 8.8758592734375
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 8.883340611328125
-  end_time: 9.002044505859375
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 56
-  start_time: 8.638451484375
-  end_time: 9.002044505859375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 8.638451484375
-  end_time: 9.009027087890626
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 9.00952584375
-  end_time: 9.120748400390625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 9.12822973828125
-  end_time: 9.23995105078125
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 9.247432388671875
-  end_time: 9.363143748046875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 9.00952584375
-  end_time: 9.370625085937501
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 70
-  start_time: 9.00952584375
-  end_time: 9.370625085937501
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 9.371123841796875
-  end_time: 9.486835201171875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 57
-  start_time: 9.371123841796875
-  end_time: 9.598556513671875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 9.4943165390625
-  end_time: 9.606037851562501
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 9.371123841796875
-  end_time: 9.61302043359375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 9.613519189453125
-  end_time: 9.72474174609375
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 9.613519189453125
-  end_time: 9.841949373046875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 9.73272183984375
-  end_time: 9.8494307109375
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 9.613519189453125
-  end_time: 9.85641329296875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 9.858907072265625
-  end_time: 9.999057468750001
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 9.999556224609375
-  end_time: 10.11177629296875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 10.119257630859375
-  end_time: 10.230978943359375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 61
-  start_time: 9.858907072265625
-  end_time: 10.238460281250001
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 75
-  start_time: 9.858907072265625
-  end_time: 10.238460281250001
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 10.238959037109375
-  end_time: 10.355667908203126
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 10.36314924609375
-  end_time: 10.479359361328125
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 10.238959037109375
-  end_time: 10.591080673828126
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 10.487339455078125
-  end_time: 10.598063255859376
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 10.238959037109375
-  end_time: 10.60554459375
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 10.606043349609376
-  end_time: 10.71726590625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 10.724747244140625
-  end_time: 10.8429523828125
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 10.8509324765625
-  end_time: 10.96963637109375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 56
-  start_time: 10.606043349609376
-  end_time: 10.96963637109375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 10.606043349609376
-  end_time: 10.976618953125
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 10.977117708984375
-  end_time: 11.087841509765624
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 11.095821603515626
-  end_time: 11.20704416015625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 11.21502425390625
-  end_time: 11.33073561328125
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 10.977117708984375
-  end_time: 11.337718195312501
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 10.977117708984375
-  end_time: 11.337718195312501
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 11.338216951171875
-  end_time: 11.453928310546875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 11.461908404296876
-  end_time: 11.573130960937501
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 11.338216951171875
-  end_time: 11.580612298828125
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 71
-  start_time: 11.338216951171875
-  end_time: 11.580612298828125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 11.580612298828125
-  end_time: 11.692333611328126
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 11.580612298828125
-  end_time: 11.80954123828125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 11.69981494921875
-  end_time: 11.8165238203125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 70
-  start_time: 11.580612298828125
-  end_time: 11.824005158203125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 11.8264989375
-  end_time: 11.966649333984375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 11.96714808984375
-  end_time: 12.07886940234375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 64
-  start_time: 12.08684949609375
-  end_time: 12.19857080859375
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 56
-  start_time: 11.8264989375
-  end_time: 12.322761017578125
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 64
-  start_time: 12.206052146484375
-  end_time: 12.322761017578125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 12.330741111328125
-  end_time: 12.4469512265625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 12.454432564453125
-  end_time: 12.56565512109375
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 12.573136458984376
-  end_time: 12.684857771484376
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 12.692339109375
-  end_time: 12.810544248046876
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 67
-  start_time: 12.8180255859375
-  end_time: 12.93672948046875
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 12.944210818359375
-  end_time: 13.055433375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 13.062914712890626
-  end_time: 13.174636025390626
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 13.18211736328125
-  end_time: 13.29782872265625
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 13.30580881640625
-  end_time: 13.42152017578125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 13.429001513671876
-  end_time: 13.540722826171875
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 13.5482041640625
-  end_time: 13.659426720703125
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 13.667406814453125
-  end_time: 13.784115685546876
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 11.8264989375
-  end_time: 13.791098267578125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 69
-  start_time: 13.793592046875
-  end_time: 13.926759861328126
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 13.93424119921875
-  end_time: 14.046461267578126
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 14.05394260546875
-  end_time: 14.173145255859376
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 14.17364401171875
-  end_time: 14.421525673828125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 14.4220244296875
-  end_time: 14.53274823046875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 14.540728324218751
-  end_time: 14.651950880859376
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 14.65943221875
-  end_time: 14.777637357421876
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 67
-  start_time: 14.785617451171875
-  end_time: 14.911303927734375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 14.91180268359375
-  end_time: 15.14921047265625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 15.149709228515626
-  end_time: 15.265420587890626
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 65
-  start_time: 15.27290192578125
-  end_time: 15.38861328515625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 15.39659337890625
-  end_time: 15.507815935546875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 15.515796029296876
-  end_time: 15.63400116796875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 15.634499923828125
-  end_time: 15.751208794921876
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 69
-  start_time: 15.761183912109376
-  end_time: 15.893852970703126
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 15.901833064453125
-  end_time: 16.013554376953124
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 16.021534470703127
-  end_time: 16.140238365234374
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 16.14073712109375
-  end_time: 16.388618783203125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 16.3891175390625
-  end_time: 16.500340095703127
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 16.50782143359375
-  end_time: 16.61954274609375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 16.627024083984374
-  end_time: 16.74522922265625
-  program: 1
+  pitch: 54
+  velocity: 68
+  end_time: 0.222222
+  program: 30
 }
 notes {
   pitch: 59
-  velocity: 56
-  start_time: 13.793592046875
-  end_time: 16.7522118046875
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 70
-  start_time: 13.793592046875
-  end_time: 16.7522118046875
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 67
-  start_time: 16.752710560546877
-  end_time: 16.871414455078124
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 64
-  start_time: 16.879394548828124
-  end_time: 16.990118349609375
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 16.9975996875
-  end_time: 17.109321
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 17.116802337890626
-  end_time: 17.232513697265624
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 59
-  start_time: 16.752710560546877
-  end_time: 17.23999503515625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 73
-  start_time: 16.752710560546877
-  end_time: 17.23999503515625
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 65
-  start_time: 17.240493791015627
-  end_time: 17.356205150390625
-  program: 1
-}
-notes {
-  pitch: 73
-  velocity: 64
-  start_time: 17.36368648828125
-  end_time: 17.47540780078125
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 64
-  start_time: 17.482889138671876
-  end_time: 17.5941116953125
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 64
-  start_time: 17.602091789062502
-  end_time: 17.71880066015625
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 57
-  start_time: 17.240493791015627
-  end_time: 17.7257832421875
-  program: 1
-}
-notes {
-  pitch: 56
-  velocity: 71
-  start_time: 17.240493791015627
-  end_time: 17.7257832421875
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 61
-  start_time: 17.728277021484377
-  end_time: 18.10783023046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 75
-  start_time: 17.728277021484377
-  end_time: 18.10783023046875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 17.728277021484377
-  end_time: 18.232020439453127
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 17.728277021484377
-  end_time: 18.232020439453127
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 18.108328986328125
-  end_time: 18.460450623046874
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 70
-  start_time: 18.108328986328125
-  end_time: 18.47491454296875
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 18.475413298828126
-  end_time: 18.70533975
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 18.232519195312502
-  end_time: 18.719803669921877
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 18.232519195312502
-  end_time: 18.719803669921877
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 18.475413298828126
-  end_time: 18.719803669921877
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 18.720302425781252
-  end_time: 18.8390063203125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 18.720302425781252
-  end_time: 18.845988902343752
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 70
-  start_time: 18.720302425781252
-  end_time: 19.083895447265625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 65
-  start_time: 18.720302425781252
-  end_time: 19.083895447265625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 18.846487658203124
-  end_time: 19.20708814453125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 18.846487658203124
-  end_time: 19.20708814453125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 19.084394203125
-  end_time: 19.435518328125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 19.207586900390627
-  end_time: 19.693375107421875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 19.207586900390627
-  end_time: 19.693375107421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 19.45048100390625
-  end_time: 19.693375107421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 61
-  start_time: 19.69586888671875
-  end_time: 20.07492333984375
-  program: 1
-}
-notes {
-  pitch: 79
-  velocity: 75
-  start_time: 19.69586888671875
-  end_time: 20.07492333984375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 19.69586888671875
-  end_time: 20.199612304687502
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 19.69586888671875
-  end_time: 20.199612304687502
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 56
-  start_time: 20.075422095703125
-  end_time: 20.427543732421874
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 70
-  start_time: 20.075422095703125
-  end_time: 20.44200765234375
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 20.442506408203126
-  end_time: 20.672432859375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 20.200111060546874
-  end_time: 20.686896779296877
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 20.200111060546874
-  end_time: 20.686896779296877
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 20.442506408203126
-  end_time: 20.686896779296877
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 20.687395535156252
-  end_time: 20.8060994296875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 20.687395535156252
-  end_time: 20.813580767578127
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 59
-  start_time: 20.687395535156252
-  end_time: 21.050988556640625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 73
-  start_time: 20.687395535156252
-  end_time: 21.050988556640625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 20.8140795234375
-  end_time: 21.174680009765627
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 20.8140795234375
-  end_time: 21.174680009765627
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 21.0514873125
-  end_time: 21.174680009765627
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 21.175178765625
-  end_time: 21.4026114375
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 70
-  start_time: 21.0514873125
-  end_time: 21.417075357421876
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 21.41757411328125
-  end_time: 21.646004296875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 21.175178765625
-  end_time: 21.660468216796875
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 21.41757411328125
-  end_time: 21.660468216796875
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 61
-  start_time: 21.66296199609375
-  end_time: 21.803112392578125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 75
-  start_time: 21.66296199609375
-  end_time: 21.803112392578125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 21.8036111484375
-  end_time: 21.915831216796875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 21.8036111484375
-  end_time: 21.922813798828127
-  program: 1
-}
-notes {
-  pitch: 64
-  velocity: 56
-  start_time: 21.923312554687502
-  end_time: 22.035532623046876
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 70
-  start_time: 21.923312554687502
-  end_time: 22.042515205078125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 22.0430139609375
-  end_time: 22.15972283203125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 21.66296199609375
-  end_time: 22.166705414062502
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 21.66296199609375
-  end_time: 22.166705414062502
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 22.0430139609375
-  end_time: 22.166705414062502
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 22.4100982734375
-  end_time: 22.52880216796875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 66
-  start_time: 22.4100982734375
-  end_time: 22.52880216796875
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 22.529300923828124
-  end_time: 22.647007306640624
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 22.167204169921874
-  end_time: 22.654488644531252
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 22.167204169921874
-  end_time: 22.654488644531252
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 22.529300923828124
-  end_time: 22.654488644531252
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 22.654987400390624
-  end_time: 22.773691294921875
-  program: 1
-}
-notes {
-  pitch: 64
-  velocity: 59
-  start_time: 22.654987400390624
-  end_time: 22.773691294921875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 22.654987400390624
-  end_time: 22.780673876953127
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 73
-  start_time: 22.654987400390624
-  end_time: 22.780673876953127
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 22.7811726328125
-  end_time: 23.141773119140627
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 22.7811726328125
-  end_time: 23.141773119140627
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 22.7811726328125
-  end_time: 23.141773119140627
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 22.7811726328125
-  end_time: 23.141773119140627
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 45
-  start_time: 23.142271875000002
-  end_time: 23.265464572265625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 59
-  start_time: 23.142271875000002
-  end_time: 23.265464572265625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 23.142271875000002
-  end_time: 23.370203302734375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 23.142271875000002
-  end_time: 23.38466722265625
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 23.265963328125
-  end_time: 23.38466722265625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 23.265963328125
-  end_time: 23.38466722265625
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 23.385165978515627
-  end_time: 23.503371117187502
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 23.385165978515627
-  end_time: 23.503371117187502
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 23.385165978515627
-  end_time: 23.62806008203125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 23.385165978515627
-  end_time: 23.62806008203125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 23.503869873046877
-  end_time: 23.62806008203125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 23.503869873046877
-  end_time: 23.6350426640625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 69
-  start_time: 23.630553861328124
-  end_time: 24.009608314453125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 23.630553861328124
-  end_time: 24.134297279296877
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 23.630553861328124
-  end_time: 24.134297279296877
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 24.13479603515625
-  end_time: 24.621581753906252
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 24.13479603515625
-  end_time: 24.621581753906252
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 64
-  start_time: 24.0101070703125
-  end_time: 24.621581753906252
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 24.622080509765624
-  end_time: 24.740784404296875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 24.622080509765624
-  end_time: 24.7482657421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 67
-  start_time: 24.622080509765624
-  end_time: 24.852505716796877
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 24.86696963671875
-  end_time: 24.978690949218752
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 24.748764498046874
-  end_time: 25.109364984375002
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 24.748764498046874
-  end_time: 25.109364984375002
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 64
-  start_time: 24.986172287109376
-  end_time: 25.225575099609376
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 64
-  start_time: 25.2330564375
-  end_time: 25.344777750000002
-  program: 1
-}
-notes {
-  pitch: 68
-  velocity: 64
-  start_time: 25.352259087890626
-  end_time: 25.463980400390625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 25.47146173828125
-  end_time: 25.588170609375002
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 25.109863740234374
-  end_time: 25.59515319140625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 25.109863740234374
-  end_time: 25.59515319140625
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 61
-  start_time: 25.597646970703124
-  end_time: 25.9772001796875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 75
-  start_time: 25.597646970703124
-  end_time: 25.9772001796875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 25.597646970703124
-  end_time: 26.101390388671877
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 25.597646970703124
-  end_time: 26.101390388671877
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 25.977698935546876
-  end_time: 26.329820572265625
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 70
-  start_time: 25.977698935546876
-  end_time: 26.3442844921875
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 26.344783248046877
-  end_time: 26.57470969921875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 26.10188914453125
-  end_time: 26.589173619140627
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 26.10188914453125
-  end_time: 26.589173619140627
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 26.344783248046877
-  end_time: 26.589173619140627
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 26.589672375
-  end_time: 26.70837626953125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 26.589672375
-  end_time: 26.715358851562502
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 70
-  start_time: 26.589672375
-  end_time: 26.953265396484376
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 65
-  start_time: 26.589672375
-  end_time: 26.953265396484376
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 26.715857607421874
-  end_time: 27.076458093750002
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 26.715857607421874
-  end_time: 27.076458093750002
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 26.95376415234375
-  end_time: 27.30488827734375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 27.076956849609374
-  end_time: 27.562745056640626
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 27.076956849609374
-  end_time: 27.562745056640626
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 27.319850953125002
-  end_time: 27.562745056640626
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 61
-  start_time: 27.5652388359375
-  end_time: 27.944792044921876
-  program: 1
-}
-notes {
-  pitch: 79
-  velocity: 75
-  start_time: 27.5652388359375
-  end_time: 27.944792044921876
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 27.5652388359375
-  end_time: 28.06898225390625
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 27.5652388359375
-  end_time: 28.06898225390625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 56
-  start_time: 27.944792044921876
-  end_time: 28.296913681640625
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 70
-  start_time: 27.944792044921876
-  end_time: 28.3113776015625
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 28.311876357421877
-  end_time: 28.542301564453126
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 28.069481009765624
-  end_time: 28.556266728515627
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 28.069481009765624
-  end_time: 28.556266728515627
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 28.311876357421877
-  end_time: 28.556266728515627
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 28.556765484375
-  end_time: 28.67546937890625
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 28.556765484375
-  end_time: 28.682950716796874
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 59
-  start_time: 28.556765484375
-  end_time: 28.801654611328125
-  program: 1
-}
-notes {
-  pitch: 73
-  velocity: 73
-  start_time: 28.556765484375
-  end_time: 28.801654611328125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 28.8021533671875
-  end_time: 29.0295860390625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 28.68344947265625
-  end_time: 29.044049958984377
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 28.68344947265625
-  end_time: 29.044049958984377
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 28.8021533671875
-  end_time: 29.044049958984377
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 57
-  start_time: 29.04454871484375
-  end_time: 29.27198138671875
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 71
-  start_time: 29.04454871484375
-  end_time: 29.286445306640626
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 56
-  start_time: 29.2869440625
-  end_time: 29.515873001953125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 29.04454871484375
-  end_time: 29.529838166015626
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 29.04454871484375
-  end_time: 29.529838166015626
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 29.2869440625
-  end_time: 29.529838166015626
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 29.5323319453125
-  end_time: 30.036075363281252
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 29.5323319453125
-  end_time: 30.036075363281252
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 61
-  start_time: 29.5323319453125
-  end_time: 30.036075363281252
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 75
-  start_time: 29.5323319453125
-  end_time: 30.036075363281252
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 30.036574119140624
-  end_time: 30.52385859375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 30.036574119140624
-  end_time: 30.52385859375
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 30.524357349609375
-  end_time: 30.643061244140625
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 30.524357349609375
-  end_time: 30.650043826171874
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 57
-  start_time: 30.036574119140624
-  end_time: 30.754283800781252
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 71
-  start_time: 30.036574119140624
-  end_time: 30.768747720703125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 30.65054258203125
-  end_time: 31.011143068359377
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 30.65054258203125
-  end_time: 31.011143068359377
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 30.7692464765625
-  end_time: 31.011143068359377
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 31.01164182421875
-  end_time: 31.239573251953125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 31.01164182421875
-  end_time: 31.254037171875
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 31.254535927734377
-  end_time: 31.49743003125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 31.254535927734377
-  end_time: 31.49743003125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 30.7692464765625
-  end_time: 31.49743003125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 31.499923810546875
-  end_time: 32.003667228515624
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 31.499923810546875
-  end_time: 32.003667228515624
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 32.004165984375
-  end_time: 32.490951703125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 32.004165984375
-  end_time: 32.490951703125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 32.491450458984374
-  end_time: 32.610154353515625
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 32.491450458984374
-  end_time: 32.61763569140625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 32.618134447265625
-  end_time: 32.97873493359375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 32.618134447265625
-  end_time: 32.97873493359375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 32.979233689453125
-  end_time: 33.464523140625
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 31.499923810546875
-  end_time: 33.464523140625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 32.979233689453125
-  end_time: 33.464523140625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 70
-  start_time: 31.499923810546875
-  end_time: 33.464523140625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 33.467016919921875
-  end_time: 33.72686872265625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 33.727367478515625
-  end_time: 33.84657012890625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 33.467016919921875
-  end_time: 33.97125909375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 33.467016919921875
-  end_time: 33.97125909375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 33.847068884765626
-  end_time: 33.97125909375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 33.97125909375
-  end_time: 34.094950546875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 34.09544930273437
-  end_time: 34.21365444140625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 33.97125909375
-  end_time: 34.458543568359374
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 33.97125909375
-  end_time: 34.458543568359374
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 34.214153197265624
-  end_time: 34.47350624414062
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 34.45904232421875
-  end_time: 34.57774621875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 34.45904232421875
-  end_time: 34.58472880078125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 34.585227556640625
-  end_time: 34.94582804296875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 34.585227556640625
-  end_time: 34.94582804296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 34.703931451171876
-  end_time: 34.94582804296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 34.946326798828125
-  end_time: 35.069519496093754
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 35.07001825195312
-  end_time: 35.18872214648437
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 35.18922090234375
-  end_time: 35.307924796875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 34.946326798828125
-  end_time: 35.43211500585937
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 34.946326798828125
-  end_time: 35.43211500585937
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 35.308423552734375
-  end_time: 35.43211500585937
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 35.43460878515625
-  end_time: 35.938352203125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 35.43460878515625
-  end_time: 35.938352203125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 35.43460878515625
-  end_time: 35.938352203125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 36.181246306640624
-  end_time: 36.41167151367188
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 35.938850958984375
-  end_time: 36.425636677734374
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 35.938850958984375
-  end_time: 36.425636677734374
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 36.42613543359375
-  end_time: 36.544839328125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 36.42613543359375
-  end_time: 36.552320666015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 36.42613543359375
-  end_time: 36.552320666015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 36.552819421875
-  end_time: 36.671024560546876
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 36.67152331640625
-  end_time: 36.78972845507813
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 36.552819421875
-  end_time: 36.913419908203124
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 36.552819421875
-  end_time: 36.913419908203124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 36.7902272109375
-  end_time: 36.92040249023437
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 36.9139186640625
-  end_time: 37.39970687109375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 36.9139186640625
-  end_time: 37.39970687109375
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 65
-  start_time: 36.9139186640625
-  end_time: 37.39970687109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 37.40170189453125
-  end_time: 37.661553697265624
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 37.662052453125
-  end_time: 37.781255103515626
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 37.40170189453125
-  end_time: 37.905944068359375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 37.40170189453125
-  end_time: 37.905944068359375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 37.781753859375
-  end_time: 37.905944068359375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 37.90644282421875
-  end_time: 38.02963552148437
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 38.03013427734375
-  end_time: 38.148339416015624
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 37.90644282421875
-  end_time: 38.39322854296875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 37.90644282421875
-  end_time: 38.39322854296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 38.148838171875
-  end_time: 38.39322854296875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 38.393727298828125
-  end_time: 38.512431193359376
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 38.393727298828125
-  end_time: 38.519413775390625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 38.393727298828125
-  end_time: 38.638117669921876
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 38.51991253125
-  end_time: 38.880513017578124
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 38.51991253125
-  end_time: 38.880513017578124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 38.63861642578125
-  end_time: 38.880513017578124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 38.8810117734375
-  end_time: 39.00420447070313
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 38.8810117734375
-  end_time: 39.108943201171876
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 38.8810117734375
-  end_time: 39.12340712109375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 39.123905876953124
-  end_time: 39.36679998046875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 39.123905876953124
-  end_time: 39.36679998046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 39.0047032265625
-  end_time: 39.36679998046875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 39.369293759765625
-  end_time: 39.873037177734375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 39.369293759765625
-  end_time: 39.873037177734375
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 69
-  start_time: 39.369293759765625
-  end_time: 39.873037177734375
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 40.11593128125
-  end_time: 40.34635648828125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 39.87353593359375
-  end_time: 40.360820408203125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 39.87353593359375
-  end_time: 40.360820408203125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 40.360820408203125
-  end_time: 40.479524302734376
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 40.360820408203125
-  end_time: 40.487005640625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 40.487504396484375
-  end_time: 40.8481048828125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 40.487504396484375
-  end_time: 40.8481048828125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 40.848603638671875
-  end_time: 41.334391845703124
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 40.848603638671875
-  end_time: 41.334391845703124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 41.336386869140625
-  end_time: 41.596238671875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 41.596737427734375
-  end_time: 41.715940078125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 41.336386869140625
-  end_time: 41.84062904296875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 41.336386869140625
-  end_time: 41.84062904296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 41.71643883398438
-  end_time: 41.84062904296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 41.841127798828126
-  end_time: 41.96432049609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 41.964819251953124
-  end_time: 42.083024390625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 41.841127798828126
-  end_time: 42.327913517578125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 41.841127798828126
-  end_time: 42.327913517578125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 42.083523146484374
-  end_time: 42.34287619335937
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 42.3284122734375
-  end_time: 42.44711616796875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 42.3284122734375
-  end_time: 42.45409875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 42.454597505859375
-  end_time: 42.815696748046875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 42.454597505859375
-  end_time: 42.815696748046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 42.573301400390626
-  end_time: 42.815696748046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 42.815696748046875
-  end_time: 42.9388894453125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 42.93938820117187
-  end_time: 43.058092095703124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 43.0585908515625
-  end_time: 43.17729474609375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 42.815696748046875
-  end_time: 43.301484955078124
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 42.815696748046875
-  end_time: 43.301484955078124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 43.177793501953126
-  end_time: 43.301484955078124
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 57
-  start_time: 43.303978734375
-  end_time: 43.451610468750005
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 43.44462788671875
-  end_time: 43.669068023437504
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 43.68403069921875
-  end_time: 43.8007395703125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 43.303978734375
-  end_time: 43.80772215234375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 43.303978734375
-  end_time: 43.80772215234375
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 65
-  start_time: 43.808220908203126
-  end_time: 44.0361523359375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 44.050616255859374
-  end_time: 44.162337568359376
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 44.16981890625
-  end_time: 44.288024044921876
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 43.808220908203126
-  end_time: 44.2955053828125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 43.808220908203126
-  end_time: 44.2955053828125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 44.296004138671876
-  end_time: 44.41420927734375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 44.296004138671876
-  end_time: 44.421690615234375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 44.296004138671876
-  end_time: 44.540394509765626
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 44.42218937109375
-  end_time: 44.782789857421875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 44.42218937109375
-  end_time: 44.782789857421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 44.540893265625
-  end_time: 44.782789857421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 44.78328861328125
-  end_time: 44.89899997265625
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 64
-  start_time: 44.90648131054687
-  end_time: 45.14438785546875
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 64
-  start_time: 45.144886611328126
-  end_time: 45.261595482421875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 44.78328861328125
-  end_time: 45.2690768203125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 44.78328861328125
-  end_time: 45.2690768203125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 45.27107184375
-  end_time: 45.41172099609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 45.412219751953124
-  end_time: 45.530923646484375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 45.53142240234375
-  end_time: 45.65062505273438
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 45.27107184375
-  end_time: 45.775314017578125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 45.27107184375
-  end_time: 45.775314017578125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 45.65112380859375
-  end_time: 45.775314017578125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 45.7758127734375
-  end_time: 46.017709365234374
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 46.01820812109375
-  end_time: 46.136912015625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 45.7758127734375
-  end_time: 46.2625984921875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 45.7758127734375
-  end_time: 46.2625984921875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 46.137410771484376
-  end_time: 46.2625984921875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 46.263097248046876
-  end_time: 46.38180114257813
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 46.263097248046876
-  end_time: 46.388783724609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 46.263097248046876
-  end_time: 46.388783724609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 46.38928248046875
-  end_time: 46.507487619140626
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 46.507986375
-  end_time: 46.62669026953125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 46.38928248046875
-  end_time: 46.75038172265625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 46.38928248046875
-  end_time: 46.75038172265625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 46.62718902539063
-  end_time: 46.75038172265625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 46.750880478515626
-  end_time: 46.87357441992187
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 46.750880478515626
-  end_time: 46.978313150390626
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 46.750880478515626
-  end_time: 46.9927770703125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 46.993275826171875
-  end_time: 47.2361699296875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 46.993275826171875
-  end_time: 47.2361699296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 46.87407317578125
-  end_time: 47.2361699296875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 57
-  start_time: 47.238663708984376
-  end_time: 47.37881410546875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 47.379312861328124
-  end_time: 47.49851551171875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 47.499014267578126
-  end_time: 47.61821691796875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 47.238663708984376
-  end_time: 47.742407126953125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 47.238663708984376
-  end_time: 47.742407126953125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 47.61871567382813
-  end_time: 47.742407126953125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 47.7429058828125
-  end_time: 47.984802474609374
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 47.98530123046875
-  end_time: 48.104005125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 47.7429058828125
-  end_time: 48.230190357421876
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 47.7429058828125
-  end_time: 48.230190357421876
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 48.104503880859376
-  end_time: 48.230190357421876
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 48.23068911328125
-  end_time: 48.348894251953126
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 48.23068911328125
-  end_time: 48.35637558984375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 48.23068911328125
-  end_time: 48.35637558984375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 48.356874345703126
-  end_time: 48.475079484375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 48.47557824023438
-  end_time: 48.59428213476563
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 48.356874345703126
-  end_time: 48.71747483203125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 48.356874345703126
-  end_time: 48.71747483203125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 48.594780890625
-  end_time: 48.71747483203125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 48.717973587890626
-  end_time: 48.84116628515625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 48.717973587890626
-  end_time: 49.203761794921874
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 67
-  start_time: 48.717973587890626
-  end_time: 49.203761794921874
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 48.841665041015624
-  end_time: 49.203761794921874
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 49.20874935351563
-  end_time: 49.346405970703124
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 49.3469047265625
-  end_time: 49.4586260390625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 49.466107376953126
-  end_time: 49.5783274453125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 49.58580878320313
-  end_time: 49.70251765429688
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 49.710497748046876
-  end_time: 49.82670786328125
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 49.834189201171874
-  end_time: 49.9454117578125
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 49.952893095703125
-  end_time: 50.06411565234375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 50.07209574609375
-  end_time: 50.19030088476563
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 50.19778222265625
-  end_time: 50.3164861171875
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 50.323967455078126
-  end_time: 50.43519001171875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 50.44267134960938
-  end_time: 50.55439266210938
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 50.561874
-  end_time: 50.677585359375
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 50.685565453125
-  end_time: 50.8012768125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 50.808758150390624
-  end_time: 50.91998070703125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 50.92796080078125
-  end_time: 51.03918335742188
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 51.047163451171876
-  end_time: 51.163872322265625
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 64
-  start_time: 49.466107376953126
-  end_time: 51.170854904296874
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 51.17334868359375
-  end_time: 51.313499080078124
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 51.3139978359375
-  end_time: 51.42621790429688
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 51.4336992421875
-  end_time: 51.5454205546875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 51.5534006484375
-  end_time: 51.67010951953125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 51.677590857421876
-  end_time: 51.79380097265625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 51.80178106640625
-  end_time: 51.9125048671875
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 51.919986205078125
-  end_time: 52.03170751757813
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 52.03918885546875
-  end_time: 52.15739399414063
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 52.165374087890626
-  end_time: 52.2835792265625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 52.2915593203125
-  end_time: 52.40228312109375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 52.41026321484375
-  end_time: 52.52148577148438
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 52.52946586523438
-  end_time: 52.64517722460938
-  program: 1
-}
-notes {
-  pitch: 71
-  velocity: 64
-  start_time: 51.17334868359375
-  end_time: 52.652159806640626
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 52.6526585625
-  end_time: 52.768369921875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 52.776350015625
-  end_time: 52.887572572265626
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 52.89505391015625
-  end_time: 53.00677522265625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 53.014256560546876
-  end_time: 53.130965431640625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 53.14044179296875
-  end_time: 53.2810909453125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 53.281589701171875
-  end_time: 53.39331101367188
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 64
-  start_time: 53.4007923515625
-  end_time: 53.51301241992188
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 64
-  start_time: 53.5204937578125
-  end_time: 53.63720262890625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 53.64518272265625
-  end_time: 53.761392837890625
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 53.76887417578125
-  end_time: 53.880096732421876
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 53.8875780703125
-  end_time: 53.99880062695313
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 54.00678072070313
-  end_time: 54.124985859375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 57
-  start_time: 52.6526585625
-  end_time: 54.13196844140625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 67
-  start_time: 52.6526585625
-  end_time: 54.13196844140625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 67
-  start_time: 54.132467197265626
-  end_time: 54.25117109179688
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 47
-  start_time: 54.132467197265626
-  end_time: 54.2586524296875
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 57
-  start_time: 54.132467197265626
-  end_time: 54.2586524296875
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 54.25915118554688
-  end_time: 54.37087249804688
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.25915118554688
-  end_time: 54.3783538359375
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.25915118554688
-  end_time: 54.3783538359375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 54.37885259179688
-  end_time: 54.491571416015624
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.37885259179688
-  end_time: 54.49855399804687
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.37885259179688
-  end_time: 54.49855399804687
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 54.49905275390625
-  end_time: 54.61675913671875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.49905275390625
-  end_time: 54.62424047460938
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.49905275390625
-  end_time: 54.62424047460938
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 54.62473923046875
-  end_time: 54.743443125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 45
-  start_time: 54.62473923046875
-  end_time: 54.75092446289062
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 55
-  start_time: 54.62473923046875
-  end_time: 54.75092446289062
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 54.75142321875
-  end_time: 54.86613706640625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.75142321875
-  end_time: 54.87361840429688
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.75142321875
-  end_time: 54.87361840429688
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 54.87411716015625
-  end_time: 54.989329763671876
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.87411716015625
-  end_time: 54.9968111015625
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.87411716015625
-  end_time: 54.9968111015625
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 54.997309857421875
-  end_time: 55.11850753125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 44
-  start_time: 54.997309857421875
-  end_time: 55.12598886914063
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 54
-  start_time: 54.997309857421875
-  end_time: 55.12598886914063
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 55.128482648437505
-  end_time: 55.27312184765625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 55.273620603515624
-  end_time: 55.385840671875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 55.393322009765626
-  end_time: 55.505542078125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 55.51302341601563
-  end_time: 55.62973228710938
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 55.637213625
-  end_time: 55.753423740234375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 55.761403833984375
-  end_time: 55.872127634765626
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 55.880107728515625
-  end_time: 55.99133028515625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 55.99931037890625
-  end_time: 56.11701676171875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 67
-  start_time: 56.12499685546875
-  end_time: 56.24370075
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 56.251182087890626
-  end_time: 56.36240464453125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 56.36988598242188
-  end_time: 56.481108539062504
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 56.4890886328125
-  end_time: 56.6047999921875
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 65
-  start_time: 56.612281330078126
-  end_time: 56.727992689453124
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 56.735972783203124
-  end_time: 56.84719533984375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 56.85517543359375
-  end_time: 56.96639799023438
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 56.97437808398438
-  end_time: 57.091086955078126
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 55.128482648437505
-  end_time: 57.098069537109374
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 70
-  start_time: 55.128482648437505
-  end_time: 57.098069537109374
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 57.10056331640625
-  end_time: 57.240713712890624
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 57.24121246875
-  end_time: 57.35293378125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 57.360913875
-  end_time: 57.4726351875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 57.10056331640625
-  end_time: 57.48011652539063
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 75
-  start_time: 57.10056331640625
-  end_time: 57.48011652539063
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 57.48061528125
-  end_time: 57.59732415234375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 57.60480549023438
-  end_time: 57.72101560546875
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 57.48061528125
-  end_time: 57.83223816210938
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 57.728496943359374
-  end_time: 57.8397195
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 70
-  start_time: 57.48061528125
-  end_time: 57.84670208203125
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 57.847200837890625
-  end_time: 57.95892215039063
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 57.96640348828125
-  end_time: 58.08460862695313
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 58.09208996484375
-  end_time: 58.210793859375
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 56
-  start_time: 57.847200837890625
-  end_time: 58.210793859375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 57.847200837890625
-  end_time: 58.218275197265626
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 58.218773953125
-  end_time: 58.32949775390625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 58.33747784765625
-  end_time: 58.44870040429688
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 58.4561817421875
-  end_time: 58.5718931015625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 58.218773953125
-  end_time: 58.579374439453126
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 70
-  start_time: 58.218773953125
-  end_time: 58.579374439453126
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 58.5798731953125
-  end_time: 58.6955845546875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 57
-  start_time: 58.5798731953125
-  end_time: 58.8073058671875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 58.703065892578124
-  end_time: 58.814787205078126
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 58.5798731953125
-  end_time: 58.821769787109375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 58.82226854296875
-  end_time: 58.93398985546875
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 58.82226854296875
-  end_time: 59.05119748242188
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 58.94147119335938
-  end_time: 59.058180064453126
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 58.82226854296875
-  end_time: 59.065162646484374
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 59.06765642578125
-  end_time: 59.208305578125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 59.208305578125
-  end_time: 59.32052564648438
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 59.328006984375
-  end_time: 59.44022705273438
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 61
-  start_time: 59.06765642578125
-  end_time: 59.44720963476563
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 75
-  start_time: 59.06765642578125
-  end_time: 59.44720963476563
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 59.447708390625
-  end_time: 59.56441726171875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 59.571898599609376
-  end_time: 59.688607470703126
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 59.447708390625
-  end_time: 59.79983002734375
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 59.69608880859375
-  end_time: 59.806812609375
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 59.447708390625
-  end_time: 59.814293947265625
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 59.814792703125
-  end_time: 59.92601525976563
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 59.93399535351563
-  end_time: 60.0522004921875
-  program: 1
-}
-notes {
-  pitch: 44
-  velocity: 67
-  start_time: 60.05968183007813
-  end_time: 60.17838572460938
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 56
-  start_time: 59.814792703125
-  end_time: 60.17838572460938
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 59.814792703125
-  end_time: 60.185368306640626
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 60.1858670625
-  end_time: 60.29708961914063
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 60.30457095703125
-  end_time: 60.41579351367188
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 60.42377360742188
-  end_time: 60.53948496679688
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 56
-  start_time: 60.1858670625
-  end_time: 60.546467548828126
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 70
-  start_time: 60.1858670625
-  end_time: 60.546467548828126
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 60.5469663046875
-  end_time: 60.6626776640625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 60.6706577578125
-  end_time: 60.781880314453126
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 60.5469663046875
-  end_time: 60.78936165234375
-  program: 1
-}
-notes {
-  pitch: 62
-  velocity: 71
-  start_time: 60.5469663046875
-  end_time: 60.78936165234375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 60.789860408203126
-  end_time: 60.90108296484375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 60.789860408203126
-  end_time: 61.01829059179688
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 60.90906305859375
-  end_time: 61.0257719296875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 70
-  start_time: 60.789860408203126
-  end_time: 61.03275451171875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 69
-  start_time: 61.03524829101563
-  end_time: 61.1753986875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 61.175897443359375
-  end_time: 61.28761875585938
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 64
-  start_time: 61.29559884960938
-  end_time: 61.40732016210938
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 56
-  start_time: 61.03524829101563
-  end_time: 61.53200912695313
-  program: 1
-}
-notes {
-  pitch: 57
-  velocity: 64
-  start_time: 61.41530025585938
-  end_time: 61.53200912695313
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 65
-  start_time: 61.53949046484375
-  end_time: 61.655700580078125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 61.66318191796875
-  end_time: 61.774404474609376
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 64
-  start_time: 61.7818858125
-  end_time: 61.893607125
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 61.90108846289063
-  end_time: 62.0192936015625
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 67
-  start_time: 62.02677493945313
-  end_time: 62.14547883398438
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 62.15345892773438
-  end_time: 62.26418272851563
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 62.27216282226563
-  end_time: 62.383385378906254
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 62.39086671679688
-  end_time: 62.50707683203125
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 65
-  start_time: 62.51455816992188
-  end_time: 62.630269529296875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 62.6377508671875
-  end_time: 62.7494721796875
-  program: 1
-}
-notes {
-  pitch: 46
-  velocity: 64
-  start_time: 62.756953517578125
-  end_time: 62.86867483007813
-  program: 1
-}
-notes {
-  pitch: 48
-  velocity: 64
-  start_time: 62.87615616796875
-  end_time: 62.9928650390625
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 61.03524829101563
-  end_time: 63.000346376953125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 69
-  start_time: 63.00234140039063
-  end_time: 63.13550921484375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 63.14348930859375
-  end_time: 63.25521062109375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 63.26269195898438
-  end_time: 63.381894609375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 63.38239336523438
-  end_time: 63.63027502734375
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 63.630773783203125
-  end_time: 63.741497583984376
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 63.749477677734376
-  end_time: 63.860700234375
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 63.868680328125
-  end_time: 63.98688546679688
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 67
-  start_time: 63.9943668046875
-  end_time: 64.12005328125001
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 64.12055203710938
-  end_time: 64.35795982617188
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 64.35845858203125
-  end_time: 64.47416994140625
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 65
-  start_time: 64.48165127929688
-  end_time: 64.59786139453125
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 64.60534273242187
-  end_time: 64.7165652890625
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 64.72454538281251
-  end_time: 64.84324927734376
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 64.84374803320313
-  end_time: 64.96045690429688
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 69
-  start_time: 64.969933265625
-  end_time: 65.10310108007813
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 65.11058241796876
-  end_time: 65.22230373046875
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 65.23028382421874
-  end_time: 65.34948647460938
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 65.34998523046875
-  end_time: 65.59786689257812
-  program: 1
-}
-notes {
-  pitch: 41
-  velocity: 64
-  start_time: 65.59786689257812
-  end_time: 65.70908944921875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 64
-  start_time: 65.71657078710938
-  end_time: 65.82829209960937
-  program: 1
-}
-notes {
-  pitch: 51
-  velocity: 64
-  start_time: 65.8357734375
-  end_time: 65.95397857617188
-  program: 1
+  velocity: 68
+  end_time: 0.222222
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 0.222222
+  end_time: 0.2777775
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 0.222222
+  end_time: 0.2777775
+  program: 30
 }
 notes {
   pitch: 59
-  velocity: 56
-  start_time: 63.00234140039063
-  end_time: 65.9614599140625
-  program: 1
+  velocity: 68
+  start_time: 0.222222
+  end_time: 0.2777775
+  program: 30
 }
 notes {
-  pitch: 62
-  velocity: 70
-  start_time: 63.00234140039063
-  end_time: 65.9614599140625
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 0.333333
+  end_time: 0.3888885
+  program: 30
 }
 notes {
-  pitch: 65
-  velocity: 67
-  start_time: 65.9614599140625
-  end_time: 66.08016380859375
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 0.333333
+  end_time: 0.3888885
+  program: 30
 }
 notes {
-  pitch: 67
-  velocity: 64
-  start_time: 66.08814390234375
-  end_time: 66.198867703125
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 0.333333
+  end_time: 0.3888885
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 64
-  start_time: 66.206847796875
-  end_time: 66.31807035351562
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 0.444444
+  end_time: 0.4999995
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 64
-  start_time: 66.32555169140625
-  end_time: 66.44176180664063
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 0.444444
+  end_time: 0.4999995
+  program: 30
 }
 notes {
-  pitch: 41
-  velocity: 59
-  start_time: 65.9614599140625
-  end_time: 66.44874438867188
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 0.444444
+  end_time: 0.4999995
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 73
-  start_time: 65.9614599140625
-  end_time: 66.44874438867188
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 0.555555
+  end_time: 0.6111105
+  program: 30
 }
 notes {
-  pitch: 72
-  velocity: 65
-  start_time: 66.44924314453125
-  end_time: 66.56495450390625
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 0.555555
+  end_time: 0.6111105
+  program: 30
 }
 notes {
-  pitch: 73
-  velocity: 64
-  start_time: 66.57243584179687
-  end_time: 66.68415715429688
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 0.555555
+  end_time: 0.6111105
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 64
-  start_time: 66.69163849218751
-  end_time: 66.8033598046875
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 0.666666
+  end_time: 0.7222215
+  program: 30
 }
 notes {
-  pitch: 77
-  velocity: 64
-  start_time: 66.81084114257813
-  end_time: 66.92755001367188
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 0.666666
+  end_time: 0.7222215
+  program: 30
 }
 notes {
-  pitch: 44
-  velocity: 57
-  start_time: 66.44924314453125
-  end_time: 66.9350313515625
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 0.666666
+  end_time: 0.7222215
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 0.777777
+  end_time: 0.8333325
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 0.777777
+  end_time: 0.8333325
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 0.777777
+  end_time: 0.8333325
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 0.888888
+  end_time: 0.9444435
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 0.888888
+  end_time: 0.9444435
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 0.888888
+  end_time: 0.9444435
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 0.999999
+  end_time: 1.0555545
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 0.999999
+  end_time: 1.0555545
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 0.999999
+  end_time: 1.0555545
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.11111
+  end_time: 1.1666655
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.11111
+  end_time: 1.1666655
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.11111
+  end_time: 1.1666655
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.222221
+  end_time: 1.2777765
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.222221
+  end_time: 1.2777765
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.222221
+  end_time: 1.2777765
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.333332
+  end_time: 1.3888875
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.333332
+  end_time: 1.3888875
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.333332
+  end_time: 1.3888875
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.444443
+  end_time: 1.4999985
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.444443
+  end_time: 1.4999985
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.444443
+  end_time: 1.4999985
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.555554
+  end_time: 1.6111095
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.555554
+  end_time: 1.6111095
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.555554
+  end_time: 1.6111095
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 1.666665
+  end_time: 1.7222205
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 1.666665
+  end_time: 1.7222205
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.666665
+  end_time: 1.7222205
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 1.777776
+  end_time: 1.999998
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.777776
+  end_time: 1.999998
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 1.777776
+  end_time: 1.999998
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 1.999998
+  end_time: 2.0555535
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 1.999998
+  end_time: 2.0555535
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 1.999998
+  end_time: 2.0555535
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 2.111109
+  end_time: 2.1666645
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 2.111109
+  end_time: 2.1666645
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 2.111109
+  end_time: 2.1666645
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 2.22222
+  end_time: 2.2777755
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 2.22222
+  end_time: 2.2777755
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 2.22222
+  end_time: 2.2777755
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 2.333331
+  end_time: 2.3888865
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 2.333331
+  end_time: 2.3888865
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 2.333331
+  end_time: 2.3888865
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 2.444442
+  end_time: 2.4999975
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 2.444442
+  end_time: 2.4999975
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 2.444442
+  end_time: 2.4999975
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 2.555553
+  end_time: 2.6111085
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 2.555553
+  end_time: 2.6111085
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 2.555553
+  end_time: 2.6111085
+  program: 30
+}
+notes {
+  pitch: 51
+  velocity: 68
+  start_time: 2.666664
+  end_time: 2.888886
+  program: 30
+}
+notes {
+  pitch: 58
+  velocity: 68
+  start_time: 2.666664
+  end_time: 2.888886
+  program: 30
+}
+notes {
+  pitch: 63
+  velocity: 68
+  start_time: 2.666664
+  end_time: 2.888886
+  program: 30
+}
+notes {
+  pitch: 51
+  velocity: 68
+  start_time: 2.888886
+  end_time: 2.9444415
+  program: 30
+}
+notes {
+  pitch: 58
+  velocity: 68
+  start_time: 2.888886
+  end_time: 2.9444415
+  program: 30
+}
+notes {
+  pitch: 63
+  velocity: 68
+  start_time: 2.888886
+  end_time: 2.9444415
+  program: 30
+}
+notes {
+  pitch: 51
+  velocity: 68
+  start_time: 2.999997
+  end_time: 3.0555525
+  program: 30
+}
+notes {
+  pitch: 58
+  velocity: 68
+  start_time: 2.999997
+  end_time: 3.0555525
+  program: 30
+}
+notes {
+  pitch: 63
+  velocity: 68
+  start_time: 2.999997
+  end_time: 3.0555525
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 3.111108
+  end_time: 3.33333
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 3.111108
+  end_time: 3.33333
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 3.111108
+  end_time: 3.33333
+  program: 30
+}
+notes {
+  pitch: 51
+  velocity: 68
+  start_time: 3.33333
+  end_time: 3.555552
+  program: 30
+}
+notes {
+  pitch: 58
+  velocity: 68
+  start_time: 3.33333
+  end_time: 3.555552
+  program: 30
+}
+notes {
+  pitch: 63
+  velocity: 68
+  start_time: 3.33333
+  end_time: 3.555552
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 3.555552
+  end_time: 3.777774
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 3.555552
+  end_time: 3.777774
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 3.555552
+  end_time: 3.777774
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 3.777774
+  end_time: 3.888885
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 3.777774
+  end_time: 3.888885
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 3.777774
+  end_time: 3.888885
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 3.888885
+  end_time: 3.999996
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 3.888885
+  end_time: 3.999996
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 3.888885
+  end_time: 3.999996
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 3.999996
+  end_time: 4.111107
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 3.999996
+  end_time: 4.111107
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 3.999996
+  end_time: 4.111107
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.111107
+  end_time: 4.222218
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.111107
+  end_time: 4.222218
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.111107
+  end_time: 4.222218
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.222218
+  end_time: 4.333329
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.222218
+  end_time: 4.333329
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.222218
+  end_time: 4.333329
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.333329
+  end_time: 4.44444
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.333329
+  end_time: 4.44444
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.333329
+  end_time: 4.44444
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.44444
+  end_time: 4.666662
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.44444
+  end_time: 4.666662
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.44444
+  end_time: 4.666662
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.666662
+  end_time: 4.777773
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.666662
+  end_time: 4.777773
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.666662
+  end_time: 4.777773
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.777773
+  end_time: 4.888884
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.777773
+  end_time: 4.888884
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.777773
+  end_time: 4.888884
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.888884
+  end_time: 4.999995
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.888884
+  end_time: 4.999995
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.888884
+  end_time: 4.999995
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 4.999995
+  end_time: 5.111106
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 4.999995
+  end_time: 5.111106
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 4.999995
+  end_time: 5.111106
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 5.111106
+  end_time: 5.222217
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 5.111106
+  end_time: 5.222217
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.111106
+  end_time: 5.222217
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 5.222217
+  end_time: 5.333328
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 5.222217
+  end_time: 5.333328
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.222217
+  end_time: 5.333328
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.333328
+  end_time: 5.55555
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.333328
+  end_time: 5.55555
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.333328
+  end_time: 5.55555
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.55555
+  end_time: 5.666661
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.55555
+  end_time: 5.666661
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.55555
+  end_time: 5.666661
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.666661
+  end_time: 5.777772
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.666661
+  end_time: 5.777772
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.666661
+  end_time: 5.777772
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.777772
+  end_time: 5.888883
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.777772
+  end_time: 5.888883
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.777772
+  end_time: 5.888883
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.888883
+  end_time: 5.999994
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.888883
+  end_time: 5.999994
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.888883
+  end_time: 5.999994
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 5.999994
+  end_time: 6.111105
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 5.999994
+  end_time: 6.111105
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 5.999994
+  end_time: 6.111105
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.111105
+  end_time: 6.222216
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.111105
+  end_time: 6.222216
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.111105
+  end_time: 6.222216
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.222216
+  end_time: 6.444438
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.222216
+  end_time: 6.444438
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.222216
+  end_time: 6.444438
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.444438
+  end_time: 6.555549
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.444438
+  end_time: 6.555549
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.444438
+  end_time: 6.555549
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.555549
+  end_time: 6.66666
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.555549
+  end_time: 6.66666
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.555549
+  end_time: 6.66666
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.66666
+  end_time: 6.777771
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.66666
+  end_time: 6.777771
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.66666
+  end_time: 6.777771
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.777771
+  end_time: 6.888882
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.777771
+  end_time: 6.888882
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.777771
+  end_time: 6.888882
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.888882
+  end_time: 6.999993
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.888882
+  end_time: 6.999993
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.888882
+  end_time: 6.999993
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 6.999993
+  end_time: 7.111104
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 6.999993
+  end_time: 7.111104
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 6.999993
+  end_time: 7.111104
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 7.111104
+  end_time: 7.3333260000000005
+  program: 30
 }
 notes {
   pitch: 56
-  velocity: 71
-  start_time: 66.44924314453125
-  end_time: 66.9350313515625
-  program: 1
+  velocity: 68
+  start_time: 7.111104
+  end_time: 7.3333260000000005
+  program: 30
 }
 notes {
-  pitch: 62
-  velocity: 61
-  start_time: 66.937026375
-  end_time: 67.31657958398438
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.111104
+  end_time: 7.3333260000000005
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 75
-  start_time: 66.937026375
-  end_time: 67.31657958398438
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 7.3333260000000005
+  end_time: 7.444437
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 61
-  start_time: 66.937026375
-  end_time: 67.44126854882812
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 7.3333260000000005
+  end_time: 7.444437
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 75
-  start_time: 66.937026375
-  end_time: 67.44126854882812
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.3333260000000005
+  end_time: 7.444437
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 56
-  start_time: 67.31707833984375
-  end_time: 67.6691999765625
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 7.444437
+  end_time: 7.555548
+  program: 30
 }
 notes {
-  pitch: 72
-  velocity: 70
-  start_time: 67.31707833984375
-  end_time: 67.68366389648438
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 7.444437
+  end_time: 7.555548
+  program: 30
 }
 notes {
-  pitch: 65
-  velocity: 56
-  start_time: 67.68416265234376
-  end_time: 67.91408910351562
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.444437
+  end_time: 7.555548
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 57
-  start_time: 67.4417673046875
-  end_time: 67.9285530234375
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 7.555548
+  end_time: 7.666659
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 71
-  start_time: 67.4417673046875
-  end_time: 67.9285530234375
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 7.555548
+  end_time: 7.666659
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 70
-  start_time: 67.68416265234376
-  end_time: 67.9285530234375
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.555548
+  end_time: 7.666659
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 59
-  start_time: 67.92905177929687
-  end_time: 68.04775567382812
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 7.666659
+  end_time: 7.77777
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 67.92905177929687
-  end_time: 68.05473825585938
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 7.666659
+  end_time: 7.77777
+  program: 30
 }
 notes {
-  pitch: 67
-  velocity: 70
-  start_time: 67.92905177929687
-  end_time: 68.29264480078125
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.666659
+  end_time: 7.77777
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 65
-  start_time: 67.92905177929687
-  end_time: 68.29264480078125
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 7.77777
+  end_time: 7.8888810000000005
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 56
-  start_time: 68.05523701171875
-  end_time: 68.41633625390625
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 7.77777
+  end_time: 7.8888810000000005
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 70
-  start_time: 68.05523701171875
-  end_time: 68.41633625390625
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 7.77777
+  end_time: 7.8888810000000005
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 64
-  start_time: 68.29314355664063
-  end_time: 68.64426768164063
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 7.8888810000000005
+  end_time: 8.111103
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 57
-  start_time: 68.41633625390625
-  end_time: 68.9021244609375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 68.41633625390625
-  end_time: 68.9021244609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 68.65923035742188
-  end_time: 68.9021244609375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 61
-  start_time: 68.90461824023437
-  end_time: 69.28417144921875
-  program: 1
-}
-notes {
-  pitch: 79
-  velocity: 75
-  start_time: 68.90461824023437
-  end_time: 69.28417144921875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 68.90461824023437
-  end_time: 69.40836165820312
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 68.90461824023437
-  end_time: 69.40836165820312
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 56
-  start_time: 69.28467020507813
-  end_time: 69.63679184179688
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 70
-  start_time: 69.28467020507813
-  end_time: 69.65075700585938
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 69.65125576171876
-  end_time: 69.88168096875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 69.4088604140625
-  end_time: 69.89614488867187
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 69.4088604140625
-  end_time: 69.89614488867187
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 69.65125576171876
-  end_time: 69.89614488867187
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 69.89664364453125
-  end_time: 70.01484878320312
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 69.89664364453125
-  end_time: 70.02233012109374
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 59
-  start_time: 69.89664364453125
-  end_time: 70.26023666601563
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 73
-  start_time: 69.89664364453125
-  end_time: 70.26023666601563
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 70.02282887695313
-  end_time: 70.38342936328125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 70.02282887695313
-  end_time: 70.38342936328125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 56
-  start_time: 70.26023666601563
-  end_time: 70.38342936328125
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 70.38392811914062
-  end_time: 70.61136079101563
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 70
-  start_time: 70.26023666601563
-  end_time: 70.62582471093751
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 70.62632346679688
-  end_time: 70.85525240625
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 70.38392811914062
-  end_time: 70.86971632617188
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 70.62632346679688
-  end_time: 70.86971632617188
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 61
-  start_time: 70.87171134960937
-  end_time: 71.01236050195313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 75
-  start_time: 70.87171134960937
-  end_time: 71.01236050195313
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 71.01285925781251
-  end_time: 71.1245805703125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 71.01285925781251
-  end_time: 71.13156315234376
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 7.8888810000000005
+  end_time: 8.111103
+  program: 30
 }
 notes {
   pitch: 64
-  velocity: 56
-  start_time: 71.13206190820313
-  end_time: 71.2442819765625
-  program: 1
+  velocity: 68
+  start_time: 7.8888810000000005
+  end_time: 8.111103
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 70
-  start_time: 71.13206190820313
-  end_time: 71.25126455859375
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 8.111103
+  end_time: 8.222214
+  program: 30
 }
 notes {
-  pitch: 65
-  velocity: 56
-  start_time: 71.25176331445313
-  end_time: 71.36847218554688
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 70.87171134960937
-  end_time: 71.3759535234375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 70.87171134960937
-  end_time: 71.3759535234375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 71.25176331445313
-  end_time: 71.3759535234375
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 71.61884762695313
-  end_time: 71.73755152148438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 66
-  start_time: 71.61884762695313
-  end_time: 71.73755152148438
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 71.73805027734375
-  end_time: 71.85625541601563
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 71.37645227929687
-  end_time: 71.86323799804687
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 71.37645227929687
-  end_time: 71.86323799804687
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 71.73805027734375
-  end_time: 71.86323799804687
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 71.86373675390625
-  end_time: 71.9824406484375
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 8.111103
+  end_time: 8.222214
+  program: 30
 }
 notes {
   pitch: 64
-  velocity: 59
-  start_time: 71.86373675390625
-  end_time: 71.9824406484375
-  program: 1
+  velocity: 68
+  start_time: 8.111103
+  end_time: 8.222214
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 71.86373675390625
-  end_time: 71.98942323046874
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 8.222214
+  end_time: 8.333325
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 73
-  start_time: 71.86373675390625
-  end_time: 71.98942323046874
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 8.222214
+  end_time: 8.333325
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 56
-  start_time: 71.98992198632813
-  end_time: 72.35102122851562
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 8.222214
+  end_time: 8.333325
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 8.333325
+  end_time: 8.444436
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.333325
+  end_time: 8.444436
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 8.333325
+  end_time: 8.444436
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 8.444436
+  end_time: 8.555547
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.444436
+  end_time: 8.555547
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 8.444436
+  end_time: 8.555547
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 8.555547
+  end_time: 8.666658
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.555547
+  end_time: 8.666658
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 8.555547
+  end_time: 8.666658
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 8.666658
+  end_time: 8.777769
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.666658
+  end_time: 8.777769
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 8.666658
+  end_time: 8.777769
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 8.777769
+  end_time: 8.88888
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.777769
+  end_time: 8.88888
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 8.777769
+  end_time: 8.88888
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 8.88888
+  end_time: 9.111102
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 8.88888
+  end_time: 9.111102
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 8.88888
+  end_time: 9.111102
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.111102
+  end_time: 9.222213
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.111102
+  end_time: 9.222213
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.111102
+  end_time: 9.222213
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.222213
+  end_time: 9.333324
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.222213
+  end_time: 9.333324
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.222213
+  end_time: 9.333324
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.333324
+  end_time: 9.444435
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.333324
+  end_time: 9.444435
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.333324
+  end_time: 9.444435
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.444435
+  end_time: 9.555546
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.444435
+  end_time: 9.555546
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.444435
+  end_time: 9.555546
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.555546
+  end_time: 9.666657
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.555546
+  end_time: 9.666657
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.555546
+  end_time: 9.666657
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 9.666657
+  end_time: 9.777768
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 9.666657
+  end_time: 9.777768
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 9.666657
+  end_time: 9.777768
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 9.777768
+  end_time: 9.99999
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 70
-  start_time: 71.98992198632813
-  end_time: 72.35102122851562
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 71.98992198632813
-  end_time: 72.35102122851562
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 70
-  start_time: 71.98992198632813
-  end_time: 72.35102122851562
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 45
-  start_time: 72.351519984375
-  end_time: 72.47421392578126
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 59
-  start_time: 72.351519984375
-  end_time: 72.47421392578126
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 72.351519984375
-  end_time: 72.57895265625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 72.351519984375
-  end_time: 72.59341657617188
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 72.47471268164063
-  end_time: 72.59341657617188
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 72.47471268164063
-  end_time: 72.59341657617188
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 72.59391533203126
-  end_time: 72.7126192265625
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 72.59391533203126
-  end_time: 72.7126192265625
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 72.59391533203126
-  end_time: 72.83680943554688
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 72.59391533203126
-  end_time: 72.83680943554688
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 54
-  start_time: 72.71311798242188
-  end_time: 72.83680943554688
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 44
-  start_time: 72.71311798242188
-  end_time: 72.8442907734375
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 69
-  start_time: 72.83930321484375
-  end_time: 73.21885642382813
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 72.83930321484375
-  end_time: 73.3430466328125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 72.83930321484375
-  end_time: 73.3430466328125
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 73.34354538867187
-  end_time: 73.83082986328125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 73.34354538867187
-  end_time: 73.83082986328125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 64
-  start_time: 73.2193551796875
-  end_time: 73.83082986328125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 73.83132861914062
-  end_time: 73.9495337578125
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 73.83132861914062
-  end_time: 73.95701509570313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 67
-  start_time: 73.83132861914062
-  end_time: 74.0612550703125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 74.07621774609375
-  end_time: 74.18744030273437
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 73.9575138515625
-  end_time: 74.31811433789062
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 73.9575138515625
-  end_time: 74.31811433789062
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 64
-  start_time: 74.19542039648438
-  end_time: 74.434324453125
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 64
-  start_time: 74.44230454687501
-  end_time: 74.55352710351562
-  program: 1
+  velocity: 68
+  start_time: 9.777768
+  end_time: 9.99999
+  program: 30
 }
 notes {
   pitch: 68
-  velocity: 64
-  start_time: 74.56100844140626
-  end_time: 74.67272975390625
-  program: 1
+  velocity: 68
+  start_time: 9.777768
+  end_time: 9.99999
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 64
-  start_time: 74.68021109179688
-  end_time: 74.79691996289063
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 74.31861309375
-  end_time: 74.80440130078125
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 9.99999
+  end_time: 10.111101
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 71
-  start_time: 74.31861309375
-  end_time: 74.80440130078125
-  program: 1
+  velocity: 68
+  start_time: 9.99999
+  end_time: 10.111101
+  program: 30
 }
 notes {
-  pitch: 62
-  velocity: 61
-  start_time: 74.80639632421875
-  end_time: 75.18594953320313
-  program: 1
+  pitch: 68
+  velocity: 68
+  start_time: 9.99999
+  end_time: 10.111101
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 75
-  start_time: 74.80639632421875
-  end_time: 75.18594953320313
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 74.80639632421875
-  end_time: 75.31063849804687
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 74.80639632421875
-  end_time: 75.31063849804687
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 10.111101
+  end_time: 10.222212
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 56
-  start_time: 75.1864482890625
-  end_time: 75.53856992578125
-  program: 1
+  velocity: 68
+  start_time: 10.111101
+  end_time: 10.222212
+  program: 30
 }
 notes {
-  pitch: 72
-  velocity: 70
-  start_time: 75.1864482890625
-  end_time: 75.55303384570313
-  program: 1
+  pitch: 68
+  velocity: 68
+  start_time: 10.111101
+  end_time: 10.222212
+  program: 30
 }
 notes {
-  pitch: 65
-  velocity: 56
-  start_time: 75.55353260156251
-  end_time: 75.78345905273437
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 10.222212
+  end_time: 10.444434
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 57
-  start_time: 75.31113725390625
-  end_time: 75.79792297265625
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 10.222212
+  end_time: 10.444434
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 71
-  start_time: 75.31113725390625
-  end_time: 75.79792297265625
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 10.222212
+  end_time: 10.444434
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 70
-  start_time: 75.55353260156251
-  end_time: 75.79792297265625
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 10.444434
+  end_time: 10.555545
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 59
-  start_time: 75.79842172851562
-  end_time: 75.91712562304687
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 10.444434
+  end_time: 10.555545
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 75.79842172851562
-  end_time: 75.92410820507813
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 10.444434
+  end_time: 10.555545
+  program: 30
 }
 notes {
-  pitch: 67
-  velocity: 70
-  start_time: 75.79842172851562
-  end_time: 76.16201475
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 10.555545
+  end_time: 10.666656
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 65
-  start_time: 75.79842172851562
-  end_time: 76.16201475
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 10.555545
+  end_time: 10.666656
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 56
-  start_time: 75.9246069609375
-  end_time: 76.285706203125
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 10.555545
+  end_time: 10.666656
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 10.666656
+  end_time: 10.888878
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 10.666656
+  end_time: 10.888878
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 10.666656
+  end_time: 10.888878
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 10.888878
+  end_time: 10.999989
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 10.888878
+  end_time: 10.999989
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 10.888878
+  end_time: 10.999989
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 10.999989
+  end_time: 11.1111
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 10.999989
+  end_time: 11.1111
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 10.999989
+  end_time: 11.1111
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 11.1111
+  end_time: 11.222211
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 11.1111
+  end_time: 11.222211
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 11.1111
+  end_time: 11.222211
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 11.222211
+  end_time: 11.333322
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 11.222211
+  end_time: 11.333322
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 11.222211
+  end_time: 11.333322
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 11.333322
+  end_time: 11.444433
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 11.333322
+  end_time: 11.444433
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 11.333322
+  end_time: 11.444433
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 11.444433
+  end_time: 11.555544
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 11.444433
+  end_time: 11.555544
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 11.444433
+  end_time: 11.555544
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 11.555544
+  end_time: 11.777766
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 11.555544
+  end_time: 11.777766
+  program: 30
+}
+notes {
+  pitch: 66
+  velocity: 68
+  start_time: 11.555544
+  end_time: 11.777766
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 12.444432
+  end_time: 12.666654
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 12.444432
+  end_time: 12.666654
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 12.444432
+  end_time: 12.666654
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 13.33332
+  end_time: 18.222204
+  program: 30
+}
+notes {
+  pitch: 66
+  velocity: 68
+  start_time: 13.33332
+  end_time: 18.222204
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 18.666648
+  end_time: 18.777759
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 18.666648
+  end_time: 18.777759
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 18.666648
+  end_time: 18.777759
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 18.777759
+  end_time: 18.88887
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 18.777759
+  end_time: 18.88887
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 18.777759
+  end_time: 18.88887
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 18.88887
+  end_time: 18.999981000000002
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 18.88887
+  end_time: 18.999981000000002
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 18.88887
+  end_time: 18.999981000000002
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 18.999981000000002
+  end_time: 19.111092
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 18.999981000000002
+  end_time: 19.111092
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 18.999981000000002
+  end_time: 19.111092
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.111092
+  end_time: 19.222203
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.111092
+  end_time: 19.222203
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.111092
+  end_time: 19.222203
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.222203
+  end_time: 19.333314
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.222203
+  end_time: 19.333314
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.222203
+  end_time: 19.333314
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.333314
+  end_time: 19.444425
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.333314
+  end_time: 19.444425
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.333314
+  end_time: 19.444425
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.444425
+  end_time: 19.555536
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.444425
+  end_time: 19.555536
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.444425
+  end_time: 19.555536
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.555536
+  end_time: 19.666647
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.555536
+  end_time: 19.666647
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.555536
+  end_time: 19.666647
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.666647
+  end_time: 19.777758
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.666647
+  end_time: 19.777758
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.666647
+  end_time: 19.777758
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.777758
+  end_time: 19.888869
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.777758
+  end_time: 19.888869
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.777758
+  end_time: 19.888869
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.888869
+  end_time: 19.99998
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.888869
+  end_time: 19.99998
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.888869
+  end_time: 19.99998
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 19.99998
+  end_time: 20.111091000000002
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 19.99998
+  end_time: 20.111091000000002
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 19.99998
+  end_time: 20.111091000000002
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 20.111091000000002
+  end_time: 20.222202
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 20.111091000000002
+  end_time: 20.222202
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 20.111091000000002
+  end_time: 20.222202
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 20.222202
+  end_time: 20.333313
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 20.222202
+  end_time: 20.333313
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 20.222202
+  end_time: 20.333313
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 20.333313
+  end_time: 20.444424
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 20.333313
+  end_time: 20.444424
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 20.333313
+  end_time: 20.444424
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 20.444424
+  end_time: 20.666646
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 20.444424
+  end_time: 20.666646
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 20.444424
+  end_time: 20.666646
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 20.666646
+  end_time: 20.777757
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 20.666646
+  end_time: 20.777757
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 20.666646
+  end_time: 20.777757
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 20.777757
+  end_time: 20.888868
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 20.777757
+  end_time: 20.888868
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 20.777757
+  end_time: 20.888868
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 20.888868
+  end_time: 20.999979
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 20.888868
+  end_time: 20.999979
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 20.888868
+  end_time: 20.999979
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 20.999979
+  end_time: 21.11109
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 20.999979
+  end_time: 21.11109
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 20.999979
+  end_time: 21.11109
+  program: 30
+}
+notes {
+  pitch: 49
+  velocity: 68
+  start_time: 21.11109
+  end_time: 21.222201000000002
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 21.11109
+  end_time: 21.222201000000002
+  program: 30
+}
+notes {
+  pitch: 61
+  velocity: 68
+  start_time: 21.11109
+  end_time: 21.222201000000002
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.222201000000002
+  end_time: 21.444423
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.222201000000002
+  end_time: 21.444423
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.222201000000002
+  end_time: 21.444423
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.444423
+  end_time: 21.555534
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.444423
+  end_time: 21.555534
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.444423
+  end_time: 21.555534
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.555534
+  end_time: 21.666645
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.555534
+  end_time: 21.666645
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.555534
+  end_time: 21.666645
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.666645
+  end_time: 21.777756
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.666645
+  end_time: 21.777756
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.666645
+  end_time: 21.777756
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.777756
+  end_time: 21.888867
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.777756
+  end_time: 21.888867
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.777756
+  end_time: 21.888867
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.888867
+  end_time: 21.999978
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.888867
+  end_time: 21.999978
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.888867
+  end_time: 21.999978
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 21.999978
+  end_time: 22.111089
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 21.999978
+  end_time: 22.111089
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 21.999978
+  end_time: 22.111089
+  program: 30
+}
+notes {
+  pitch: 52
+  velocity: 68
+  start_time: 22.111089
+  end_time: 22.2222
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.111089
+  end_time: 22.2222
+  program: 30
+}
+notes {
+  pitch: 64
+  velocity: 68
+  start_time: 22.111089
+  end_time: 22.2222
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.2222
+  end_time: 22.444422
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.2222
+  end_time: 22.444422
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.2222
+  end_time: 22.444422
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.444422
+  end_time: 22.555533
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.444422
+  end_time: 22.555533
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.444422
+  end_time: 22.555533
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.555533
+  end_time: 22.666644
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.555533
+  end_time: 22.666644
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.555533
+  end_time: 22.666644
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.666644
+  end_time: 22.777755
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.666644
+  end_time: 22.777755
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.666644
+  end_time: 22.777755
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.777755
+  end_time: 22.888866
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.777755
+  end_time: 22.888866
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.777755
+  end_time: 22.888866
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.888866
+  end_time: 22.999977
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.888866
+  end_time: 22.999977
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.888866
+  end_time: 22.999977
+  program: 30
+}
+notes {
+  pitch: 47
+  velocity: 68
+  start_time: 22.999977
+  end_time: 23.111088
+  program: 30
+}
+notes {
+  pitch: 54
+  velocity: 68
+  start_time: 22.999977
+  end_time: 23.111088
+  program: 30
+}
+notes {
+  pitch: 59
+  velocity: 68
+  start_time: 22.999977
+  end_time: 23.111088
+  program: 30
+}
+notes {
+  pitch: 56
+  velocity: 68
+  start_time: 23.111088
+  end_time: 23.33331
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 70
-  start_time: 75.9246069609375
-  end_time: 76.285706203125
-  program: 1
+  velocity: 68
+  start_time: 23.111088
+  end_time: 23.33331
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 64
-  start_time: 76.16251350585938
-  end_time: 76.51363763085938
-  program: 1
+  pitch: 68
+  velocity: 68
+  start_time: 23.111088
+  end_time: 23.33331
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 57
-  start_time: 76.28620495898437
-  end_time: 76.77149441015625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 76.28620495898437
-  end_time: 76.77149441015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 76.52860030664063
-  end_time: 76.77149441015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 61
-  start_time: 76.77398818945312
-  end_time: 77.1535413984375
-  program: 1
-}
-notes {
-  pitch: 79
-  velocity: 75
-  start_time: 76.77398818945312
-  end_time: 77.1535413984375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 76.77398818945312
-  end_time: 77.27773160742187
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 76.77398818945312
-  end_time: 77.27773160742187
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 56
-  start_time: 77.15404015429688
-  end_time: 77.50616179101563
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 70
-  start_time: 77.15404015429688
-  end_time: 77.52062571093751
-  program: 1
-}
-notes {
-  pitch: 67
-  velocity: 56
-  start_time: 77.52062571093751
-  end_time: 77.75105091796875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 77.27823036328125
-  end_time: 77.76551483789062
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 77.27823036328125
-  end_time: 77.76551483789062
-  program: 1
-}
-notes {
-  pitch: 75
-  velocity: 70
-  start_time: 77.52062571093751
-  end_time: 77.76551483789062
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 77.76601359375
-  end_time: 77.88421873242187
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 77.76601359375
-  end_time: 77.8917000703125
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 59
-  start_time: 77.76601359375
-  end_time: 78.01040396484375
-  program: 1
-}
-notes {
-  pitch: 73
-  velocity: 73
-  start_time: 77.76601359375
-  end_time: 78.01040396484375
-  program: 1
-}
-notes {
-  pitch: 65
-  velocity: 56
-  start_time: 78.01090272070313
-  end_time: 78.23833539257812
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 77.89219882617188
-  end_time: 78.2527993125
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 23.33331
+  end_time: 23.444421000000002
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 70
-  start_time: 77.89219882617188
-  end_time: 78.2527993125
-  program: 1
+  velocity: 68
+  start_time: 23.33331
+  end_time: 23.444421000000002
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 70
-  start_time: 78.01090272070313
-  end_time: 78.2527993125
-  program: 1
+  pitch: 68
+  velocity: 68
+  start_time: 23.33331
+  end_time: 23.444421000000002
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 57
-  start_time: 78.25329806835937
-  end_time: 78.48122949609375
-  program: 1
-}
-notes {
-  pitch: 77
-  velocity: 71
-  start_time: 78.25329806835937
-  end_time: 78.49519466015626
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 56
-  start_time: 78.49569341601563
-  end_time: 78.72462235546875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 78.25329806835937
-  end_time: 78.73908627539063
-  program: 1
+  pitch: 56
+  velocity: 68
+  start_time: 23.444421000000002
+  end_time: 23.555532
+  program: 30
 }
 notes {
   pitch: 63
-  velocity: 71
-  start_time: 78.25329806835937
-  end_time: 78.73908627539063
-  program: 1
+  velocity: 68
+  start_time: 23.444421000000002
+  end_time: 23.555532
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 70
-  start_time: 78.49569341601563
-  end_time: 78.73908627539063
-  program: 1
+  pitch: 68
+  velocity: 68
+  start_time: 23.444421000000002
+  end_time: 23.555532
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 61
-  start_time: 78.74108129882812
-  end_time: 79.24532347265625
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 23.555532
+  end_time: 23.777754
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 75
-  start_time: 78.74108129882812
-  end_time: 79.24532347265625
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 23.555532
+  end_time: 23.777754
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 61
-  start_time: 78.74108129882812
-  end_time: 79.24532347265625
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 23.555532
+  end_time: 23.777754
+  program: 30
 }
 notes {
-  pitch: 72
-  velocity: 75
-  start_time: 78.74108129882812
-  end_time: 79.24532347265625
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 23.777754
+  end_time: 23.888865
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 57
-  start_time: 79.24582222851562
-  end_time: 79.73260794726562
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 23.777754
+  end_time: 23.888865
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 71
-  start_time: 79.24582222851562
-  end_time: 79.73260794726562
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 23.777754
+  end_time: 23.888865
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 59
-  start_time: 79.733106703125
-  end_time: 79.85181059765625
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 23.888865
+  end_time: 23.999976
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 79.733106703125
-  end_time: 79.8587931796875
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 23.888865
+  end_time: 23.999976
+  program: 30
 }
 notes {
-  pitch: 65
-  velocity: 57
-  start_time: 79.24582222851562
-  end_time: 79.96303315429688
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 23.888865
+  end_time: 23.999976
+  program: 30
 }
 notes {
-  pitch: 74
-  velocity: 71
-  start_time: 79.24582222851562
-  end_time: 79.97749707421875
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 23.999976
+  end_time: 24.222198
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 56
-  start_time: 79.85929193554688
-  end_time: 80.22039117773437
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 23.999976
+  end_time: 24.222198
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 70
-  start_time: 79.85929193554688
-  end_time: 80.22039117773437
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 23.999976
+  end_time: 24.222198
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 56
-  start_time: 79.97799583007813
-  end_time: 80.22039117773437
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.222198
+  end_time: 24.333309
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 57
-  start_time: 80.22088993359375
-  end_time: 80.44832260546875
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.222198
+  end_time: 24.333309
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 71
-  start_time: 80.22088993359375
-  end_time: 80.46278652539063
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.222198
+  end_time: 24.333309
+  program: 30
 }
 notes {
-  pitch: 55
-  velocity: 56
-  start_time: 80.46328528125001
-  end_time: 80.70617938476563
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.333309
+  end_time: 24.44442
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 70
-  start_time: 80.46328528125001
-  end_time: 80.70617938476563
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.333309
+  end_time: 24.44442
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 70
-  start_time: 79.97799583007813
-  end_time: 80.70617938476563
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.333309
+  end_time: 24.44442
+  program: 30
 }
 notes {
-  pitch: 50
-  velocity: 61
-  start_time: 80.7086731640625
-  end_time: 81.21241658203125
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.44442
+  end_time: 24.555531000000002
+  program: 30
 }
 notes {
-  pitch: 55
-  velocity: 75
-  start_time: 80.7086731640625
-  end_time: 81.21241658203125
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.44442
+  end_time: 24.555531000000002
+  program: 30
 }
 notes {
-  pitch: 50
-  velocity: 57
-  start_time: 81.21291533789062
-  end_time: 81.7001998125
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.44442
+  end_time: 24.555531000000002
+  program: 30
 }
 notes {
-  pitch: 55
-  velocity: 71
-  start_time: 81.21291533789062
-  end_time: 81.7001998125
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.555531000000002
+  end_time: 24.666642
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 59
-  start_time: 81.70069856835937
-  end_time: 81.81940246289062
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.555531000000002
+  end_time: 24.666642
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 81.70069856835937
-  end_time: 81.82638504492188
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.555531000000002
+  end_time: 24.666642
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 56
-  start_time: 81.82688380078125
-  end_time: 82.18748428710937
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.666642
+  end_time: 24.777753
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 70
-  start_time: 81.82688380078125
-  end_time: 82.18748428710937
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.666642
+  end_time: 24.777753
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 57
-  start_time: 82.18798304296875
-  end_time: 82.67377125
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.666642
+  end_time: 24.777753
+  program: 30
 }
 notes {
-  pitch: 62
-  velocity: 56
-  start_time: 80.7086731640625
-  end_time: 82.67377125
-  program: 1
+  pitch: 52
+  velocity: 68
+  start_time: 24.777753
+  end_time: 24.888864
+  program: 30
 }
 notes {
-  pitch: 63
-  velocity: 71
-  start_time: 82.18798304296875
-  end_time: 82.67377125
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 24.777753
+  end_time: 24.888864
+  program: 30
 }
 notes {
-  pitch: 69
-  velocity: 70
-  start_time: 80.7086731640625
-  end_time: 82.67377125
-  program: 1
+  pitch: 64
+  velocity: 68
+  start_time: 24.777753
+  end_time: 24.888864
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 69
-  start_time: 82.67626502929687
-  end_time: 82.93611683203125
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 24.888864
+  end_time: 25.111086
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 52
-  start_time: 82.93611683203125
-  end_time: 83.05531948242188
-  program: 1
+  pitch: 61
+  velocity: 68
+  start_time: 24.888864
+  end_time: 25.111086
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 61
-  start_time: 82.67626502929687
-  end_time: 83.18000844726562
-  program: 1
+  pitch: 66
+  velocity: 68
+  start_time: 24.888864
+  end_time: 25.111086
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 75
-  start_time: 82.67626502929687
-  end_time: 83.18000844726562
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 25.777752
+  end_time: 25.999974
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 52
-  start_time: 83.05581823828125
-  end_time: 83.18000844726562
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 25.777752
+  end_time: 25.999974
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 53
-  start_time: 83.180507203125
-  end_time: 83.30369990039063
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 25.777752
+  end_time: 25.999974
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 52
-  start_time: 83.30419865625001
-  end_time: 83.42240379492188
-  program: 1
+  pitch: 42
+  velocity: 68
+  start_time: 26.222196
+  end_time: 26.66664
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 57
-  start_time: 83.180507203125
-  end_time: 83.667292921875
-  program: 1
+  pitch: 49
+  velocity: 68
+  start_time: 26.222196
+  end_time: 26.66664
+  program: 30
 }
 notes {
-  pitch: 58
-  velocity: 71
-  start_time: 83.180507203125
-  end_time: 83.667292921875
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 26.222196
+  end_time: 26.66664
+  program: 30
 }
 notes {
-  pitch: 70
-  velocity: 52
-  start_time: 83.42290255078125
-  end_time: 83.68225559765625
-  program: 1
+  pitch: 47
+  velocity: 68
+  start_time: 26.66664
+  end_time: 26.888862
+  program: 30
 }
 notes {
-  pitch: 53
-  velocity: 59
-  start_time: 83.66779167773437
-  end_time: 83.78649557226562
-  program: 1
+  pitch: 54
+  velocity: 68
+  start_time: 26.66664
+  end_time: 26.888862
+  program: 30
 }
 notes {
-  pitch: 60
-  velocity: 73
-  start_time: 83.66779167773437
-  end_time: 83.79347815429688
-  program: 1
+  pitch: 59
+  velocity: 68
+  start_time: 26.66664
+  end_time: 26.888862
+  program: 30
 }
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 83.79397691015625
-  end_time: 84.15507615234375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 83.79397691015625
-  end_time: 84.15507615234375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 83.9126808046875
-  end_time: 84.15507615234375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 84.15557490820312
-  end_time: 84.27826884960938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 84.27876760546876
-  end_time: 84.39747150000001
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 84.39797025585938
-  end_time: 84.51667415039063
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 84.15557490820312
-  end_time: 84.640864359375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 84.15557490820312
-  end_time: 84.640864359375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 84.51717290625
-  end_time: 84.640864359375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 84.64335813867187
-  end_time: 85.14710155664062
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 84.64335813867187
-  end_time: 85.14710155664062
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 84.64335813867187
-  end_time: 85.14710155664062
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 85.39049441601563
-  end_time: 85.6204208671875
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 85.1476003125
-  end_time: 85.63488478710937
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 85.1476003125
-  end_time: 85.63488478710937
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 85.63538354296875
-  end_time: 85.7540874375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 85.63538354296875
-  end_time: 85.76107001953125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 85.63538354296875
-  end_time: 85.76107001953125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 85.76156877539063
-  end_time: 85.8797739140625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 85.88027266992188
-  end_time: 85.99897656445313
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 85.76156877539063
-  end_time: 86.12216926171875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 85.76156877539063
-  end_time: 86.12216926171875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 85.9994753203125
-  end_time: 86.12965059960938
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 86.12266801757812
-  end_time: 86.60845622460938
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 86.12266801757812
-  end_time: 86.60845622460938
-  program: 1
-}
-notes {
-  pitch: 74
-  velocity: 65
-  start_time: 86.12266801757812
-  end_time: 86.60845622460938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 86.61095000390625
-  end_time: 86.87080180664063
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 86.8713005625
-  end_time: 86.99000445703125
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 86.61095000390625
-  end_time: 87.114693421875
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 86.61095000390625
-  end_time: 87.114693421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 86.99050321289063
-  end_time: 87.114693421875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 87.11519217773437
-  end_time: 87.23838487500001
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 87.23888363085938
-  end_time: 87.35708876953126
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 87.11519217773437
-  end_time: 87.60197789648437
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 87.11519217773437
-  end_time: 87.60197789648437
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 87.35758752539063
-  end_time: 87.60197789648437
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 87.60247665234375
-  end_time: 87.721180546875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 87.60247665234375
-  end_time: 87.72866188476563
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 87.60247665234375
-  end_time: 87.8468670234375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 87.72866188476563
-  end_time: 88.08976112695312
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 87.72866188476563
-  end_time: 88.08976112695312
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 87.84736577929688
-  end_time: 88.08976112695312
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 88.0902598828125
-  end_time: 88.21295382421876
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 88.0902598828125
-  end_time: 88.3176925546875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 88.0902598828125
-  end_time: 88.33215647460938
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 88.33265523046875
-  end_time: 88.57554933398438
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 88.33265523046875
-  end_time: 88.57554933398438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 88.21345258007813
-  end_time: 88.57554933398438
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 88.57804311328125
-  end_time: 89.08178653125
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 88.57804311328125
-  end_time: 89.08178653125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 69
-  start_time: 88.57804311328125
-  end_time: 89.08178653125
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 89.325179390625
-  end_time: 89.55510584179687
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 89.08228528710937
-  end_time: 89.56956976171875
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 89.08228528710937
-  end_time: 89.56956976171875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 89.57006851757812
-  end_time: 89.68877241210937
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 89.57006851757812
-  end_time: 89.69575499414063
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 89.69625375
-  end_time: 90.05685423632812
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 89.69625375
-  end_time: 90.05685423632812
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 90.0573529921875
-  end_time: 90.54314119921875
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 90.0573529921875
-  end_time: 90.54314119921875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 90.54563497851562
-  end_time: 90.80548678125
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 90.80598553710938
-  end_time: 90.92468943164063
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 90.54563497851562
-  end_time: 91.04937839648437
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 90.54563497851562
-  end_time: 91.04937839648437
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 90.9251881875
-  end_time: 91.04937839648437
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 91.04987715234375
-  end_time: 91.17306984960938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 91.17356860546876
-  end_time: 91.29177374414063
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 91.04987715234375
-  end_time: 91.53666287109375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 91.04987715234375
-  end_time: 91.53666287109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 91.2922725
-  end_time: 91.551625546875
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 91.53716162695312
-  end_time: 91.65586552148437
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 91.53716162695312
-  end_time: 91.663346859375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 91.66384561523438
-  end_time: 92.0244461015625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 91.66384561523438
-  end_time: 92.0244461015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 91.78205075390625
-  end_time: 92.0244461015625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 92.02494485742187
-  end_time: 92.14763879882813
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 92.14813755468751
-  end_time: 92.26684144921876
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 92.26734020507813
-  end_time: 92.38604409960938
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 92.02494485742187
-  end_time: 92.51023430859375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 92.02494485742187
-  end_time: 92.51023430859375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 92.38654285546875
-  end_time: 92.51023430859375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 57
-  start_time: 92.51272808789062
-  end_time: 92.66035982226563
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 92.65337724023438
-  end_time: 92.87781737695313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 92.89278005273438
-  end_time: 93.00948892382813
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 92.51272808789062
-  end_time: 93.01647150585937
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 92.51272808789062
-  end_time: 93.01647150585937
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 65
-  start_time: 93.01697026171875
-  end_time: 93.24490168945313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 93.25986436523438
-  end_time: 93.371086921875
-  program: 1
-}
-notes {
-  pitch: 69
-  velocity: 64
-  start_time: 93.37856825976563
-  end_time: 93.4967733984375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 93.01697026171875
-  end_time: 93.50425473632812
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 93.01697026171875
-  end_time: 93.50425473632812
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 93.5047534921875
-  end_time: 93.62345738671875
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 93.5047534921875
-  end_time: 93.63043996875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 93.5047534921875
-  end_time: 93.74914386328125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 93.63093872460938
-  end_time: 93.9915392109375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 93.63093872460938
-  end_time: 93.9915392109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 93.74964261914063
-  end_time: 93.9915392109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 93.99203796679687
-  end_time: 94.10774932617188
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 64
-  start_time: 94.11572941992188
-  end_time: 94.35313720898438
-  program: 1
-}
-notes {
-  pitch: 72
-  velocity: 64
-  start_time: 94.35363596484375
-  end_time: 94.4703448359375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 93.99203796679687
-  end_time: 94.47782617382813
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 93.99203796679687
-  end_time: 94.47782617382813
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 69
-  start_time: 94.480319953125
-  end_time: 94.62047034960938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 94.62096910546875
-  end_time: 94.74017175585938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 94.74067051171875
-  end_time: 94.85937440625
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 61
-  start_time: 94.480319953125
-  end_time: 94.98406337109375
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 75
-  start_time: 94.480319953125
-  end_time: 94.98406337109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 94.85987316210938
-  end_time: 94.98406337109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 94.98456212695312
-  end_time: 95.22645871875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 95.22695747460938
-  end_time: 95.34566136914063
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 57
-  start_time: 94.98456212695312
-  end_time: 95.47134784570312
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 71
-  start_time: 94.98456212695312
-  end_time: 95.47134784570312
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 95.346160125
-  end_time: 95.47134784570312
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 95.4718466015625
-  end_time: 95.59055049609375
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 95.4718466015625
-  end_time: 95.59803183398438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 95.4718466015625
-  end_time: 95.59803183398438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 95.59853058984375
-  end_time: 95.71623697265625
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 95.71673572851563
-  end_time: 95.83543962304688
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 95.59853058984375
-  end_time: 95.95913107617187
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 95.59853058984375
-  end_time: 95.95913107617187
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 95.83593837890625
-  end_time: 95.95913107617187
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 95.95962983203125
-  end_time: 96.08232377343751
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 95.95962983203125
-  end_time: 96.18706250390625
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 71
-  start_time: 95.95962983203125
-  end_time: 96.20152642382813
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 56
-  start_time: 96.2020251796875
-  end_time: 96.44491928320313
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 70
-  start_time: 96.2020251796875
-  end_time: 96.44491928320313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 96.08282252929688
-  end_time: 96.44491928320313
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 57
-  start_time: 96.4474130625
-  end_time: 96.58756345898438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 96.58806221484376
-  end_time: 96.70726486523438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 96.70776362109375
-  end_time: 96.82696627148438
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 61
-  start_time: 96.4474130625
-  end_time: 96.95115648046875
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 75
-  start_time: 96.4474130625
-  end_time: 96.95115648046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 96.82746502734375
-  end_time: 96.95115648046875
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 65
-  start_time: 96.95165523632812
-  end_time: 97.19405058398438
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 97.19454933984375
-  end_time: 97.313253234375
-  program: 1
-}
-notes {
-  pitch: 50
-  velocity: 57
-  start_time: 96.95165523632812
-  end_time: 97.4389397109375
-  program: 1
-}
-notes {
-  pitch: 55
-  velocity: 71
-  start_time: 96.95165523632812
-  end_time: 97.4389397109375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 97.313253234375
-  end_time: 97.4389397109375
-  program: 1
-}
-notes {
-  pitch: 53
-  velocity: 59
-  start_time: 97.43943846679687
-  end_time: 97.55814236132812
-  program: 1
-}
-notes {
-  pitch: 60
-  velocity: 73
-  start_time: 97.43943846679687
-  end_time: 97.56512494335938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 55
-  start_time: 97.43943846679687
-  end_time: 97.56512494335938
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 97.56562369921875
-  end_time: 97.68382883789063
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 97.68432759375
-  end_time: 97.80303148828125
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 56
-  start_time: 97.56562369921875
-  end_time: 97.92622418554687
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 70
-  start_time: 97.56562369921875
-  end_time: 97.92622418554687
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 52
-  start_time: 97.80353024414063
-  end_time: 97.92622418554687
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 53
-  start_time: 97.92672294140625
-  end_time: 98.04991563867188
-  program: 1
-}
-notes {
-  pitch: 58
-  velocity: 57
-  start_time: 97.92672294140625
-  end_time: 98.4125111484375
-  program: 1
-}
-notes {
-  pitch: 63
-  velocity: 67
-  start_time: 97.92672294140625
-  end_time: 98.4125111484375
-  program: 1
-}
-notes {
-  pitch: 70
-  velocity: 64
-  start_time: 98.05041439453126
-  end_time: 98.4125111484375
-  program: 1
-}
-total_time: 98.4125111484375
+total_time: 26.888862
 source_info {
   encoding_type: MIDI
   parser: PRETTY_MIDI

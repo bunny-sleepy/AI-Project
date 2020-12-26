@@ -6,6 +6,7 @@ import torch.optim as optim
 import torch.utils.data as Data
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from torchvision import datasets, transforms
+import os
 
 fc_size = 1000
 

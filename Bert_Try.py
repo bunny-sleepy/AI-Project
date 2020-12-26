@@ -5,7 +5,7 @@ import numpy as np
 Tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 Model = BertModel.from_pretrained('bert-base-uncased')
 
-def encode_nlp(text, model = Model, tokenizer = Tokenizer, pooling = True):
+def encode_nlp(text, model = Model, tokenizer = Tokenizer, pooling = False):
     tokenized_text = tokenizer.tokenize(text)
     indexed_tokens=tokenizer.convert_tokens_to_ids(tokenized_text)
     tokens_tensor = torch.tensor([indexed_tokens])

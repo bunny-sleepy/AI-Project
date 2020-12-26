@@ -9,7 +9,7 @@ def train_model(wordvec_batch = None,
                 latentvec_batch = None,
                 dense_layer_size = 2048,
                 dropout_rate = 0.2,
-                learning_rate = 1e-1,
+                learning_rate = 1e-2,
                 momentum = 0.9,
                 epochs = 1000,
                 wordvec_length = 768,
@@ -48,23 +48,15 @@ def train_model(wordvec_batch = None,
                          activation = 'relu',
                          kernel_initializer = 'RandomNormal',
                          bias_initializer = 'RandomNormal'),
-            layers.Dense(dense_layer_size,
-                         activation = 'relu',
-                         kernel_initializer = 'RandomNormal',
-                         bias_initializer = 'RandomNormal'),
-            layers.Dense(dense_layer_size,
-                         activation = 'relu',
-                         kernel_initializer = 'RandomNormal',
-                         bias_initializer = 'RandomNormal'),
             layers.Dropout(dropout_rate),
             layers.Dense(latentvec_length,
                          kernel_initializer='RandomNormal',
                          bias_initializer='RandomNormal') # output layer
         ])
-        optimizer = tf.keras.optimizers.SGD(learning_rate = learning_rate, momentum = momentum)
-        model.compile(optimizer = optimizer,
+        optimizer = tf.keras.optimizers.Adam(learning_rate = learning_rate)
+        model.compile(optimizer = 'adam',
                       loss = 'mse',
-                      metrics = ['mse', 'mae'])
+                      metrics = ['mse'])
 
         history = model.fit(wordvec_batch, latentvec_batch, batch_size = 5, epochs = epochs)
         history.history.keys()

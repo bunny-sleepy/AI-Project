@@ -7,3 +7,5 @@ crawler/Downloader/Downloader.py
 preprocessing/TitlePreprocessor/dataset
 *.h5
 model.h5
+.idea/misc.xml
+.idea/AI-Project.iml
