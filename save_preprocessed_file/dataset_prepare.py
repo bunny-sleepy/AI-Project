@@ -12,7 +12,7 @@ try:
 except:
     word_dct = None
 
-def prepare_dataset(musicvae_model, dataset_path, stored_path, pooling = False, word_dict = word_dct, max_num = 1000):
+def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_dct, max_num = 1000):
     file_list = os.listdir(dataset_path)
     curr_num = 0
     for filename in file_list:
@@ -23,7 +23,7 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, pooling = False, 
             if (".mid" in filename) or (".midi" in filename):
                 file_valid, title = ppt.file_title(midi_file, word_dict)
                 if file_valid:
-                    midi_wordvec = bt.encode_nlp(title, pooling)
+                    midi_wordvec = bt.encode_nlp(title)
                     ns = note_seq.midi_file_to_note_sequence(midi_file)
                     # TODO: change this midi preprocessing method
                     try:

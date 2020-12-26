@@ -5,7 +5,7 @@ import numpy as np
 Tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 Model = BertModel.from_pretrained('bert-base-uncased')
 
-def encode_nlp(text, model = Model, tokenizer = Tokenizer, pooling = False):
+def encode_nlp(text, model = Model, tokenizer = Tokenizer):
     tokenized_text = tokenizer.tokenize(text)
     indexed_tokens=tokenizer.convert_tokens_to_ids(tokenized_text)
     tokens_tensor = torch.tensor([indexed_tokens])
@@ -18,7 +18,4 @@ def encode_nlp(text, model = Model, tokenizer = Tokenizer, pooling = False):
         encoded_layers = outputs[0]
     assert tuple(encoded_layers.shape) == (1, len(indexed_tokens), model.config.hidden_size)
     output = encoded_layers.numpy()[0]
-    if pooling:
-        return np.max(np.array(output), axis = 0)
-    else:
-        return np.array(np.array(output)[0])
+    return np.array(output)

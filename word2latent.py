@@ -57,12 +57,11 @@ def train_model(wordvec_batch = None,
         model.compile(optimizer = 'adam',
                       loss = 'mse',
                       metrics = ['mse'])
-
+        model.summary()
         history = model.fit(wordvec_batch, latentvec_batch, batch_size = 5, epochs = epochs)
         history.history.keys()
         plt.plot(history.epoch, history.history.get('loss'))
         plt.plot(history.epoch, history.history.get('acc'))
-        model.summary()
         model.save(checkpoint_path)
     elif not os.path.exists(checkpoint_path):
         print("ERROR: No existing checkpoint")

@@ -7,7 +7,7 @@ import word2latent as w2l
 # import torch
 
 def main():
-    dataset_path = 'D:/code/Github/repository/encoded_data_test'
+    dataset_path = 'D:/code/Github/repository/encoded_data_2020_12_26'
     # dataset_path = 'D:/code/Github/AI-Project/midi_input'
     # music_vae_config_str = 'hierdec-mel_16bar'
     # music_vae_checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
@@ -16,8 +16,9 @@ def main():
     # midi_wordvec_list, midi_latentvec_list = ld.load_dataset(music_vae_model,
     #                                                          midi_directory = dataset_path,
     #                                                          max_num = 2)
-    midi_latentvec_list, midi_wordvec_list = lp.load_prepared_dataset(dataset_path)
-    print(midi_wordvec_list)
+    import os
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+    midi_latentvec_list, midi_wordvec_list = lp.load_prepared_dataset(dataset_path, max_number = 2000)
     checkpoint_path = 'D:/code/Github/AI-Project/model/'
     w2l_model = w2l.train_model(np.array(midi_wordvec_list), np.array(midi_latentvec_list), checkpoint_path = checkpoint_path,
                                 epochs = 1000)

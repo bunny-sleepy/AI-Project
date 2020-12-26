@@ -9,3 +9,5 @@ preprocessing/TitlePreprocessor/dataset
 model.h5
 .idea/misc.xml
 .idea/AI-Project.iml
+*.iml
+*.xml
