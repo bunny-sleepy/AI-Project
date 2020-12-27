@@ -11,3 +11,6 @@ model.h5
 .idea/AI-Project.iml
 *.iml
 *.xml
+model/saved_model.pb
+model/variables/variables.data-00000-of-00001
+model/variables/variables.index
