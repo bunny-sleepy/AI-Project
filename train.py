@@ -16,12 +16,10 @@ def main():
     # midi_wordvec_list, midi_latentvec_list = ld.load_dataset(music_vae_model,
     #                                                          midi_directory = dataset_path,
     #                                                          max_num = 2)
-    import os
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    midi_latentvec_list, midi_wordvec_list = lp.load_prepared_dataset(dataset_path, max_number = 2000)
+    midi_latentvec_list, midi_wordvec_list = lp.load_prepared_dataset(dataset_path, max_number = None)
     checkpoint_path = 'D:/code/Github/AI-Project/model/'
     w2l_model = w2l.train_model(np.array(midi_wordvec_list), np.array(midi_latentvec_list), checkpoint_path = checkpoint_path,
-                                epochs = 1000)
+                                epochs = 20000, batch_size = 512, load = True)
 
     # wordvec_tensors = torch.from_numpy(np.array(midi_wordvec_list))
     # latentvec_tensors = torch.from_numpy(np.array(midi_latentvec_list))
