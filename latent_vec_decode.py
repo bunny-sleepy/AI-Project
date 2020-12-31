@@ -49,7 +49,7 @@ def decode(trained_model,
 def decode_to_midi(target_directory,
                    trained_model,
                    length = None,
-                   z_batch = [],
+                   z_batch = None,
                    samples_per_batch = 1,
                    temperature = 0.5,
                    file_name = ''):
@@ -59,6 +59,7 @@ def decode_to_midi(target_directory,
         target_directory: the directory to hold the generated piece.
         trained_model: the trained model, may be loaded from checkpoints or
           use the music_vae.trained_model.TrainedModel method.
+        length: pass
         z_batch: the input batch of z, each np.array generates one output.
         samples_per_batch: how many note sequences to generate for each z.
         temperature: softmax temperature used in model.decode.
@@ -67,6 +68,8 @@ def decode_to_midi(target_directory,
     Return:
         a batch of note sequences.
     """
+    if z_batch is None:
+        z_batch = []
     note_seq_batch = decode(trained_model, length, z_batch, samples_per_batch, temperature)
     basename = os.path.join(
         target_directory,

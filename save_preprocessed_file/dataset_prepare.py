@@ -1,6 +1,5 @@
 import os
 import numpy as np
-import re
 import preprocessing.preprocess_title as ppt
 import bert_try as bt
 import latent_vec_generate as lvg
@@ -30,10 +29,24 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                             os.mkdir(midi_store_path)
                         np.save("%s/name.npy" % midi_store_path, midi_wordvec)
                         new_ns = ppm.get_new_ns(ppm.skyline(ns), ns)
-                        z_list, _, _ = lvg.encode_ns(musicvae_model, new_ns)
+                        z_list, mu_list, sigma_list = lvg.encode_ns(musicvae_model, new_ns)
                         i = 0
+                        z_path = os.path.join(midi_store_path, 'z')
+                        os.mkdir(z_path)
+                        mu_path = os.path.join(midi_store_path, 'mu')
+                        os.mkdir(mu_path)
+                        sigma_path = os.path.join(midi_store_path, 'sigma')
+                        os.mkdir(sigma_path)
                         for z in z_list:
-                            np.save('%s/%02d.npy' % (midi_store_path, i), z)
+                            np.save(os.path.join(z_path, '%02d.npy' % i), z)
+                            i = i + 1
+                        i = 0
+                        for mu in mu_list:
+                            np.save(os.path.join(mu_path, '%02d.npy' % i), mu)
+                            i = i + 1
+                        i = 0
+                        for sigma in sigma_list:
+                            np.save(os.path.join(sigma_path, '%02d.npy' % i), sigma)
                             i = i + 1
                         curr_num += 1
                         print("%04d/%04d: data loaded successfully at %s" % (curr_num, max_num, filename))
