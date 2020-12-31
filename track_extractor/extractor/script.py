@@ -20,10 +20,11 @@ def extract_track(input_directory, file_name, output_directory):
     dump_path = output_directory + "/" + file_name + ".tmp"
     # algo according to script.py
     try:
-        preprocess(path_mid, dump_path)
+        #preprocess(path_mid, dump_path)
         # algo according to filters
-        ns = note_seq.midi_file_to_note_sequence(dump_path)
-        new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'argmax'), ns)
+        #ns = note_seq.midi_file_to_note_sequence(dump_path)
+        ns = note_seq.midi_file_to_note_sequence(path_mid)
+        new_ns = pm.get_new_ns(pm.skyline(ns, mode = 'time_first'), ns)
         # save the output
         save_path = output_directory + "/" + file_name
         note_seq.sequence_proto_to_midi_file(new_ns, save_path)
@@ -39,10 +40,17 @@ def extract_track(input_directory, file_name, output_directory):
         os.remove(dump_path)
 
 def batch_extract_track(input_dir_name, dic_path, output_dir_name):
+    success_counter = 0
+    fail_counter = 0
     for filename in os.listdir(input_dir_name):
         is_valid, _ = pt.file_title(input_dir_name + "/" + filename, pt.word_dict(dic_path))
         if is_valid:
+            success_counter = success_counter + 1
             extract_track(input_dir_name, filename, output_dir_name)
+            print("Completed " + str(success_counter) + " midi file(s): " + filename)
+        else:
+            fail_counter = fail_counter + 1
+            print("Failed " + str(fail_counter) + " midi file(s): " + filename)
 
 def main():
     batch_extract_track("I:/input",
