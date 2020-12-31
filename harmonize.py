@@ -34,6 +34,9 @@ def harmonize(file_path, output_dir, coconet_model, batch_size = 1, file_name = 
     Return:
         None
     """
+    # file1 = open('original.txt', 'w+')
+    # noteseq = ns.midi_file_to_note_sequence(file_path)
+    # file1.write(str(noteseq.notes))
     strategy = "harmonize_midi_melody"
     generator = cs.Generator(coconet_model, strategy)
     midi_outs = generator.run_generation(midi_in = pretty_midi.PrettyMIDI(file_path),
@@ -90,7 +93,7 @@ def harmonize(file_path, output_dir, coconet_model, batch_size = 1, file_name = 
         for file_path in file_list:
             midi_file_name = os.path.basename(file_path)
             save_path = os.path.join(path, midi_file_name)
-            convert_to_piano(file_path, save_path)
+            convert_to_piano(os.path.join(midi_path, file_path), save_path)
 
 def convert_to_piano(path, output_path):
     """convert a midi file to piano
@@ -102,21 +105,24 @@ def convert_to_piano(path, output_path):
         None
     """
     noteseq = ns.midi_file_to_note_sequence(path)
+    # file2 = open('after.txt', 'w+')
     for note in noteseq.notes:
         note.instrument = 0
         note.program = 0
+    # file2.write(str(noteseq.notes))
     ns.note_sequence_to_midi_file(noteseq, output_path)
 
 
 # example of usage
 def main():
-    # coconet_model_path = "D:/code/Github/repository/coconet_model"
-    # coconet_model = generate_coconet_model(coconet_model_path)
-    # file_path = "D:/code/Github/AI-Project/midi_input/quiet_test.mid"
-    # output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
-    # harmonize(file_path, output_path, coconet_model)
-    convert_to_piano('D:/code/Github/AI-Project/midi_output/harmonize_output/sample_20201230185612_harmonize_midi_melody_straight_T0.8_l2_7.10min/midi/1.midi',
-                     'D:/code/Github/AI-Project/midi_output/piano_1.mid')
+    coconet_model_path = "D:/code/Github/repository/coconet_model"
+    coconet_model = generate_coconet_model(coconet_model_path)
+    file_path = "D:/code/Github/AI-Project/midi_input/test.mid"
+    output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
+    harmonize(file_path, output_path, coconet_model = coconet_model, file_name = 'test', to_piano = True)
+
+    # convert_to_piano('D:/code/Github/AI-Project/midi_output/harmonize_output/sample_20201230185612_harmonize_midi_melody_straight_T0.8_l2_7.10min/midi/1.midi',
+    #                  'D:/code/Github/AI-Project/midi_output/piano_1.mid')
 
 
 if __name__ == "__main__":
