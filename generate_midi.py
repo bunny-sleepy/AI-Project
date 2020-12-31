@@ -57,7 +57,7 @@ def main():
     coconet_model = har.generate_coconet_model(coconet_model_path = coconet_checkpoint_dir)
     # train model
     w2vmodel = w2l.train_model(checkpoint_path = 'D:/code/Github/AI-Project/model', train = False)
-    word_input = "Li Zhouzi"
+    word_input = "Happy"
     generateMidi(word_input,
                  w2vmodel,
                  music_vae_model = music_vae_model,
