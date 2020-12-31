@@ -5,7 +5,7 @@ import latent_vec_generate as lvg
 def wwh_test():
     model_path = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
     trained_model = lvg.generate_model(checkpoint_dir = model_path)
-    test1_path = 'D:/code/Github/AI-Project/midi_input/TakeMeToYourHeart.mid'
+    test1_path = 'D:/code/Github/AI-Project/midi_input/ATeam.mid'
     midi_batch = []
     midi_batch.append(test1_path)
     dict1 = lvg.encode(trained_model = trained_model, midi_batch = midi_batch)
@@ -15,7 +15,7 @@ def wwh_test():
     for key in dict1:
         z, _, _ = dict1[key]
         z_batch.append(z)
-    lvd.decode_to_midi(trained_model = trained_model, target_directory = target_dir, z_batch = z_batch, file_name = '1')
+    lvd.decode_to_midi(trained_model = trained_model, target_directory = target_dir, z_batch = z_batch, file_name = '2')
 
 def lzz_test():
     path = 'C:/Users/Li/PycharmProjects/AI_proj/AI-proj/midids'
