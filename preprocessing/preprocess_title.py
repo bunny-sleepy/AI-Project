@@ -93,7 +93,7 @@ def file_title(file_path, worddct):
         new_file_name = midi_file_name.replace(number, '')
     new_file_name = new_file_name.lower()
     words = new_file_name.split()
-    print(words)
+    # print(words)
     for word in words:
         if not worddct.__contains__(word):
             print('invalid word: %s' % word)
