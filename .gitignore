@@ -14,3 +14,9 @@ model.h5
 model/saved_model.pb
 model/variables/variables.data-00000-of-00001
 model/variables/variables.index
+*.midi
+*.npy
+*.mid
+*.zip
+*.npz
+1.txt

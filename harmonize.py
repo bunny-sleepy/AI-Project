@@ -5,26 +5,31 @@ import re
 import tensorflow.compat.v1 as tf
 import pretty_midi
 import numpy as np
+import note_seq as ns
 
 def generate_coconet_model(coconet_model_path):
     """Generate a coconet model based on the model path
+    Args:
+        coconet_model_path: the directory that contains the coconet model
 
-
+    Return:
+        the loaded coconet model ready for use
     """
     tf.compat.v1.disable_eager_execution()
     coconet_model = cs.instantiate_model(coconet_model_path)
     return coconet_model
 
 # TODO: change the instrument of the harmonized sample
-def harmonize(file_path, output_dir, coconet_model, temperature = 0.8, batch_size = 2):
+def harmonize(file_path, output_dir, coconet_model, batch_size = 1, file_name = '', to_piano = False):
     """harmonize a midi file
 
     Args:
         file_path: the input path
         coconet_model: the loaded coconet model
         output_dir: the output path
-        temperature: the generation temperature
+        file_name: the name of the generated piece
         batch_size: how many samples to generate each time
+        to_piano: whether or not to convert the output to piano
 
     Return:
         None
@@ -35,12 +40,7 @@ def harmonize(file_path, output_dir, coconet_model, temperature = 0.8, batch_siz
                                          gen_batch_size = batch_size)
 
     # Creates a folder for storing the process of the sampling.
-    label = "sample_%s_%s_%s_T%g_l%i_%.2fmin" % (lib_util.timestamp(),
-                                                 strategy,
-                                                 generator.hparams.architecture,
-                                                 temperature,
-                                                 batch_size,
-                                                 generator.time_taken)
+    label = "%s_harmonized_%s" % (file_name, lib_util.timestamp())
     basepath = os.path.join(output_dir, label)
     tf.logging.info("basepath: %s", basepath)
     tf.gfile.MakeDirs(basepath)
@@ -83,14 +83,41 @@ def harmonize(file_path, output_dir, coconet_model, temperature = 0.8, batch_siz
                     cs.save_midis(prime_midi_outs, midi_path, label + "_prime")
                 break
     tf.logging.info("Done")
+    if to_piano:
+        file_list = os.listdir(midi_path)
+        path = os.path.join(output_dir, "%s_piano_harmonized_%s" % (file_name, lib_util.timestamp()))
+        tf.gfile.MakeDirs(path)
+        for file_path in file_list:
+            midi_file_name = os.path.basename(file_path)
+            save_path = os.path.join(path, midi_file_name)
+            convert_to_piano(file_path, save_path)
+
+def convert_to_piano(path, output_path):
+    """convert a midi file to piano
+    Args:
+        path: the path of the midi file
+        output_path: the output file path that contains the whole name, e.g., D:/out/out1.mid
+
+    Return:
+        None
+    """
+    noteseq = ns.midi_file_to_note_sequence(path)
+    for note in noteseq.notes:
+        note.instrument = 0
+        note.program = 0
+    ns.note_sequence_to_midi_file(noteseq, output_path)
+
 
 # example of usage
 def main():
-    coconet_model_path = "D:/code/Github/repository/coconet_model"
-    coconet_model = generate_coconet_model(coconet_model_path)
-    file_path = "D:/code/Github/AI-Project/midi_input/test.mid"
-    output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
-    harmonize(file_path, output_path, coconet_model)
+    # coconet_model_path = "D:/code/Github/repository/coconet_model"
+    # coconet_model = generate_coconet_model(coconet_model_path)
+    # file_path = "D:/code/Github/AI-Project/midi_input/quiet_test.mid"
+    # output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
+    # harmonize(file_path, output_path, coconet_model)
+    convert_to_piano('D:/code/Github/AI-Project/midi_output/harmonize_output/sample_20201230185612_harmonize_midi_melody_straight_T0.8_l2_7.10min/midi/1.midi',
+                     'D:/code/Github/AI-Project/midi_output/piano_1.mid')
+
 
 if __name__ == "__main__":
     main()

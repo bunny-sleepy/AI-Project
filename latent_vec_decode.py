@@ -53,7 +53,8 @@ def decode_to_midi(target_directory,
                    length = None,
                    z_batch = [],
                    samples_per_batch = 1,
-                   temperature = 0.5):
+                   temperature = 0.5,
+                   file_name = ''):
     """ decode the generated z into note sequences
 
     Args:
@@ -63,6 +64,7 @@ def decode_to_midi(target_directory,
         z_batch: the input batch of z, each np.array generates one output.
         samples_per_batch: how many note sequences to generate for each z.
         temperature: softmax temperature used in model.decode.
+        file_name: the file_name to attach to the front
 
     Return:
         a batch of note sequences.
@@ -70,8 +72,8 @@ def decode_to_midi(target_directory,
     note_seq_batch = decode(trained_model, length, z_batch, samples_per_batch, temperature)
     basename = os.path.join(
         target_directory,
-        '%s_%03d_*.mid' %
-        (date_and_time, samples_per_batch))
+        '%s_%s_%03d_*.mid' %
+        (file_name, date_and_time, samples_per_batch))
     output_file_paths = []
     for noteseq in note_seq_batch:
         i = 0
