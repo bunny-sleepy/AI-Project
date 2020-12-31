@@ -287,6 +287,17 @@ def skyline(ns, mode = 'argmax'):
         counts = np.bincount(target)
         target_instrument = np.argmax(counts)
         return target_instrument
+    elif mode == 'time_first':
+        target = []
+        target.extend(list(set(top_diff).intersection(set(top_total_time))))
+        target.extend(list(set(top_diversity).intersection(set(top_total_time))))
+        target.extend(list(set(top_max).intersection(set(top_total_time))))
+        target.extend(list(set(top_velocity).intersection(set(top_total_time))))
+        target.extend(list(set(top_variance).intersection(set(top_total_time))))
+
+        counts = np.bincount(target)
+        target_instrument = np.argmax(counts)
+        return target_instrument
     else: # default: top variance
         return top_variance[0]
 
