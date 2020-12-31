@@ -39,10 +39,17 @@ def extract_track(input_directory, file_name, output_directory):
         os.remove(dump_path)
 
 def batch_extract_track(input_dir_name, dic_path, output_dir_name):
+    success_counter = 0
+    fail_counter = 0
     for filename in os.listdir(input_dir_name):
         is_valid, _ = pt.file_title(input_dir_name + "/" + filename, pt.word_dict(dic_path))
         if is_valid:
+            success_counter = success_counter + 1
             extract_track(input_dir_name, filename, output_dir_name)
+            print("Completed " + str(success_counter) + " midi file(s): " + filename)
+        else:
+            fail_counter = fail_counter + 1
+            print("Failed " + str(fail_counter) + " midi file(s): " + filename)
 
 def main():
     batch_extract_track("I:/input",
