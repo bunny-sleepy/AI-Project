@@ -1,6 +1,6 @@
 from music_vae.trained_model import TrainedModel
 import note_seq
-import os, sys
+import os
 import music_vae.configs as configs
 import time
 
@@ -9,7 +9,6 @@ class NoExtractedExamplesError(Exception):
 
 date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
 
-# TODO: find the appropriate batch size
 # NOTE: plz do not change the directory here, since you can always specify out side this file
 def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
     config = configs.CONFIG_MAP[config_str]
@@ -20,7 +19,6 @@ def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
                                  checkpoint_dir_or_path = checkpoint_dir)
     return trained_model
 
-# TODO: concatenate the generated word vector with this function
 def decode(trained_model,
            length = None,
            z_batch = [],
@@ -72,7 +70,7 @@ def decode_to_midi(target_directory,
     note_seq_batch = decode(trained_model, length, z_batch, samples_per_batch, temperature)
     basename = os.path.join(
         target_directory,
-        '%s_%s_%03d_*.mid' %
+        '%s_vae_output_%s_%03d_*.mid' %
         (file_name, date_and_time, samples_per_batch))
     output_file_paths = []
     for noteseq in note_seq_batch:

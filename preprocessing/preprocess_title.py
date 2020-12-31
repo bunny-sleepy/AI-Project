@@ -2,7 +2,6 @@ import os
 import re
 import note_seq
 
-# TODO: devise these sets more wisely
 char_set = {'朘','朅','#','œ', '抯', '’','Ç', 'á','朏', ']', '&', 'ü',
  '=', 'Φ','骃', '＆', '[','é', '朙', 'î','閛', 'Ø', 'à', 'ン','ス', '鉶', '閡', 
  'è','+','ï','№','朠', '鵪', '驪', 'í', 'û','朣', 'ダ', '抦'}
@@ -39,7 +38,7 @@ def word_dict(dict_path = 'word.txt'):
         To use this, you should write
         >>> my_dict = word_dict('word.txt')
         >>> for word_to_check in words_to_check:
-        >>>     print(word_to_check in my_dict)
+        >>> print(word_to_check in my_dict)
     """
     dict_file = open(dict_path, 'r')
     dict_words = dict_file.readlines()
@@ -50,7 +49,6 @@ def word_dict(dict_path = 'word.txt'):
     return {}.fromkeys(dict_words, 1)
 
 # Preprocess Titles (currently adding blank spaces)
-# TODO: find a better preprocess method
 def file_title(file_path, worddct):
     """ Return the file name string with blank spaces
     Args:
@@ -134,9 +132,6 @@ def Rename(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePrepro
 
 def main():
     worddct = word_dict('./word.txt')
-    # print (worddct)
-    # test_file1 = './midi_input/broken_midi.mid'
-    # print(file_title(test_file1))
     test_file2 = './../midi_input/BackToDecember.mid'
     print(file_title(test_file2, worddct))
     # word_1 = 'zebra'

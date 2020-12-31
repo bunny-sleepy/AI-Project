@@ -1,9 +1,6 @@
-import bert_try as bt
-import numpy as np
 import os
 import tensorflow as tf
 from tensorflow.keras import layers
-import matplotlib.pyplot as plt
 
 def train_model(wordvec_batch = None,
                 latentvec_batch = None,

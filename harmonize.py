@@ -121,9 +121,5 @@ def main():
     output_path = "D:/code/Github/AI-Project/midi_output/harmonize_output"
     harmonize(file_path, output_path, coconet_model = coconet_model, file_name = 'test', to_piano = True)
 
-    # convert_to_piano('D:/code/Github/AI-Project/midi_output/harmonize_output/sample_20201230185612_harmonize_midi_melody_straight_T0.8_l2_7.10min/midi/1.midi',
-    #                  'D:/code/Github/AI-Project/midi_output/piano_1.mid')
-
-
 if __name__ == "__main__":
     main()

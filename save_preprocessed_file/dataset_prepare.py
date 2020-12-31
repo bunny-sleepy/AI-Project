@@ -25,7 +25,6 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                 if file_valid:
                     midi_wordvec = bt.encode_nlp(title)
                     ns = note_seq.midi_file_to_note_sequence(midi_file)
-                    # TODO: change this midi preprocessing method
                     try:
                         if not os.path.exists(midi_store_path): 
                             os.mkdir(midi_store_path)
@@ -47,15 +46,11 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
 def main():
     dataset_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/musictest'
     stored_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/testback/storetest'
-    # dataset_path = 'D:/code/Github/AI-Project/midi_input'
     music_vae_config_str = 'hierdec-mel_16bar'
     music_vae_checkpoint_dir = 'C:/Users/Li/Desktop/Latex file/AI_proj/hierdec-mel_16bar'
     music_vae_model = lvg.generate_model(config_str = music_vae_config_str,
                                          checkpoint_dir = music_vae_checkpoint_dir)
-
     prepare_dataset(music_vae_model, dataset_path, stored_path)
-    # c = np.load(filepath)
-    # print (c)
 
 if __name__ == "__main__":
     main()

@@ -1,5 +1,4 @@
 import note_seq
-import os, sys
 import numpy as np
 
 # According to the average velocity of notes
@@ -49,12 +48,9 @@ def max_pitch_diff(ns):
                                            max(note.pitch, number[note.instrument][1]))
             else:
                 number[note.instrument] = (note.pitch, note.pitch)
-    # print(number)
-
     max_instrument = -1
     max_pitch_difference = -1
     for instrument in number:
-        # print(number[instrument][0], number[instrument][1])
         if number[instrument][1] - number[instrument][0] > max_pitch_difference:
             max_instrument = instrument
             max_pitch_difference = number[instrument][1] - number[instrument][0]
@@ -73,7 +69,6 @@ def max_pitch(ns):
     max_instrument = -1
     max_pt = -1
     for instrument in number:
-        # print(number[instrument][0], number[instrument][1])
         if number[instrument] > max_pt:
             max_instrument = instrument
             max_pt = number[instrument]
@@ -112,7 +107,6 @@ def max_diversity(ns):
     max_instrument = -1
     max_pitch_num = -1
     for instrument in number:
-        # print(number[instrument][0], number[instrument][1])
         if len(number[instrument]) > max_pitch_num:
             max_instrument = instrument
             max_pitch_num = len(number[instrument])
@@ -175,9 +169,6 @@ def skyline(ns, mode = 'argmax'):
     pitch_total_time = total_time(ns)[1]
     pitch_velocity = avg_velocity(ns)[1]
     pitch_variance = pitch_var(ns)[1]
-    # print(pitch_max)
-    # print(pitch_diff)
-    # print(pitch_diversity)
     pick_num = max(int(len(pitch_max) / 3), 1)
     pick_num_max = max(int(len(pitch_max) * 2 / 3), 1)
     top_diff = []
@@ -273,8 +264,6 @@ def skyline(ns, mode = 'argmax'):
                     min_index = top_diversity.index(ins)
             if len(pitch_diversity[instrument]) > min_diversity:
                 top_diversity[min_index] = instrument
-
-    # print(top_diff, top_diversity, top_max, top_total_time, top_velocity)
     if mode == 'argmax':
         target = []
         target.extend(top_diff)
@@ -303,19 +292,11 @@ def skyline(ns, mode = 'argmax'):
 
 # TODO: change the file directory
 def main():
-    # test_target = './../midi_input/BackToDecember.mid'
-    # test_target = './../midi_input/SomebodyThatIUsedToKnow(BetterVersion).mid'
-    # test_target = './../midi_input/7Days.mid'
-    # test_target = './../midi_input/advance-wars-2-black-hole-rising-super-co-power-mid.mid'
-    # test_target = './../midi_input/NeverSayNever.mid'
-    # test_target = './../midi_input/test1.mid'
     test_target = './../midi_input/Anchor.mid'
     ns = note_seq.midi_file_to_note_sequence(test_target)
     file1 = open('./../1.txt', 'w+')
     file2 = open('./../2.txt', 'w+')
     target_instrument = skyline(ns)
-    # target_instrument = skyline(ns)
-    # target_instrument = pitch_var(ns)[0]
     if target_instrument is None:
         print('No track selected')
     else:
