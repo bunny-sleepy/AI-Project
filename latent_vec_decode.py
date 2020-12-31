@@ -20,7 +20,7 @@ def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
     return trained_model
 
 def decode(trained_model,
-           length = None,
+           length = 256,
            z_batch = [],
            samples_per_batch = 1,
            temperature = 0.5):
@@ -48,7 +48,7 @@ def decode(trained_model,
 
 def decode_to_midi(target_directory,
                    trained_model,
-                   length = None,
+                   length = 256,
                    z_batch = None,
                    samples_per_batch = 1,
                    temperature = 0.5,

@@ -30,7 +30,7 @@ def generateMidi(word_string,
     os.mkdir(base_path)
     output_files = decode.decode_to_midi(target_directory=base_path,
                                          trained_model=music_vae_model,
-                                         length = len(latent_vec),
+                                         length = 256,
                                          z_batch = [latent_vec],
                                          temperature=generate_temperature,
                                          file_name = word_string.replace(' ', '_'))

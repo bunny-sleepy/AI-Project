@@ -149,6 +149,11 @@ def get_new_ns(max_instrument, ns):
     seq.total_time = ns.total_time - timing
     return seq
 
+def cross_entropy(ns, bar_num = 1):
+    value = {}
+
+
+
 def skyline(ns, mode = 'argmax'):
     """ Returns the melody track according to the skyline algorithm
     To get more details on this algorithm,

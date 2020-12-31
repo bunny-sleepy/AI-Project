@@ -15,32 +15,35 @@ def load_prepared_dataset(file_path, pooling = False, max_number = None):
         num += 1
         print("Loading %d-th folder" % num)
         path = os.path.join(file_path, dir)
-        files = os.listdir(path)
-        z_path = os.path.join(file_path, 'z')
-        mu_path = os.path.join(file_path, 'mu')
-        sigma_path = os.path.join(file_path, 'sigma')
-        z_files = os.listdir(z_path)
-        mu_files = os.listdir(mu_path)
-        sigma_files = os.listdir(sigma_path)
-        name = None
-        for file in files:
-            if file == 'name.npy':
-                npath = os.path.join(path, file)
-                name =  np.load(npath)
-        for file in z_files:
-            z = np.load(os.path.join(z_path, file))
-            if not pooling:
-                midi_wordvec_list.append(np.array(name[0]))
-            else:
-                midi_wordvec_list.append(np.max(name, axis = 0))
-            z_list.append(z)
-        for file in mu_files:
-            mu = np.load(os.path.join(mu_path, file))
-            mu_list.append(mu)
-        for file in sigma_files:
-            sigma = np.load(os.path.join(sigma_path, file))
-            sigma_list.append(sigma)
-    
+        try:
+            files = os.listdir(path)
+            z_path = os.path.join(path, 'z')
+            mu_path = os.path.join(path, 'mu')
+            sigma_path = os.path.join(path, 'sigma')
+            z_files = os.listdir(z_path)
+            mu_files = os.listdir(mu_path)
+            sigma_files = os.listdir(sigma_path)
+            name = None
+            for file in files:
+                if file == 'name.npy':
+                    npath = os.path.join(path, file)
+                    name = np.load(npath)
+            for file in z_files:
+                z = np.load(os.path.join(z_path, file))
+                if not pooling:
+                    midi_wordvec_list.append(np.array(name[0]))
+                else:
+                    midi_wordvec_list.append(np.max(name, axis = 0))
+                z_list.append(z)
+            for file in mu_files:
+                mu = np.load(os.path.join(mu_path, file))
+                mu_list.append(mu)
+            for file in sigma_files:
+                sigma = np.load(os.path.join(sigma_path, file))
+                sigma_list.append(sigma)
+            print('Loaded successfully')
+        except:
+            print('Failed to Load')
     return z_list, mu_list, sigma_list, midi_wordvec_list
 
 # Test
