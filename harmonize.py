@@ -34,9 +34,9 @@ def harmonize(file_path, output_dir, coconet_model, batch_size = 1, file_name = 
     Return:
         None
     """
-    # file1 = open('original.txt', 'w+')
-    # noteseq = ns.midi_file_to_note_sequence(file_path)
-    # file1.write(str(noteseq.notes))
+    file1 = open('original.txt', 'w+')
+    noteseq = ns.midi_file_to_note_sequence(file_path)
+    file1.write(str(noteseq))
     strategy = "harmonize_midi_melody"
     generator = cs.Generator(coconet_model, strategy)
     midi_outs = generator.run_generation(midi_in = pretty_midi.PrettyMIDI(file_path),
@@ -105,13 +105,14 @@ def convert_to_piano(path, output_path):
         None
     """
     noteseq = ns.midi_file_to_note_sequence(path)
-    # file2 = open('after.txt', 'w+')
+    file2 = open('after.txt', 'w+')
+    # TODO(wwh): change the factor of the weaken of non-prime tracks
     for note in noteseq.notes:
-        note.instrument = 0
+        if note.program != 68:
+            note.velocity = int(note.velocity / 2)
         note.program = 0
-    # file2.write(str(noteseq.notes))
+    file2.write(str(noteseq))
     ns.note_sequence_to_midi_file(noteseq, output_path)
-
 
 # example of usage
 def main():

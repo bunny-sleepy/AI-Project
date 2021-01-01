@@ -69,13 +69,13 @@ def lzz():
 
 def wwh():
     import save_preprocessed_file.load_prepared as lp
-    dataset_path = 'D:/code/Github/AI-Project/midi_input'
+    dataset_path = 'D:/Downloads/midi'
     stored_path = 'D:/tmp'
     music_vae_config_str = 'hierdec-mel_16bar'
     music_vae_checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
     music_vae_model = lvg.generate_model(config_str = music_vae_config_str,
                                          checkpoint_dir = music_vae_checkpoint_dir)
-    # prepare_dataset(music_vae_model, dataset_path, stored_path)
+    prepare_dataset(music_vae_model, dataset_path, stored_path)
     z_list, mu_list, sigma_list, wordvec_list = lp.load_prepared_dataset(stored_path)
     print(len(z_list), len(mu_list), len(sigma_list), len(wordvec_list))
 

@@ -6,7 +6,6 @@ import music_vae.configs as configs
 class NoExtractedExamplesError(Exception):
   pass
 
-# TODO: find the appropriate batch size
 # NOTE: plz do not change the directory here, since you can always specify out side this file
 def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
     config = configs.CONFIG_MAP[config_str]
@@ -43,7 +42,7 @@ def encode_ns(trained_model, ns):
     z, mu, sigma = trained_model.encode_tensors(inputs, lengths, controls)
     return z, mu, sigma
 
-def encode(trained_model, midi_batch = []):
+def encode(trained_model, midi_batch = None):
     """encode a midi_batch according to a trained model.
 
     Args:

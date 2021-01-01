@@ -26,6 +26,7 @@ def generateMidi(word_string,
 
     tmp_normal = np.random.normal(0, 1, 512)
     latent_vec = np.array(mu + sigma @ tmp_normal)
+    # latent_vec = mu
     base_path = os.path.join(target_directory, word_string.replace(' ', '_'))
     os.mkdir(base_path)
     output_files = decode.decode_to_midi(target_directory=base_path,
@@ -45,7 +46,7 @@ def generateMidi(word_string,
                           batch_size = harmonize_batch_size,
                           to_piano = harmonize_to_piano)
     elif coconet_model is None:
-        print('You must ')
+        print('You must enter a coconet model before using the harmonize functionality')
 
 # TODO: write a tentative main function
 def main():
@@ -63,13 +64,13 @@ def main():
     # train model
     w2vmodel_mean = w2l.train_model_mean(checkpoint_path_mean = 'D:/code/Github/AI-Project/model', train = False)
     w2vmodel_variance = w2l.train_model_variance(checkpoint_path_variance = 'D:/code/Github/AI-Project/model', train = False)
-    word_input = "Happy"
+    word_input = "war"
     generateMidi(word_input,
                  w2vmodel_mean,
                  w2vmodel_variance,
                  music_vae_model = music_vae_model,
                  coconet_model = coconet_model,
-                 harmonize = True,
+                 harmonize = False,
                  target_directory = target_directory,
                  generate_temperature = generate_temperature,
                  harmonize_batch_size = harmonize_batch_size)
