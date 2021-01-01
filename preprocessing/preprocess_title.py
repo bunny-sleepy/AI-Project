@@ -83,17 +83,24 @@ def file_title(file_path, worddct):
     if midi_file_name[0] == ' ':
         midi_file_name = midi_file_name[1:]
     # check spelling errors
-    new_file_name = None
+    return_file_name = midi_file_name
     for number in numbers:
+<<<<<<< HEAD
         new_file_name = midi_file_name.replace(number, '')
     new_file_name = new_file_name.lower()
     words = new_file_name.split()
+=======
+        midi_file_name = midi_file_name.replace(number, '')
+    midi_file_name = midi_file_name.lower()
+    words = midi_file_name.split()
+>>>>>>> 773559d75178624f34284c1ada91007941b78ed7
     # print(words)
     for word in words:
         if not worddct.__contains__(word):
             print('invalid word: %s' % word)
             return False, None
-    return True, midi_file_name
+    print(return_file_name)
+    return True, return_file_name
 
 # TODO: find a better preprocess method
 def PreprocessDataset(dataset_path = "I:\\FinalProj\\AI-Project\\preprocessing\\TitlePreprocessor\\dataset"):

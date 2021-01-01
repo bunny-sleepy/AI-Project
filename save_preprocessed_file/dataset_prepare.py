@@ -1,6 +1,5 @@
 import os
 import numpy as np
-import re
 import preprocessing.preprocess_title as ppt
 import bert_try as bt
 import latent_vec_generate as lvg
@@ -8,7 +7,7 @@ import preprocessing.preprocess_midi as ppm
 import note_seq
 
 try:
-    word_dct = ppt.word_dict('./preprocessing/word.txt')
+    word_dct = ppt.word_dict('D:/code/Github/AI-Project/preprocessing/word.txt')
 except:
     word_dct = None
 
@@ -30,10 +29,26 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                             os.mkdir(midi_store_path)
                         np.save("%s/name.npy" % midi_store_path, midi_wordvec)
                         new_ns = ppm.get_new_ns(ppm.skyline(ns), ns)
-                        z_list, _, _ = lvg.encode_ns(musicvae_model, new_ns)
+                        # TODO(wwh): check the effectiveness of not using filters
+                        # z_list, mu_list, sigma_list = lvg.encode_ns(musicvae_model, new_ns)
+                        z_list, mu_list, sigma_list = lvg.encode_ns(musicvae_model, ns)
                         i = 0
+                        z_path = os.path.join(midi_store_path, 'z')
+                        os.mkdir(z_path)
+                        mu_path = os.path.join(midi_store_path, 'mu')
+                        os.mkdir(mu_path)
+                        sigma_path = os.path.join(midi_store_path, 'sigma')
+                        os.mkdir(sigma_path)
                         for z in z_list:
-                            np.save('%s/%02d.npy' % (midi_store_path, i), z)
+                            np.save(os.path.join(z_path, '%02d.npy' % i), z)
+                            i = i + 1
+                        i = 0
+                        for mu in mu_list:
+                            np.save(os.path.join(mu_path, '%02d.npy' % i), mu)
+                            i = i + 1
+                        i = 0
+                        for sigma in sigma_list:
+                            np.save(os.path.join(sigma_path, '%02d.npy' % i), sigma)
                             i = i + 1
                         curr_num += 1
                         print("%04d/%04d: data loaded successfully at %s" % (curr_num, max_num, filename))
@@ -43,7 +58,7 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                     print("invalid midi file at %s" % filename)
 
 # Test on this method
-def main():
+def lzz():
     dataset_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/musictest'
     stored_path = 'C:/Users/Li/Desktop/Latex file/AI_proj/AI-proj/testback/storetest'
     music_vae_config_str = 'hierdec-mel_16bar'
@@ -52,5 +67,19 @@ def main():
                                          checkpoint_dir = music_vae_checkpoint_dir)
     prepare_dataset(music_vae_model, dataset_path, stored_path)
 
+def wwh():
+    import save_preprocessed_file.load_prepared as lp
+    dataset_path = 'D:/code/Github/AI-Project/midi_input'
+    stored_path = 'D:/tmp'
+    music_vae_config_str = 'hierdec-mel_16bar'
+    music_vae_checkpoint_dir = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
+    music_vae_model = lvg.generate_model(config_str = music_vae_config_str,
+                                         checkpoint_dir = music_vae_checkpoint_dir)
+    # prepare_dataset(music_vae_model, dataset_path, stored_path)
+    z_list, mu_list, sigma_list, wordvec_list = lp.load_prepared_dataset(stored_path)
+    print(len(z_list), len(mu_list), len(sigma_list), len(wordvec_list))
+
+
 if __name__ == "__main__":
-    main()
+    # lzz()
+    wwh()

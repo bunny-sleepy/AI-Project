@@ -4,14 +4,15 @@ import apache_beam as beam
 
 def preprocess_dataset(input_file_name,
                        output_file_name,
-                       output_shards=32,
+                       output_shards=2,
                        config="hierdec-mel_16bar"):
     """ Preprocess dataset for further training
 
     Args:
     input_file_name: name of input TFRecord
+        TODO: some of our midi files may cause warning in Beam, try to find out why
     output_file_name: name of output TFRecord
-    output_shards: number of fragments for output
+    output_shards: number of files for output
     config: model and training configuration
         try "hierdec-mel_16bar", "hier-mel_16bar" or "flat-mel_16bar"
         TODO: try out other two configs

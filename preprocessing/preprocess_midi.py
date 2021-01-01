@@ -149,6 +149,22 @@ def get_new_ns(max_instrument, ns):
     seq.total_time = ns.total_time - timing
     return seq
 
+def cross_entropy(ns, bar_num = 1):
+    # time interval to seperate the notes
+    s_time = 4 * bar_num * ns.tempos.qpm
+    value = {}
+    instrument_notes = {}
+    instruments = []
+    for note in ns.notes:
+        if note.instrument in instrument_notes.keys():
+            instrument_notes[note.instrument].append(note)
+        else:
+            instrument_notes[note.instrument] = [note]
+            instruments.append(note.instrument)
+    for instrument in instruments:
+        pass
+
+
 def skyline(ns, mode = 'argmax'):
     """ Returns the melody track according to the skyline algorithm
     To get more details on this algorithm,

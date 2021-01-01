@@ -17,3 +17,5 @@ model/variables/variables.index
 *.zip
 *.npz
 1.txt
+track_extractor/extractor/notebook/Analysis.ipynb
+*.ipynb

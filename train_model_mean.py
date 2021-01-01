@@ -14,13 +14,12 @@ def main():
     checkpoint_dir_mean = os.path.join(model_dir, 'mean')
     if not os.path.exists(checkpoint_dir_mean):
         os.mkdir(checkpoint_dir_mean)
-    checkpoint_dir_variance = os.path.join(model_dir, 'variance')
-    if not os.path.exists(checkpoint_dir_variance):
-        os.mkdir(checkpoint_dir_variance)
-    w2l_model_mean = w2l.train_model_mean(np.array(midi_wordvec_list), np.array(mu_list), checkpoint_path_mean = checkpoint_dir_mean,
-                                epochs = 20000, batch_size = 512, load = True)
-    w2l_model_variance = w2l.train_model_variance(np.array(midi_wordvec_list), np.array(sigma_list), checkpoint_path_variance = checkpoint_dir_variance,
-                                epochs = 20000, batch_size = 512, load = True)
+    w2l_model_mean = w2l.train_model_mean(np.array(midi_wordvec_list),
+                                          np.array(mu_list),
+                                          checkpoint_path_mean = checkpoint_dir_mean,
+                                          epochs = 20000,
+                                          batch_size = 512,
+                                          load = True)
 
 if __name__ == "__main__":
     main()

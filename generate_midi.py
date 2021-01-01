@@ -10,7 +10,8 @@ input: word_vec
 output: latent vector
 '''
 def generateMidi(word_string,
-                 wordvec_to_latentvec_model,
+                 wordvec_to_mean_model,
+                 wordvec_to_variance_model,
                  music_vae_model,
                  coconet_model = None,
                  harmonize = True,
@@ -20,12 +21,16 @@ def generateMidi(word_string,
                  harmonize_to_piano = True):
     word_vec = bert_try.encode_nlp(word_string)
     # model output
-    latent_vec = wordvec_to_latentvec_model.predict(np.array([word_vec[0]]))
+    mu = wordvec_to_mean_model.predict(np.array([word_vec[0]]))
+    sigma = wordvec_to_variance_model.predict(np.array([word_vec[0]]))
+
+    tmp_normal = np.random.normal(0, 1, 512)
+    latent_vec = np.array(mu + sigma @ tmp_normal)
     base_path = os.path.join(target_directory, word_string.replace(' ', '_'))
     os.mkdir(base_path)
     output_files = decode.decode_to_midi(target_directory=base_path,
                                          trained_model=music_vae_model,
-                                         length = len(latent_vec),
+                                         length = 256,
                                          z_batch = [latent_vec],
                                          temperature=generate_temperature,
                                          file_name = word_string.replace(' ', '_'))
@@ -56,10 +61,12 @@ def main():
                                             checkpoint_dir = music_vae_checkpoint_dir)
     coconet_model = har.generate_coconet_model(coconet_model_path = coconet_checkpoint_dir)
     # train model
-    w2vmodel = w2l.train_model(checkpoint_path = 'D:/code/Github/AI-Project/model', train = False)
+    w2vmodel_mean = w2l.train_model_mean(checkpoint_path_mean = 'D:/code/Github/AI-Project/model', train = False)
+    w2vmodel_variance = w2l.train_model_variance(checkpoint_path_variance = 'D:/code/Github/AI-Project/model', train = False)
     word_input = "Happy"
     generateMidi(word_input,
-                 w2vmodel,
+                 w2vmodel_mean,
+                 w2vmodel_variance,
                  music_vae_model = music_vae_model,
                  coconet_model = coconet_model,
                  harmonize = True,
