@@ -1,5 +1,6 @@
 import numpy as np 
 import os
+import shutil
 
 def load_prepared_dataset(file_path, pooling = False, max_number = None):
     midi_wordvec_list = []
@@ -15,11 +16,13 @@ def load_prepared_dataset(file_path, pooling = False, max_number = None):
         num += 1
         print("Loading %d-th folder" % num)
         path = os.path.join(file_path, dir)
+        z_path = os.path.join(path, 'z')
+        mu_path = os.path.join(path, 'mu')
+        sigma_path = os.path.join(path, 'sigma')
+        # if not os.path.exists(z_path) or not os.path.exists(mu_path) or not os.path.exists(sigma_path):
+        #     os.remove(path)
         try:
             files = os.listdir(path)
-            z_path = os.path.join(path, 'z')
-            mu_path = os.path.join(path, 'mu')
-            sigma_path = os.path.join(path, 'sigma')
             z_files = os.listdir(z_path)
             mu_files = os.listdir(mu_path)
             sigma_files = os.listdir(sigma_path)
@@ -43,7 +46,8 @@ def load_prepared_dataset(file_path, pooling = False, max_number = None):
                 sigma_list.append(sigma)
             print('Loaded successfully')
         except:
-            print('Failed to Load')
+            print('Failed to Load at %s' % path)
+            shutil.rmtree(path)
     return z_list, mu_list, sigma_list, midi_wordvec_list
 
 # Test

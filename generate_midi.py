@@ -52,7 +52,7 @@ def generateMidi(word_string,
 def main():
     # NOTE: you should change this configuration YOURSELF
     music_vae_config_str = 'hierdec-mel_16bar'
-    music_vae_checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
+    music_vae_checkpoint_dir = './../repository/musicvae_retrain_test'
     target_directory = './midi_output/total_output'
     generate_temperature = 0.5
     coconet_checkpoint_dir = 'D:/code/Github/repository/coconet_model'
@@ -64,7 +64,7 @@ def main():
     # train model
     w2vmodel_mean = w2l.train_model_mean(checkpoint_path_mean = 'D:/code/Github/AI-Project/model', train = False)
     w2vmodel_variance = w2l.train_model_variance(checkpoint_path_variance = 'D:/code/Github/AI-Project/model', train = False)
-    word_input = "war"
+    word_input = "happy day"
     generateMidi(word_input,
                  w2vmodel_mean,
                  w2vmodel_variance,

@@ -85,15 +85,9 @@ def file_title(file_path, worddct):
     # check spelling errors
     return_file_name = midi_file_name
     for number in numbers:
-<<<<<<< HEAD
-        new_file_name = midi_file_name.replace(number, '')
-    new_file_name = new_file_name.lower()
-    words = new_file_name.split()
-=======
         midi_file_name = midi_file_name.replace(number, '')
     midi_file_name = midi_file_name.lower()
     words = midi_file_name.split()
->>>>>>> 773559d75178624f34284c1ada91007941b78ed7
     # print(words)
     for word in words:
         if not worddct.__contains__(word):

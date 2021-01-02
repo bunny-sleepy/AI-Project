@@ -5,6 +5,7 @@ import bert_try as bt
 import latent_vec_generate as lvg
 import preprocessing.preprocess_midi as ppm
 import note_seq
+import shutil
 
 try:
     word_dct = ppt.word_dict('D:/code/Github/AI-Project/preprocessing/word.txt')
@@ -53,6 +54,7 @@ def prepare_dataset(musicvae_model, dataset_path, stored_path, word_dict = word_
                         curr_num += 1
                         print("%04d/%04d: data loaded successfully at %s" % (curr_num, max_num, filename))
                     except:
+                        shutil.rmtree(midi_store_path)
                         print("unable to load the file at %s" % filename)
                 else:
                     print("invalid midi file at %s" % filename)
