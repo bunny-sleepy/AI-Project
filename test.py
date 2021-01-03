@@ -3,9 +3,9 @@ import latent_vec_decode as lvd
 import latent_vec_generate as lvg
 
 def wwh_test():
-    model_path = 'D:/code/Github/repository/musicvae_hierdec-mel_16bar'
+    model_path = 'D:/code/Github/repository/musicvae_retrain_test'
     trained_model = lvg.generate_model(checkpoint_dir = model_path)
-    test1_path = 'D:/code/Github/AI-Project/midi_input/ATeam.mid'
+    test1_path = 'D:/code/Github/AI-Project/midi_input/7Days.mid'
     midi_batch = []
     midi_batch.append(test1_path)
     dict1 = lvg.encode(trained_model = trained_model, midi_batch = midi_batch)

@@ -82,6 +82,9 @@ def file_title(file_path, worddct):
     # remove first spacing
     if midi_file_name[0] == ' ':
         midi_file_name = midi_file_name[1:]
+    # remove last spacing
+    if midi_file_name[-1] == ' ':
+        midi_file_name = midi_file_name[:-1]
     # check spelling errors
     return_file_name = midi_file_name
     for number in numbers:
