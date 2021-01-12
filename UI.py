@@ -9,4 +9,3 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPainter, QColor, QFont
 from PyQt5.QtCore import *
 import sys
-
