@@ -26,3 +26,4 @@ model/2021_1_2/mean/variables/variables.data-00000-of-00001
 model/2021_1_2/mean/saved_model.pb
 model/2021_1_2/variance/variables/variables.data-00000-of-00001
 model/2021_1_2/variance/saved_model.pb
+.idea/AI-Project.iml
