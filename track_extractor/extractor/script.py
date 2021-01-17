@@ -54,10 +54,6 @@ def batch_extract_track(input_dir_name, dic_path, output_dir_name):
         else:
             fail_counter = fail_counter + 1
             print("Failed " + str(fail_counter) + " midi file(s): " + filename)
-<<<<<<< HEAD
-
-=======
->>>>>>> 773559d75178624f34284c1ada91007941b78ed7
 
 def main():
     batch_extract_track("I:/input",
