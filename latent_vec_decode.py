@@ -7,8 +7,6 @@ import time
 class NoExtractedExamplesError(Exception):
   pass
 
-date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
-
 # NOTE: plz do not change the directory here, since you can always specify out side this file
 def generate_model(config_str = 'hierdec-mel_16bar', checkpoint_dir = None):
     config = configs.CONFIG_MAP[config_str]
@@ -36,6 +34,7 @@ def decode(trained_model,
     Return:
         a batch of note sequences.
     """
+    date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
     note_seq_batch = []
     for z in z_batch:
         for _ in range(samples_per_batch):
@@ -68,6 +67,7 @@ def decode_to_midi(target_directory,
     Return:
         a batch of note sequences.
     """
+    date_and_time = time.strftime('%Y-%m-%d_%H%M%S')
     if z_batch is None:
         z_batch = []
     note_seq_batch = decode(trained_model, length, z_batch, samples_per_batch, temperature)

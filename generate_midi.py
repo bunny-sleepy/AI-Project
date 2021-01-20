@@ -64,7 +64,7 @@ def generateMidi(word_string,
 def main():
     # NOTE: you should change this configuration YOURSELF
     music_vae_config_str = 'hierdec-mel_16bar'
-    music_vae_checkpoint_dir = './../repository/train_test'
+    music_vae_checkpoint_dir = './../repository/musicvae_hierdec-mel_16bar'
     target_directory = './midi_output/total_output_v2'
     generate_temperature = 0.5
     coconet_checkpoint_dir = 'D:/code/Github/repository/coconet_model'
